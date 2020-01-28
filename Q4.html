@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      Choose the best when there are options | Idea Switching
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="/rss-feed.xml" title="Idea Switching" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Idea Switching | Networking, Security, Automation & Development"/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112060364-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Choose the best when there are options | Idea Switching</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="Choose the best when there are options" />
+<meta name="author" content="Ken Lai" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A company collects a steady stream of 10 million data records from 100,000 sources each day. These records are written to an Amazon RDS MySQL DB. A query must produce the daily average of a data source over the past 30 days. There are twice as many reads as writes. Queries to the collected data are for one source ID at a time." />
+<meta property="og:description" content="A company collects a steady stream of 10 million data records from 100,000 sources each day. These records are written to an Amazon RDS MySQL DB. A query must produce the daily average of a data source over the past 30 days. There are twice as many reads as writes. Queries to the collected data are for one source ID at a time." />
+<meta property="og:site_name" content="Idea Switching" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-26T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"A company collects a steady stream of 10 million data records from 100,000 sources each day. These records are written to an Amazon RDS MySQL DB. A query must produce the daily average of a data source over the past 30 days. There are twice as many reads as writes. Queries to the collected data are for one source ID at a time.","@type":"BlogPosting","headline":"Choose the best when there are options","url":"/Q4","dateModified":"2019-09-26T00:00:00+00:00","datePublished":"2019-09-26T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/Q4"},"author":{"@type":"Person","name":"Ken Lai"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Idea Switching</a>
+    <small class="masthead-subtitle">Networking, Security, Automation & Development</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/writing.html">Writing</a>
+    
+      <a href="/menu/contact.html">Contact</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/lenpaul" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/paululele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/lenpaul/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:l.nguyen.paul@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <h1>
+  Choose the best when there are options
+</h1>
+
+
+
+<p>A company collects a steady stream of 10 million data records from 100,000 sources each day. These records are written to an Amazon RDS MySQL DB. A query must produce the daily average of a data source over the past 30 days. There are twice as many reads as writes. Queries to the collected data are for one source ID at a time.</p>
+
+<!-- more -->
+
+<p>How can the Solutions Architect improve the reliability and cost effectiveness of this solution?</p>
+
+<ol>
+  <li>Use Amazon Aurora with MySQL in a Multi-AZ mode. Use four additional read replicas.</li>
+  <li>Use Amazon DynamoDB with the source ID as the partition key and the timestamp as the sort key. Use a Time to Live (TTL) to delete data after 30 days.</li>
+  <li>Use Amazon DynamoDB with the source ID as the partition key. Use a different table each day.</li>
+  <li>Ingest data into Amazon Kinesis using a retention period of 30 days. Use AWS Lambda to write data records to Amazon ElastiCache for read access.</li>
+</ol>
+
+<hr />
+
+<p>答案中比较明显的是B、C采用了DynamoDB，而题目中说明使用了MySQL。采用这两种方案需要对数据库进行非常大的改动。一般来说这种方案除非有深思熟虑，在实际情况中是不会采纳的。所以这里可以比较容易的排除B、C两项。</p>
+
+<p><del>答案A和D中，乍一看都是可以满足所有需求：一定量的数据写入，两倍于写入的读取需求性能和查询最近30天的平均值。但答案A相比D更加合理：</del>
+<del>* 数据并没有说明只保留30天，答案A可以长期保留数据。而D在30天之后数据即消失</del>
+<del>* Kinesis更加强调实时性，这里并没有提出这种需求</del></p>
+
+<p><del>综合来看，A是最佳的答案。</del></p>
+
+<p>经过其他群友的提醒，<a href="https://docs.aws.amazon.com/streams/latest/dev/kinesis-extended-retention.html">文档中</a>明确了Kinesis里数据最长保存时间是7天（168小时），所以答案4也是不正确的。所以只能选答案1。</p>
+
+
+<span class="post-date">
+  Written on
+  
+  September
+  26th,
+  2019
+  by
+  
+    Ken Lai
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=Choose the best when there are options&amp;url=/Q4" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/Q4&amp;title=Choose the best when there are options" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+          <li>
+            <h3>
+              <a href="/Q59-SAA">
+                Not perfect, but works at least
+                <!--<img src="/images/">-->
+                <!--<small>October 17, 2019</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+        
+          <li>
+            <h3>
+              <a href="/SAP%E8%80%83%E8%AF%95%E8%AE%A4%E8%AF%81%E5%BF%83%E5%BE%97">
+                Amazon Solutions Architect - Professional 认证心得
+                <!--<img src="/images/">-->
+                <!--<small>October 5, 2019</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+        
+          <li>
+            <h3>
+              <a href="/Q5">
+                Miss a step, miss the whole
+                <!--<img src="/images/">-->
+                <!--<small>September 26, 2019</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/lenpaul" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/paululele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/lenpaul/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:l.nguyen.paul@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date"><a href="/menu/about.html">Idea Switching | Networking, Security, Automation & Development by Ken Lai</a></div>
+</footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      Scale Your Services with Load Balancers | Idea Switching
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="/rss-feed.xml" title="Idea Switching" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Idea Switching | Networking, Security, Automation & Development"/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112060364-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Scale Your Services with Load Balancers | Idea Switching</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="Scale Your Services with Load Balancers" />
+<meta name="author" content="Ken Lai" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A load balancer (LB) is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. LBs are used to increase capacity (concurrent users) and reliability of applications. They improve the overall performance of applications by decreasing the burden on servers associated with managing and maintaining application and network sessions, as well as by performing application-specific tasks." />
+<meta property="og:description" content="A load balancer (LB) is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. LBs are used to increase capacity (concurrent users) and reliability of applications. They improve the overall performance of applications by decreasing the burden on servers associated with managing and maintaining application and network sessions, as well as by performing application-specific tasks." />
+<meta property="og:site_name" content="Idea Switching" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-02T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"A load balancer (LB) is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. LBs are used to increase capacity (concurrent users) and reliability of applications. They improve the overall performance of applications by decreasing the burden on servers associated with managing and maintaining application and network sessions, as well as by performing application-specific tasks.","@type":"BlogPosting","headline":"Scale Your Services with Load Balancers","url":"/Scale-Your-Services-with-Load-Balancers","dateModified":"2018-06-02T00:00:00+00:00","datePublished":"2018-06-02T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/Scale-Your-Services-with-Load-Balancers"},"author":{"@type":"Person","name":"Ken Lai"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Idea Switching</a>
+    <small class="masthead-subtitle">Networking, Security, Automation & Development</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/writing.html">Writing</a>
+    
+      <a href="/menu/contact.html">Contact</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/lenpaul" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/paululele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/lenpaul/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:l.nguyen.paul@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <h1>
+  Scale Your Services with Load Balancers
+</h1>
+
+
+
+<p>A load balancer (LB) is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. LBs are used to increase capacity (concurrent users) and reliability of applications. They improve the overall performance of applications by decreasing the burden on servers associated with managing and maintaining application and network sessions, as well as by performing application-specific tasks.</p>
+
+<p>Some of Load Balancers will be mentioned in this article, including:</p>
+
+<ul>
+  <li>general Layer 7 (application) layer</li>
+  <li>DNS L7 layer load balancers</li>
+  <li>L4 (transport) layer load balancers</li>
+  <li>general L3 (network)</li>
+  <li>Anycast load balancers</li>
+</ul>
+
+<p>We’ll ignore most of the jargons to minimize preceded knowledge of computer networking, except the basic idea of OSI 7 layer model. The OSI 7 layer model is a model used to separate responsibilities of devices in a network, providing transparent and standard interfaces to both upper and lower layers. They’re named from high to low as:</p>
+
+<ul>
+  <li>Application Layer (Layer 7). High-level APIs, including resource sharing, remote file access</li>
+  <li>Presentation Layer. Translation of data between a networking service and an application; including character encoding, data compression, and encryption/decryption</li>
+  <li>Session Layer. Managing communication sessions, i.e. continuous exchange of information in the form of multiple back-and-forth transmissions between two nodes</li>
+  <li>Transport Layer. Reliable transmission of data segments between points on a network, including segmentation, and multiplexing</li>
+  <li>Network Layer. Structuring and managing a multi-node network, including addressing, routing and traffic control</li>
+  <li>Data Link Layer. Reliable transmission of data frames between two nodes connected by a physical layer</li>
+  <li>Physical Layer (Layer 1). Transmission and reception of raw bit stream over a physical medium</li>
+</ul>
+
+<p>For any layer of them, its upper layer and lower are transparent if available, meaning it isn’t capable of having any insight of other layers. This is a very important concept for OSI model and will be implied in the following article.</p>
+
+<h2 id="types-of-lbs">Types of LBs</h2>
+
+<h3 id="l7-application-layer">L7, application layer</h3>
+
+<p>An L7 load balancer operates at the highest level of OSI level, but this doesn’t mean it has insights for all layers, but simply L7. The content in L7  is the actual information of applications, which includes HTTP, DNS, and FTP etc. This gives the L7 LB ability to terminate traffic and make decisions based on the content of messages, such as URL and cookie. It then forwards traffic to actual servers behind.</p>
+
+<h3 id="dns">DNS</h3>
+
+<p>DNS is an L7 protocol mentioned previously, so a DNS LB should operate as same as a general L7 LB, right? Applications usually query DNS to find the IP address of a domain, they will then follow the response to reach the destination. A DNS LB is not an LBed DNS group, is a (set of) DNS server(s)  returning a set of pre-defined DNS records, which changes itself each query, typically by with the round-robin method.  Since the response changes every time w/o considering caching, applications are distributed to a group of servers.</p>
+
+<h3 id="l4-tcpudp-lb">L4, TCP/UDP LB</h3>
+
+<p>An L4 load balancer comes into consideration when there is more traffic. It includes TCP and UDP. The L4 load balancer simply forwards packets by using their pairs of IP address and port number or port numbers alone. It allows load balance specific flows across pools. As mentioned above, it has no ability to inspect any content that is higher than L4, meaning it can’t make routing decisions based on the content.</p>
+
+<h3 id="l3-network-layer">L3, network layer</h3>
+
+<p>Layer 3 load balancers are typically based on the IP protocol. It sees only IP information usually and makes a decision solely on IP address (source and/or destination).</p>
+
+<h3 id="anycast">Anycast</h3>
+
+<p>Most of the internet use unicast. It means routing devices find best (usually shortest) path to a destination (IP). Anycast is a technique that multiple network devices share the same IP address. The routers will consider them as the same destination with different path costs and will choose the best one by their policies.</p>
+
+<h2 id="common-algorithms-and-related-techniques">Common algorithms and related techniques</h2>
+
+<h3 id="round-robin-rr">Round Robin (RR)</h3>
+
+<p>This is the simplest algorithm used in LB. Imagining a set of server returns one answer with instances A, B, and C behind, the answers will follow:</p>
+
+<p>A -&gt; B -&gt; C -&gt; A -&gt; B -&gt; C -&gt; A -&gt; …</p>
+
+<h3 id="weighted-round-robin-wrr">Weighted Round Robin (WRR)</h3>
+
+<p>RR is robust because of its simplicity. If we have a set of servers with different performance, and we want to distribute traffic fairly not equally, the WRR fits perfectly. This method operates the same way as RR, but a server with a higher weight will receive more traffic in a round. Taking the same example except server B weighing 2, its response will follow or similar:</p>
+
+<p>A -&gt; B -&gt; B -&gt; C -&gt; A -&gt; B -&gt; B -&gt; C -&gt; A -&gt; …</p>
+
+<h3 id="state-tracking">State tracking</h3>
+
+<p>If an LB is capable of tracking states of traffic, there are more possible algorithms used to make decisions. Methods, such as least connection and least response time, need to track states of connections, they may provide some benefits in some cases but will become a bottleneck when traffic goes larger and larger.</p>
+
+<h3 id="health-check">Health check</h3>
+
+<p>Health checking is almost a requirement for using LB, though it isn’t mandatory. The health checking works as its name suggests: regularly check a service is still live to determine whether following traffic to be re-directed to this service.</p>
+
+
+<span class="post-date">
+  Written on
+  
+  June
+  2nd
+    ,
+  2018
+  by
+  
+    Ken Lai
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=Scale Your Services with Load Balancers&amp;url=/Scale-Your-Services-with-Load-Balancers" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/Scale-Your-Services-with-Load-Balancers&amp;title=Scale Your Services with Load Balancers" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/lenpaul" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/paululele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/lenpaul/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:l.nguyen.paul@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date"><a href="/menu/about.html">Idea Switching | Networking, Security, Automation & Development by Ken Lai</a></div>
+</footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      DOs & DONTs for Python Programmer | Idea Switching
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="/rss-feed.xml" title="Idea Switching" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Idea Switching | Networking, Security, Automation & Development"/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112060364-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>DOs &amp; DONTs for Python Programmer | Idea Switching</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="DOs &amp; DONTs for Python Programmer" />
+<meta name="author" content="Ken Lai" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a part-time Python programmer, I have to admit that I’m probably could not able to write elegant codes or apps with flexible architects. But I want to list some common DOs and DONTs which I’ve learned from minor &amp; major mistakes." />
+<meta property="og:description" content="As a part-time Python programmer, I have to admit that I’m probably could not able to write elegant codes or apps with flexible architects. But I want to list some common DOs and DONTs which I’ve learned from minor &amp; major mistakes." />
+<meta property="og:site_name" content="Idea Switching" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-02-22T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"As a part-time Python programmer, I have to admit that I’m probably could not able to write elegant codes or apps with flexible architects. But I want to list some common DOs and DONTs which I’ve learned from minor &amp; major mistakes.","@type":"BlogPosting","headline":"DOs &amp; DONTs for Python Programmer","url":"/Dos-donts-for-python-programmer","dateModified":"2015-02-22T00:00:00+00:00","datePublished":"2015-02-22T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/Dos-donts-for-python-programmer"},"author":{"@type":"Person","name":"Ken Lai"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Idea Switching</a>
+    <small class="masthead-subtitle">Networking, Security, Automation & Development</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/writing.html">Writing</a>
+    
+      <a href="/menu/contact.html">Contact</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/lenpaul" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/paululele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/lenpaul/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:l.nguyen.paul@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <h1>
+  DOs & DONTs for Python Programmer
+</h1>
+
+
+
+<p>As a part-time Python programmer, I have to admit that I’m probably could not able to write elegant codes or apps with flexible architects. But I want to list some common DOs and DONTs which I’ve learned from minor &amp; major mistakes.</p>
+
+<h2 id="top-donts">Top DONTs</h2>
+
+<ul>
+  <li>Try to reinvent wheel(s)</li>
+  <li>Forget to write tests</li>
+  <li>Forget to write comments</li>
+  <li>Assume all input  &amp; outputs as designed with checking</li>
+  <li>Balance code length &amp; functionalities</li>
+</ul>
+
+<h2 id="top-dos">Top DOs</h2>
+
+<ul>
+  <li>Learn build-in functions &amp; existent modules, avoid erroneously thinking they are missing</li>
+  <li>Write test code first, no matter it is TDD or BDD</li>
+  <li>Write comments for God sake</li>
+  <li>Write clear code for both purpose and process code</li>
+  <li>Do log code process details with something better than print</li>
+  <li>Name everything concisely &amp; self-descriptive. PEP is a good &amp; prevalent reference if there are no other mandatory rules</li>
+  <li>Read others’ codes more</li>
+  <li>Try FP style, it is great though hard at changing at first.</li>
+</ul>
+
+
+<span class="post-date">
+  Written on
+  
+  February
+  22nd
+    ,
+  2015
+  by
+  
+    Ken Lai
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=DOs & DONTs for Python Programmer&amp;url=/Dos-donts-for-python-programmer" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/Dos-donts-for-python-programmer&amp;title=DOs & DONTs for Python Programmer" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/lenpaul" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/paululele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/lenpaul/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:l.nguyen.paul@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date"><a href="/menu/about.html">Idea Switching | Networking, Security, Automation & Development by Ken Lai</a></div>
+</footer>
+
+  </div>
+
+</body>
+</html>
