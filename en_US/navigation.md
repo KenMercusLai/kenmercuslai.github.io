@@ -3,7 +3,7 @@
   -- Do NOT remove the leading `#` character.
   -->
 
-# Idea Switching
+# Engineering Field Notes
 
 
 <!--
@@ -12,7 +12,7 @@
   -->
 
 [gimmick:theme](readable)
-
+[gimmick:Disqus](kenmlaime)
 
 <!--
   -- Navigation
@@ -28,10 +28,10 @@
   * # SubMenu Heading 1
   * [SubMenu Item 1](pages/subitem1.md)
   * [SubMenu Item 2](pages/subitem2.md)
-  - - - -
+- - - -
   * # SubMenu Heading 2
   * [SubMenu Item 3](pages/subitem3.md)
-  - - - -
+- - - -
   * # SubMenu Heading 3
   * [SubMenu Item 3](pages/subitem3.md)
 
