@@ -3,7 +3,7 @@
   -- Do NOT remove the leading `#` character.
   -->
 
-# Your wiki name
+# Idea Switching
 
 
 <!--
@@ -11,7 +11,7 @@
   -- (Read: http://dynalon.github.io/mdwiki/#!customizing.md#Theme_chooser)
   -->
 
-[gimmick:theme](spacelab)
+[gimmick:theme](readable)
 
 
 <!--
@@ -20,7 +20,6 @@
   -->
 
 [About](pages/about.md)
-[Download](pages/download.md)
 
 <!-- A more complex navigation example: ----------------------------------------
 
