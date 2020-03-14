@@ -5,6 +5,9 @@ name: default
 steps:
 - name: Building
   image: ubuntu:18.04
+  environment:
+      GITHUB_TOKEN:
+        from_secret: GITHUB_TOKEN
   commands:
   - apt update
   - apt install -y curl git
@@ -21,7 +24,7 @@ steps:
   - git config user.email "ken.mercus.lai@gmail.com"
   - git add .
   - git commit -m "$(date)"
-  - git remote add origin https://${GITHUB_TOKEN}@github.com/KenMercusLai/kenmercuslai.github.io.git
+  - git remote add origin https://$GITHUB_TOKEN@github.com/KenMercusLai/kenmercuslai.github.io.git
   - git remote -v
   - git push origin master -f
 - name: send telegram notification
