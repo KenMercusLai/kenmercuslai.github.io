@@ -32,3 +32,7 @@ steps:
   settings:
     token: 916936183:AAEd7rp8lfehiRap39nMaP27WG2eDruCZy4
     to: 927863874
+  when:
+    status:
+    - success
+    - failure
