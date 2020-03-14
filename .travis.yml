@@ -4,9 +4,14 @@ branches:
     - source
     - content
 github_token: $GITHUB_TOKEN
+addons:
+  apt:
+    packages:
+    - hugo
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install hugo
+  # - sudo a# pt-get update
+#   - sudo apt-get -y install hugo
+#   - sleep10
   - git clone --single-branch --branch source https://github.com/KenMercusLai/kenmercuslai.github.io.git source
   - cd source
   - git clone --single-branch --branch content https://github.com/KenMercusLai/kenmercuslai.github.io.git content
