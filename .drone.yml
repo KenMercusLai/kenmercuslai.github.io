@@ -11,7 +11,7 @@ steps:
   commands:
   - apt update
   - apt install -y curl git
-  - curl -LO htps://github.com/gohugoio/hugo/releases/download/v0.67.0/hugo_0.67.0_Linux-64bit.deb
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.67.0/hugo_0.67.0_Linux-64bit.deb
   - dpkg -i hugo_0.67.0_Linux-64bit.deb
   - git clone --single-branch --branch source http://git.kenmlai.me:3000/ken/kenmlai.me.git source
   - cd source
