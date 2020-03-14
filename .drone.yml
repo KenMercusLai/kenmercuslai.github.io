@@ -8,9 +8,9 @@ steps:
   commands:
   - apt update
   - apt install -y hugo git
-  - git clone --single-branch --branch source https://github.com/KenMercusLai/kenmercuslai.github.io.git source
+  - git clone --single-branch --branch source http://git.kenmlai.me:3000/ken/kenmlai.me.git source
   - cd source
-  - git clone --single-branch --branch content https://github.com/KenMercusLai/kenmercuslai.github.io.git content
+  - git clone --single-branch --branch content http://git.kenmlai.me:3000/ken/kenmlai.me.git content
   - hugo -D
   - cd public
   - echo "kenmlai.me" > CNAME
