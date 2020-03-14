@@ -3,11 +3,11 @@ type: docker
 name: default
 
 steps:
-- name: CISSP
+- name: Building
   image: ubuntu:18.04
   commands:
   - apt update
-  - apt install -y hugo
+  - apt install -y hugo git
   - git clone --single-branch --branch source https://github.com/KenMercusLai/kenmercuslai.github.io.git source
   - cd source
   - git clone --single-branch --branch content https://github.com/KenMercusLai/kenmercuslai.github.io.git content
