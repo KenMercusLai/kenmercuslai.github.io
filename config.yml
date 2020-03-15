@@ -9,7 +9,7 @@ enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: ""      # UA-XXXXXXXX-X 
 permalinks:
-  posts: /:year/:month/:filename/
+  posts: /:year/:filename/
 
 taxonomies:
     category : categories
@@ -68,7 +68,7 @@ params:
   dateFormatToUse: "2006-01-02"
   enablePostCopyright: true
   # the directory under content folder that you want to render
-  mainSections: ["posts"]
+  mainSections: ["posts", "notes"]
   # Enable/Disable menu icons
   # Icon Reference: http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html
   enableMathJax: true #Enable mathjax support, to use mathematical notations
