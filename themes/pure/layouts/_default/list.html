@@ -1,4 +1,5 @@
 {{- define "content"}}
+{{- $.Scratch.Set "pages" (where .Site.RegularPages "Type" "in" .Dir)  }}
 {{$pages := $.Scratch.Get "pages"}}
 <main class="main" role="main">
     <article class="content article article-archives article-type-list" itemscope="">
