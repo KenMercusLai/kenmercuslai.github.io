@@ -94,7 +94,7 @@
                         {{- $currentYearSection = $thisYear}}
                     {{- end}}
                     {{- .Scratch.Set "type" "link"}}
-                    {{- partial "item-post.html" . }}
+                    {{- partial "item-note.html" . }}
                 {{- else}}
                     {{- $emptyDatePages = $emptyDatePages | append $page}}
                 {{- end }}
@@ -116,7 +116,7 @@
                         <div class="collection">
                             {{- range $page := $emptyDatePages}}
                                 {{- .Scratch.Set "type" "link"}}
-                                {{- partial "item-post.html" . }}
+                                {{- partial "item-note.html" . }}
                             {{- end}}
             {{- end }}
         </div></div></div></section>
