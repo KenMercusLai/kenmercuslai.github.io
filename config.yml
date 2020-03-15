@@ -48,25 +48,25 @@ menu:
       name: Essays
       title: Essays
       url: /essays/
-      weight: 2
+      weight: 3
 
     - identifier: categories
       name: Categories
       title: Categories
       url: /categories/
-      weight: 3
+      weight: 4
 
     - identifier: tags
       name: Tags
       title: Tags
       url: /tags/
-      weight: 4
+      weight: 5
 
     - identifier: about
       name: About
       title: About
       url: /about/
-      weight: 5
+      weight: 6
 
 
 params:
@@ -88,7 +88,8 @@ params:
   menuIcons:
     enable: true  # 是否启用导航菜单图标
     home: icon-home-fill
-    archives: icon-archives-fill
+    notes: icon-journal-fill
+    essays: icon-archives-fill
     categories: icon-folder
     tags: icon-tags
     repository: icon-project
