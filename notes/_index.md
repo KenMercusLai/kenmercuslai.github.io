@@ -1,6 +1,6 @@
 +++
 aliases = ["notes"]
-title = "Notess"
+title = "Notes"
 author = "Hugo Authors"
 tags = ["index"]
 +++
