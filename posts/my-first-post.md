@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: 2020-03-13T19:51:25+10:00
-series: test
+
 ---
 
 fdjakfjda;jk 
