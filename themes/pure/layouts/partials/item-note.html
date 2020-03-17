@@ -1,8 +1,16 @@
-<a href="{{- .Permalink }}" class="collection-item" itemprop="url">
-    {{- if .Date }}
-    <time datetime="{{ .Date }}" itemprop="datePublished" style="margin-right: 5px;">
-        {{- .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
-    </time>
-    {{- end }}
+<a href="{{- .Permalink }}" class="collection-item" itemprop="url"></a>
+    {{ if .Title }}
+    <h1 itemprop="name">
+        <a class="article-title" href="{{- .Permalink }}">{{ .Title }}</a>
+    </h1>
+    {{ end }}
     {{- .Content }}
+    {{ if .Date }}
+    <span class="article-date">
+        <i class="icon icon-calendar-check"></i>&nbsp;
+            <a href="{{- .Permalink }}" class="{{ .Scratch.Get "class_name" }}">
+            <time datetime="{{ .Date }}" itemprop="datePublished">{{- .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>
+        </a>
+    </span>
+    {{ end }}
 </a>
