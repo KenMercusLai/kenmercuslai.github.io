@@ -16,7 +16,7 @@ steps:
   - git clone --single-branch --branch source http://git.kenmlai.me:3000/ken/kenmlai.me.git source
   - cd source
   - git clone --single-branch --branch content http://git.kenmlai.me:3000/ken/kenmlai.me.git content
-  - hugo -D
+  - hugo 
   - cd public
   - echo "kenmlai.me" > CNAME
   - git init
