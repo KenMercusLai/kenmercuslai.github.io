@@ -3,7 +3,7 @@ theme: pure
 title: Engineering Field Notes
 defaultContentLanguage: en  # en/zh/...
 footnoteReturnLinkContents: ↩
-ignoreFiles: git
+ignoreFiles: ["git", "preprocess.sh"]
 hasCJKLanguage: true
 paginate: 7
 enableEmoji: true
