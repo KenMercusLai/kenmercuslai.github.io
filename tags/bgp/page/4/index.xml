@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BGP on Engineering Field Notes</title>
+    <link>https://kenmlai.me/tags/bgp/</link>
+    <description>Recent content in BGP on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://kenmlai.me/tags/bgp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910101123/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910101123/</guid>
+      <description>Network Threats As listed by IANA, 224.0.0.0/24 is a reserved multicast range1. Since all host should listen to 224.0.0.1 and all routers should listen to 224.0.0.2 according the list, sending a huge volume of multicast to this range will kill network devices by overwhelming their CPU, which is designed to process the multicast traffic and won&amp;rsquo;t be protected by CoPP.2
+  IANA list &amp;#x21a9;&amp;#xfe0e;
+ [[VMware NSX Killed My EVPN Fabric « ipSpace.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910091125/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910091125/</guid>
+      <description>GTD method Collect 不用区分生活与工作事物1 pp.14。GTD的本质是解决如何有效的安排事物，把所有事物和在一起可以对所有眼前的事务有完整的大局观，而各种</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910081342/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910081342/</guid>
+      <description>The Essenes of Redundancy The ultimate purpose of redundancy is to improve the weakest link in a system to the least acceptable standard1. A system&amp;rsquo;s reliability depends on the reliability of its weakest link.
+  [[Redundant BGP Connectivity on a Single ISP Connection « ipSpace.net blog]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910071331/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910071331/</guid>
+      <description>High Availability There are some simple questions need to be answered for a HA solution:
+ How do clients know which server is alive?1 How do servers register themselves as a part of the service? How do servers notify themselves as alive?1 How do clients choose the best server when there are instances available?1    [[Anycast DNS — Resilient Scalability for Critical Network Infrastructure Software, Part 1]] &amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910072014/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910072014/</guid>
+      <description>AWS Systems Manager Patch Manager Feature summary 1  Main Purpose: automates the process of patching instances Capability:  patch EC2, on-premises servers and VMs OS: Windows Servers, Ubuntu, RHEL, SUSE, CentOS, Amazon Linux and Amazon Linux 2 (All EC2 OS types) Apply individually or groups by using EC2 tags   Integrate with:  AWS Identity Access Management (IAM) Cloud Trail CloudWatch Events   Steps:  Verify Systems Manager prerequisites Setup and configure patching Configure permissions for Maintenance Windows (if this feature is used) Create patch baselines, patch groups, and a maintenance windows    Patch groups 2  A group can only be registered with one baseline Tag name MUST be: Patch Group One instance can only be in one patch group    [[AWS Systems Manager Patch Manager - AWS Systems Manager]] &amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910072033/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910072033/</guid>
+      <description>AWS DevOps Engineer Professional Exam Practices Q1 To run an application, a DevOps Engineer launches an Amazon EC2 instances with public IP addresses in a public subnet. A user data script obtains the application artifacts and installs them on the instances upon launch. A change to the security classification of the application now requires the instances to run with no access to the Internet. While the instances launch successfully and show as healthy, the application does not seem to be installed.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910072036/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910072036/</guid>
+      <description>AWS DevOps Engineer Professional Exam Practices Q2 An IT department manages a portfolio with Windows and Linux (Amazon and Red Hat Enterprise Linux) servers both on-premises and on AWS. An audit reveals that there is no process for updating OS and core application patches, and that the servers have inconsistent patch levels.
+Which of the following provides the MOST reliable and consistent mechanism for updating and maintaining all servers at the recent OS and core application patch levels?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910072038/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910072038/</guid>
+      <description>AWS DevOps Engineer Professional Exam Practices Q3 A company is setting a centralised logging solution on AWS and has several requirements. The company wants its Amazon CloudWatch Logs and VPC Flow logs to come from different sub accounts and to be delivered to a single auditing account. However, the number of sub accounts keeps changing. The company also needs to index the logs in the auditing account to gather actionable insight.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910072049/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910072049/</guid>
+      <description>AWS DevOps Engineer Professional Exam Practices Q4 A company wants to use a grid system for a proprietary enterprise in-memory data store on top of AWS. This system can run in multiple server nodes in any Linux-based distribution. The system must be able to reconfigure the entire cluster every time a node is added or removed. When adding or removing nodes, an /etc/cluster/nodes.config file must be updated, listing the IP addresses of the current node members of that cluster.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910061559/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910061559/</guid>
+      <description>Side Project List A website that provides simulated exam for certification, it should support:  single- and multiple-choice unlimited number of choices images in question and answers randomise answers fix an answer in a set position (like, keep the &amp;ldquo;above all&amp;rdquo; as the last answer) answer checking comments&amp;rsquo; of the question left by students answer explanation  Video series of anti-virus/malware software  download sample virus &amp;amp; malware each software use default settings latest version &amp;amp; database 2 scenarios: 1) having internet connection; 2) don&amp;rsquo;t have internet connection.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910061612/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910061612/</guid>
+      <description>Practical principles of GTD Actionable task. Anything that can&amp;rsquo;t be done under 2 minutes should be recorded 1 One step each time. A task is a single action and should be immutable2. This can be treated as one task in different status2 by using tags or similar ways. Focus on outcome. Describe the task as what I want to achieve in a brief and clear way3. Review to keep everything</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910051049/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910051049/</guid>
+      <description>Brief key points of HTTP protocol HTTP/1.0 Each transmission/connection1 2. File transmission is slow due to TCP slow start mechanism and huge overhead of connection buildup &amp;amp; tear-down of each connection.1 HTTP/1.1 Add keep-alive, enables multiple transmission/connection. Files are transferred serialised (second one starts after first one finishes).1 2 concurrent transferring is only possible when there are multiple TCP connections to a server. Hence, the keep-alive concept lost most of</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910051308/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910051308/</guid>
+      <description>Git Tricks  Overwrite local files forcefully 1  git fetch --all git reset --hard origin/master git pull origin master  Migrate repository 2  git clone --mirror &amp;lt;repo&amp;gt; cd &amp;lt;repo&amp;gt; git remote set-url --push origin &amp;lt;new repo&amp;gt; git push --mirror    [[Git force pull to overwrite local files · GitHub]] &amp;#x21a9;&amp;#xfe0e;
+ [[Migrate Git Repository with Branches and Commit History | DataNext Solutions]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910041540/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910041540/</guid>
+      <description>不同类型的回顾 GTD的回顾（Review）可以按照其重要程度进行分类： 需要在固定时间完成，且不应该跳过的。可以设置为日历中的日程，安排固定的</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910041826/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910041826/</guid>
+      <description>tags in Omnifocus Omnifocus可以当作是对任务划分的一个维度： 文件夹/项目。任务之间的逻辑从属关系 时间。时间上的关系，重点是什么时候需要显示和完成</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910031956/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910031956/</guid>
+      <description>Use Routers for Load Balancing Instead of using load balancer to load balancing a large volume of traffic, routers are much cheaper of doing so.
+The traditional solution with load balancers looks like this: [[201910032017]]
+Routers can be used as load balancers by its equal-cost multi-path (ECMP) forwarding for destinations.1
+ Name an IP as the service IP. this IP should not exist in the network, or this method will create a black hole.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910032017/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910032017/</guid>
+      <description>Use Load Balancers for distributing traffic  A set of servers providing same service is registered to the load balancer(s), so that the load balancer(s) know where to redirect incoming traffic Any external request for the service behind the load balancer(s) will use the &amp;ldquo;virtual&amp;rdquo; IP as the destination  There are two ways of returning traffic from servers:
+ the servers return the packets to the load balancer(s), and the load balancer(s) return to the source.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910021944/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910021944/</guid>
+      <description>Good Online Services JSONPlaceholder is a service to mimic REST API calls and returns before the back-end has been developed. It supports on-line service with default data and build on-premise if there&amp;rsquo;s a custom data required.
+It enables the separation between frond-end and back-end development, which should be considered and used more in later work.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910022111/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910022111/</guid>
+      <description>ZettelKasten method An idea or a note is only meaningful under a certain context which may be different from its origin of the idea or the note1. How to extract ideas from their sources is critical for my later work, in which I believe understanding is what I&amp;rsquo;ve been missing for years. I used to take notes in margins of books and highlight parts of texts, which are barely helpful</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910022118/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910022118/</guid>
+      <description>are they under a single topic? materials can be under the same topic or not based on the collecting perspective (as the topic), for example1 2:
+If the topic is discussing GTD methodology, then the followings in the same topic:
+ What is GTD comparison of GTD against other methods general principles recommendation tools etc.  but if the topic is about GTD workflow, then
+ general principles recommendation tools are in one note, but introduction of GTD comparison are not  Similarly, if the focus is how to apply GTD, then we can consider</description>
+    </item>
+    
+  </channel>
+</rss>

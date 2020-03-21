@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HighAvailability on Engineering Field Notes</title>
+    <link>https://kenmlai.me/tags/highavailability/</link>
+    <description>Recent content in HighAvailability on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://kenmlai.me/tags/highavailability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201909292035/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201909292035/</guid>
+      <description>Red Team Cases  Tunneling can be a series of data leaking &amp;amp; C2 attacks &amp;hellip;&amp;hellip; [[201909261144]] Spam a client through account verification &amp;hellip;&amp;hellip; [[201910191200]], instead of using SMS, email verification can be used in the lab SQL Injection with backdoor injection &amp;hellip;&amp;hellip; [[201910201702]][[201910201719]]  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201909282151/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201909282151/</guid>
+      <description>SSL VPN Pros &amp;amp; Cons SSL VPN pros:
+ More adaptable to almost all environment. Only a HTTP service needs to be exposed to the INTERNET. only a browser is needed; other services in an intra-net will be proxied by the browser service P6 of 1  cons:
+ 3 major SSL VPN vendors dominate 75% market share, so any exploit is highly repeatable. easily be forgotten after deployment  P9, P15 of 1</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201909271126/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201909271126/</guid>
+      <description>In-line Evaluation In-line evaluation is dangerous, which creates more chances of vulnerability. Code review, test framework, security checks should be introduced to mitigate the issue1 2
+  Command Injection in F5 iRules &amp;#x21a9;&amp;#xfe0e;
+ [[iRule injection]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201909261144/</link>
+      <pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201909261144/</guid>
+      <description>Tunneling any protocol can be used as a underlaid transportation protocol, like ICMP, DNS, SMB, HTTP. It&amp;rsquo;s effective since lots of perimeter defense either ignore them or isn&amp;rsquo;t capable of analyze them1
+  [[Flying A False Flag: Advanced C2, Trust Conflicts, and Domain Takeover]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201909241346/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201909241346/</guid>
+      <description>The performance of Rest API framework The Falcon has way better performance than Flask.1
+  [[Falcon: A Python Framework for Writing Excellent Microservices and APIs]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://kenmlai.me/essays/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/essays/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://kenmlai.me/essays/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/essays/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://kenmlai.me/essays/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/essays/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;/p&gt;
+&lt;p&gt;pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://kenmlai.me/essays/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/essays/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://kenmlai.me/essays/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/essays/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

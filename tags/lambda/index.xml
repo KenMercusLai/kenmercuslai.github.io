@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lambda on Engineering Field Notes</title>
+    <link>https://kenmlai.me/tags/lambda/</link>
+    <description>Recent content in Lambda on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://kenmlai.me/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202003192005/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202003192005/</guid>
+      <description>How long should you work a time A break is ~15 minutes. Before noon, 90 minutes a time before taking a break; After noon, take a break every hour.1
+  Here’s exactly how long your work breaks should be  &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202003151302/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202003151302/</guid>
+      <description>High-Intensity Circuit Training Using Body Weight HICT can be a fast and efficient way of lose weight and fat and an efficient approach to decreasing insulin resistance too.1
+ 8-12 repetitions are recommend by ACSM for each major muscle group of a bout1 people with hypertension or deart disease should avoid isometric exercises. 1 It may NOT good for training for absolute strength, specific endurance and other specific performance.1  Exercise Order</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202003151330/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202003151330/</guid>
+      <description>How to find which process has occupied a specific port Methods netstat1 sudo apt install net-tools sudo netstat -ltnp  lsof1 sudo apt install lsof sudo lsof -i :80   DON&amp;rsquo;T forget the : before the port number  fuser1 sudo apt install psmisc # show a port number is listening by a process number sudo fuser 3306/tcp # check the process name by the process number ps -p [processID] -o comm=  Usability Test    Method Linux Mac     netstat ✅ ❌   lsof ✅ ✅   fuser ✅ ❌      Linux: Find Out Which Port Number a Process is Listening on  &amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202003141522/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202003141522/</guid>
+      <description>Meek使用前置域名，将Tor流量伪装成访问其他HTTPS站点的流量。1 基于云流量混淆的Tor匿名通信识别方法 &amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://kenmlai.me/essays/my-first-post/</link>
+      <pubDate>Fri, 13 Mar 2020 19:51:25 +1000</pubDate>
+      
+      <guid>https://kenmlai.me/essays/my-first-post/</guid>
+      <description>fdjakfjda;jk 附近的考拉范德萨看赖健；理发师简单快乐 fdsajkfldaklf</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202003061909/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202003061909/</guid>
+      <description>Since AWS lambda bills according to the number of calls and computing time. We can use parallel process to reduce the time to save the cost1.
+with concurrent.futures.ThreadPoolExecutor(max_workers=60)as executor: result = executor.map(core_function, iterable)    Halving our AWS Lambda bill with parallel processing in Python  &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002190000/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002190000/</guid>
+      <description>&amp;ldquo;Ansible: Setup, Configure, and Ad Hoc Commands Deep Dive&amp;rdquo; study note The course focuses on ad hoc commands of Ansible
+about Ansible ansible is run a task against a single host ansible-playbook is running a set of tasks against a single or a groups of hosts
+##how to setup ansible default inventory file: /etc/ansible/hosts
+it&amp;rsquo;s recommended to add a new user for ansible. Besides security considerations, systems may not share the same user name in default.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002191731/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002191731/</guid>
+      <description>所谓的“1万小时学习”，更多的是强调学习方法。在不正确或者低效率的方法下，收益可能远不如话费的时间价值大。 这种学习方法包括： 永远只在“学习区</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002182245/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002182245/</guid>
+      <description>confirmation bias （确认偏误） 是一种心理认知倾向：人们倾向于主动寻找自己相信的信息，即使有相反的信息，也可能会被用来加强已有的观念。1 主动获取和自己观点相</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002122152/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002122152/</guid>
+      <description>minimal path to success providing short-term rewards and then continuously help to customers is the minimal path to awesome1.
+  &amp;ldquo;PEOPLE NEED MY PRODUCT!&amp;rdquo; (BUT DO THEY WANT IT?) &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002101022/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002101022/</guid>
+      <description>What&amp;rsquo;s zombie startups? companies that have the outside appearance of a startup but that aren’t moving that quickly and that are likely to always stay small, kept alive with suboptimal sources of funding (bad angel investors, subsidies, grants, etc.)1
+  [[Avoiding Zombie Startups - Welcome to The Family]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002081057/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002081057/</guid>
+      <description>Unfamiliarity impedes adoption of productions. A product should be improved and innovated with a similarity of existence, which makes users easier to understand and expect1.
+  [[California Roll Rule: The Familiar Done Differently | NirandFar]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002071114/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002071114/</guid>
+      <description>OSPF study notes Packet type:
+ Hello: discover and maintain neighbornood DBD: LSA header information, like a dictionary of LSAs LSR: request LSA LSU: update LSA (may contain several LSA) LS ACK: confirmation  LSA type:
+   Type advertizer scope content      1 all routers running ospf local area directly connected interfaces    2 DR local area mask of a MA network    3 ABR AS summary of LSA 1 &amp;amp; 2    4 ABR in which area an ASBR exist AS where the ASBR is    5 ASBR AS external routes    6   Group Membership LSA    7 ASBR of NSSA in the NSSA external routes    8 all routers in IPv6 (LSA 1 for ipv6)      9 DR in IPv6 (LSA 2 for ipv6)      10   MPLS TE    11   MPLS TE     Route types:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002071240/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002071240/</guid>
+      <description>STP study notes used to prevent loop in L2 by selecting root bridge to make a tree-like logical topology
+Election:
+ Priority. smaller is better MAC. smaller is better  steps of Blocking a interface:
+ all ports of the root bridge are designated interfaces, in forwarding state select all root port on non-root bridges, in forwarding state select designated interfaces in the rest networks, priority -&amp;gt; cost -&amp;gt; mac (smaller is better) block the rest interfaces  root port selection rule:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002072032/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002072032/</guid>
+      <description>Partnership Fallacy a simply combination of people/firms/teams with different strength &amp;amp; weakness doesn’t necessary mean a better team, ideas are biased based on their strength and often lack wholistic view1.
+  [[Bill Barnett on Strategy: The Partnership Fallacy]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002072230/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002072230/</guid>
+      <description>why customers pay Customers pay for what they have faced in lives, not average people need to do.1
+Focusing on what users need is more directly than what developers want1 2.
+  [[Jobs to be Done - Christensen Institute : Christensen Institute]] &amp;#x21a9;&amp;#xfe0e;
+ [[Marc Benioff: Win Customers by Treating Them Like Partners - Salesforce Blog]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002061447/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002061447/</guid>
+      <description>ratio between lines written and in production The ratio lines of codes, words of books and etc. is 10:1 between lines ever written and lines in final production.1
+  [[The 10:1 rule of writing and programming]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002061500/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002061500/</guid>
+      <description>Pros &amp;amp; Cons of using microservices Pros: Easier to test, deploy, and monitor since each service works independently,
+ service can scale better at a specific bottleneck can serving older and newer version at the same time, and let older ones phase out gradually development, test &amp;amp; deployment of each service is independent  Cons: latency between services and management issue
+ A service depending on several calls to others may suffer from a huge delay different teams may work on the same/similar service at the same time, extra assessments are needed.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002061611/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002061611/</guid>
+      <description>Meeting
+Meetings with purposes are good, otherwise they are finding problems with solutions.1
+informal chat is also a meeting, that is useful
+  [[Bill Barnett on Strategy: Delete All Meetings!]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/202002062323/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/202002062323/</guid>
+      <description>HSRP study notes Active, Standby routers:
+ Active: the router forwards packets in a HSRP group Standby: the router listens in a HSRP group  Hello packet send 224.0.0.2
+election rule: priority (default is 100) &amp;gt; interface ip (bigger is better)
+State machine:
+ Initial Learn Listen Speak Standby Active  </description>
+    </item>
+    
+  </channel>
+</rss>

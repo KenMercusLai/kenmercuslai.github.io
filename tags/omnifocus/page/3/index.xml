@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OmniFocus on Engineering Field Notes</title>
+    <link>https://kenmlai.me/tags/omnifocus/</link>
+    <description>Recent content in OmniFocus on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://kenmlai.me/tags/omnifocus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910292022/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910292022/</guid>
+      <description>Photo Shooting by Mobile Phones 广角镜头有明显的畸变：画面边缘会被拉升，而中心会被压缩 拍全身人像时应让腿部靠近边缘，脸部在中心 在拍建筑/风景时，放在中心可以显示其</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910292109/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910292109/</guid>
+      <description>Enable DHCP Server on Mac There&amp;rsquo;s a build-in DHCP server on Mac, which can be enabled with following steps1: create /etc//bootpd.plist, content refers 1 config IP address on the interface which will be enabled the DHCP service launch DHCP service by using sudo /usr/libexec/bootpd -Ddv [[macOS开启DHCP Server - 简书]] &amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910281148/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910281148/</guid>
+      <description>Advantages of Using Containers It provides better isolation/decoupling among other services. One bite a time. Bug isolation. It enables develops achieve expectations without worrying about processes in middle 1 Offload repetitive jobs [[2018 年度小结（技术方面） | 王子亭的博客]] &amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910281209/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910281209/</guid>
+      <description>What is Hard Working? Hard working is the job done with the best performance in terms of expense, time, labor, standardized and etc. Hence, for the same outcome1, whoever brings more effectiveness and efficiency is working hard instead of who simply spends more time.
+We never promote a mule even it has been working for grinding all its life.
+  [[Hard work | Seth&amp;rsquo;s Blog]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910261933/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910261933/</guid>
+      <description>VirtualBox Mount Shared Folder Similar to [[201910241123]], the shared folder may not work in a guest machine.
+The issue can be solved by using the following command:1
+sudo mount -t vboxsf shared ~/shared  if we want to mount the folder as other users, we can specify the user and group ids
+sudo mount -t vboxsf -o uid=1000,gid=1000 shared ~/shared    [[Mounting VirtualBox shared folders on Ubuntu Server 16.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910261943/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910261943/</guid>
+      <description>Unmount Busy Devices If it&amp;rsquo;s reported busy when trying to unmount a device in Linux, we can use following commands to do so forcefully1:
+umount -l /PATH/OF/BUSY-DEVICE umount -f /PATH/OF/BUSY-NFS(NETWORK-FILE-SYSTEM)    [[lvm - umount: /: target is busy - Ask Ubuntu]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910241123/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910241123/</guid>
+      <description>VMWare Fusion 10 Mount Shared Folder The shared folder feature of VMWare Fusion 10 on MacOS doesn&amp;rsquo;t work as the shared folder doesn&amp;rsquo;t show up in the guest system, especially in Linux systems.
+The issue can be solved by manually run the following command:1
+sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other  or add an entry in the /etc/fstab
+vmhgfs-fuse /mnt/hgfs fuse defaults,allow_other 0 0  A similar issue happens in VirtualBox, which can be solved by [[201910261933]]</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910241203/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910241203/</guid>
+      <description>Startup Points on MacOS There are several locations that can be registered by applications for automatically launching when the system boot up:
+Application related:
+ System Preferences -&amp;gt; Users &amp;amp; Groups -&amp;gt; Login Items 1 /Library/StartUpItems 1 2 /Library/LaunchDaemons 1 2 /Library/LaunchAgents 1 2 /Users/username/Library/LaunchAgents 2  System related:
+ /System/Library/LaunchDaemons 1 2 /System/Library/LaunchAgents 1 2 /System/Library/StartupItems 2  Some applications may register themselves as system related services, especially those working stealthy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910241725/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910241725/</guid>
+      <description>Devonthink Workflow we can use databases to store documents with very specific purposes1. I categorize them as following:
+ Inboxes: input of all new documents References: webpage scraped, books, PDFs, videos and etc. that are read and noted Stalled: documents for reference in case, probably will never be changed. like enroll form, certificates and etc. Projects: All files related to projects.  For things that is currently working on, we can make a separate folder/database which replicate all documents from somewhere else[@DE744171C157].</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910231133/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910231133/</guid>
+      <description>用FFMPEG录制RTSP RTSP的URL地址格式是： rtsp://$(IP):$(PORT)/user=$(USER)&amp;amp;password=$(PWD)&amp;amp;channel=$(Channel)&amp;amp;stream=$(Stream).sdp?real_stream 在确认能够收到流之后（如使用VLC），可以使用FFMPEG来录制流1 apt install FFmpeg -y RTSP=&amp;quot;rtsp://127.0.0.1:554/user=user&amp;amp;password=password&amp;amp;channel=Channel&amp;amp;stream=Stream.sdp?real_stream&amp;quot; ffmpeg -rtsp_transport tcp</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910231207/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910231207/</guid>
+      <description>Resilient Design Vendors are so keen to push more products by providing immature design that is perfect in PPT only.1
+I always admire and respect Netflix&amp;rsquo;s ChaosMonkey, which randomly shuts down services everyday to test its design. It exposes flaws in design early and make components more independent in a system.
+  [[Disaster Recovery Faking, Take Two « ipSpace.net blog]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910212118/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910212118/</guid>
+      <description>Split String into Array in AppleScript we can use the words command in AppleScript to split a string into an array:1
+set items to words of a_string  there&amp;rsquo;s a drawback that we can&amp;rsquo;t set the delimiter of splitting.2
+  [[Split a string into multiple variables AppleScript - Stack Overflow]] &amp;#x21a9;&amp;#xfe0e;
+ [[Beginning AppleScript® - 5.6. Words, Characters, and Paragraphs]] &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910201702/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910201702/</guid>
+      <description>SQL Injection 如果网页提交之后URL没有刷新，可以初步判断是POST类型 1 可以使用密码123456来进行测试，其base64编码是MTIzNDU2 1 可</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910201719/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910201719/</guid>
+      <description>File Uploading Vulnerability how uploading files get verified There are three parts that can verify uploading files 1: client side by using JSP, which usually examine extension name only server side, which normally includes content-type in header, file content header check (GIF89a), extension blacklist, extension whitelist, and customized rules. WAF, this depends on policies applied and vendor specific Bypass verification client side capture and modify packets to bypass. For example,</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910201817/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910201817/</guid>
+      <description>201910201817 Put element in center Two most common ways of putting an element in center of its container (vertically and horizontally):[^0498E5372927] .container { position: relative; width: 300px; height: 200px; border: 1px solid #333333; } .content { background-color: #ccc; position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); text-align: center; } .container { width: 300px; height: 200px; border: 1px solid #333333; display: flex; align-items: center; justify-content: center; } .content {</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910191200/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910191200/</guid>
+      <description>201910191200 Spam through verification messages Attackers can use account verification services to spam a client even an interval is set for the same account.1 Web page validation can be evaded by using POST method directly Backend validation for the interval can be detoured by pre-pending/appending meaningless characters to the same account, like, spaces, 0x00. [[记一次利用00进行短信轰炸的</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910171302/</link>
+      <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910171302/</guid>
+      <description>Python Tips Export requirements.txt to poetry1 cat requirements.txt | perl -pe &#39;s/([&amp;lt;=&amp;gt;]+)/:$1/g&#39; | xargs -n 1 echo poetry add  How to Improve coding skills [[201911111639]]
+  https://github.com/sdispater/poetry/issues/663 &amp;#x21a9;&amp;#xfe0e;
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910160039/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910160039/</guid>
+      <description>weight loss diet recipe shopping reference: [[201910160102]] 鸡胸肉西兰花米饭 鸡胸肉 ~250g 西兰花 ~100g 米饭 ~50g 鸡胸肉切片加胡椒 锅加热喷油 鸡胸肉煎至金黄色 西兰花切块洗净 沸水加热煮西兰花，视喜好定加热时</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910160102/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910160102/</guid>
+      <description>Shopping list for diet Woolworths Hass Avocado each	$2/each Avocado The Odd Bunch 1kg punnet $6/1kg
+Primo Turkey Breast 80g $3.25/each $5.50/two Primo Chicken Breast Thinly Sliced 80g $3.25/each $5.50/two
+any tuna fish can in spring water	$2.3/each</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenmlai.me/notes/201910141647/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenmlai.me/notes/201910141647/</guid>
+      <description>BGP study notes Characteristics: use TCP 179 port use triggered update periodically sends keepalive abundant metric for path selection Timer: keeplive: 60 timeout: 180 BGP Synchronization: routes learnt from IBGP will be advertizd to ebgp neighbors only they are in the IGP too Attribute: well-known mandatory（公认必尊，必须看到，必须传递）</description>
+    </item>
+    
+  </channel>
+</rss>
