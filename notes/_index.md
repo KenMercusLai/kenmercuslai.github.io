@@ -1,4 +1,7 @@
 +++
+
 aliases = ["notes"]
+
 title = "Notes"
+
 +++
