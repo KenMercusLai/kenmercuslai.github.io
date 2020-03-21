@@ -68,7 +68,7 @@
         <div class="article-body">
             {{- $emptyDatePages := slice}}
             {{- $currentYearSection := 0}}
-            {{- range $idx,$page := $pages}}
+            {{- range $idx,$page := sort $pages ".Params.lastmod" "desc"}}
                 {{- if $page.Date}}
                     {{- $thisYear := $page.Date.Format ("2006") }}
                     {{- if eq $currentYearSection 0 }}
