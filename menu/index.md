@@ -2,6 +2,7 @@
 headless: true
 ---
 - Series
-  - [To the Moon]({{< relref "/series/201909241346.md" >}})
-  - [Less]({{< relref "/series/201909292035.md" >}})
+  - [To the Moon]({{< relref "/series/202003151302.md" >}})
+  - [Less]({{< relref "/series/202003192005.md" >}})
+- [Blog]({{< relref "/blog" >}})
 <br />
