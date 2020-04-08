@@ -23,14 +23,10 @@ languages:
     languageName: English
     contentDir: content
     weight: 1
-  ru:
-    languageName: Russian
-    contentDir: content.ru
-    weight: 2
   cn:
-    languageName: Chinese
+    languageName: 中文
     contentDir: content.cn
-    weight: 3
+    weight: 2
 
 menu:
   # before: []
@@ -54,20 +50,20 @@ params:
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
-  # BookMenuBundle: /menu
+  BookMenuBundle: /menu
 
   # (Optional, default docs) Specify section of content to render as menu
   # You can also set value to '*' to render all sections to menu
-  BookSection: docs
+  BookSection: series
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/alex-shpak/hugo-book
+  # BookRepo: https://github.com/alex-shpak/hugo-book
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to 'content' directory of repo.
-  BookEditPath: edit/master/exampleSite/content
+  # BookEditPath: edit/master/exampleSite/content
 
   # Configure the date format used on the pages
   # - In git information
@@ -90,18 +86,3 @@ params:
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
   # Theme will print warning if page referenced in markdown does not exists.
   BookPortableLinks: true
-  
-  
-hasCJKLanguage: true
-paginate: 7
-enableEmoji: true
-PygmentsCodeFences: false
-googleAnalytics: ""      # UA-XXXXXXXX-X 
-permalinks:
-  posts: /:year/:filename/
-
-# sitemap
-sitemap:
-  changefreq: monthly
-  filename: sitemap.xml
-  priority: 0.5
