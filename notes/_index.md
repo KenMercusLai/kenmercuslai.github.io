@@ -1,7 +1,0 @@
-+++
-
-aliases = ["notes"]
-
-title = "Notes"
-
-+++
