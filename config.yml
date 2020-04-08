@@ -1,5 +1,5 @@
 baseURL: https://kenmlai.me/
-theme: pure
+theme: book
 title: Engineering Field Notes
 defaultContentLanguage: en  # en/zh/...
 footnoteReturnLinkContents: ↩
