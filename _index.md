@@ -3,39 +3,13 @@ title: About Me
 type: docs
 ---
 
-# Acerbo datus maxime
+# About me
 
-{{< columns >}}
-## Astris ipse furtiva
+Hi, this is Ken Lai and I've been working in the IT industry for more than 10 years. 
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+I've joined Cisco twice, one as a system engineer and one as a security consultant. I provided services to state-owned agencies, organizations and companies such as ministry of defense, armies, intelligent agencies and other commercial companies.
 
-<--->
+Besides my work in Cisco, I managed operation centers and security centers of more than 10 engineers in my previous positions for system high availability and security to serve over one million users. I also led a team to provide consultancy, design, and deployment for clients. My major projects including digital broadcasting systems and province-level core network designs covering tens of millions citizens when I work in state-owned companies. 
 
-## Suis quot vota
+I'm currently focusing on network automation of on-premise and cloud platforms. I've demonstrated and created automation systems based on standard platform and fully-customized software.
 
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
-{{< /columns >}}
-
-
-## Tempora nisi nunc
-
-Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
-tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
-sequens!
-
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
-
-## Locis suis novi cum suoque decidit eadem
-
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
