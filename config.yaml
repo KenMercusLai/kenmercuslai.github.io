@@ -40,9 +40,12 @@ languages:
 menu:
   # before: []
   after:
+    - name: "Linkedin"
+      url: "https://www.linkedin.com/in/kenmercuslai/"
+      weight: 10
     - name: "Twitter"
       url: "https://twitter.com/Ken_M_Lai"
-      weight: 10
+      weight: 15
 
 params:
   # (Optional, default true) Controls table of contents visibility on right side of pages.
