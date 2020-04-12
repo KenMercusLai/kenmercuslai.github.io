@@ -3,7 +3,6 @@ title: "Review: Jawbone UP 1st generation"
 date: 2014-1-17
 tags: [Review, Jawbone, gadget]
 ---
-# Review: Jawbone UP 1st generation
 
 ## ![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover.jpeg)
 

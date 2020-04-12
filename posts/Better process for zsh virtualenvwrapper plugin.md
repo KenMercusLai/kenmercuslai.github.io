@@ -3,7 +3,6 @@ title: Better process for zsh virtualenvwrapper plugin
 date: 2019-9-29
 tags: [python, zsh, shell, virtualenv, plugin]
 ---
-# Better process for zsh virtualenvwrapper plugin
 
 
 Virtualenvwrapper is one of the must-have scripts for building a Python development environment. With the power of zsh oh-my-zsh plugin framework, we can automate some processes such as activate & deactivate.

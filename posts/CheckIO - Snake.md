@@ -3,7 +3,6 @@ title: CheckIO - Snake
 date: 2013-9-12
 tags: [CHECKIO, PYTHON, Programming]
 ---
-# CheckIO - Snake
 
 [http://www.checkio.org/mission/task/info/snake/python-27/](http://www.checkio.org/mission/task/info/snake/python-27/)
 
