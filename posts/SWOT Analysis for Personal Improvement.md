@@ -1,6 +1,6 @@
 ---
 title: "SWOT Analysis for Personal Improvement"
-date: 2016-3-15
+date: 2016-03-15
 tags: [SWOT, self-improvement, Programming]
 ---
 

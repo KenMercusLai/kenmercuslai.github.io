@@ -1,6 +1,6 @@
 ---
 title: "Review: Jawbone UP 1st generation"
-date: 2014-1-17
+date: 2014-01-17
 tags: [Review, Jawbone, gadget]
 ---
 

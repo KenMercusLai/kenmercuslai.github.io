@@ -1,6 +1,6 @@
 ---
 title: CheckIO - Snake
-date: 2013-9-12
+date: 2013-09-12
 tags: [CHECKIO, PYTHON, Programming]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Huawei has published SDN product"
-date: 2016-3-2
+date: 2016-03-02
 tags: [SDN, Huawei]
 ---
 
