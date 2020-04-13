@@ -1,6 +1,6 @@
 ---
 title: Better process for zsh virtualenvwrapper plugin
-date: 2019-9-29
+date: 2016-5-20
 tags: [python, zsh, shell, virtualenv, plugin]
 ---
 
