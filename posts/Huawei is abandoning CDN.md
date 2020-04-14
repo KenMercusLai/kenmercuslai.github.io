@@ -1,7 +1,7 @@
 ---
 title: "Huawei is abandoning CDN"
 date: 2014-09-15
-tags [Huawei, CDN]
+tags: [Huawei, CDN]
 ---
 
 Companies drop their products while they are benefit-able, it seems that Huawei is abandoning CDN from its mainstream products in China.
