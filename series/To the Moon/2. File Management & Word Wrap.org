@@ -1,0 +1,70 @@
+We need to tune Emacs a little bit to make it fit us more.
+
+* File Exploration & Search
+
+Since I don't want to remember what each file name is and what contant each file contains, which I don't believe anyone can do as well, we need a good tool to quickly browsing, filtering, and editing our notes under the our root folder. Here I use [[https://jblevins.org/projects/deft/][Deft]] to handle it.
+
+It's easy to install it in Spacemacs by simply add =deft= in the layer section of its =~/.spacemacs=.
+
+#+begin_src elisp
+dotspacemacs-configuration-layers
+   '(
+     ;; ----------------------------------------------------------------
+     ;; Example of useful layers you may want to use right away.
+     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
+     ;; <M-m f e R> (Emacs style) to install them.
+     ;; ----------------------------------------------------------------
+     helm
+     auto-completion
+     ;; better-defaults
+     emacs-lisp
+     git
+     markdown
+     org
+     (org :variables org-startup-indented t
+          org-indent-mode t
+          org-enable-reveal-js-support t
+          org-enable-org-journal-support t)
+     deft
+     ;; (shell :variables
+     ;;        shell-default-height 30
+     ;;        shell-default-position 'bottom)
+     ;; spell-checking
+     ;; syntax-checking
+     version-control
+     )
+#+end_src
+
+Save the file, and use =SPC f e R= to reload the configuration. Deft will be installed after the loading finishes. Then we need to config where deft should search and what extensions are interested.
+
+ #+begin_src elisp
+(setq deft-extensions '("org"))
+(setq deft-directory "~/Dropbox/orgmode")
+(setq deft-recursive t)
+ #+end_src
+
+Save and reload the configuration, you can use =SPC a n= to open =deft=. If you need a even quicker way to open deft, you can bind it with a function key.
+#+begin_src elisp
+(global-set-key [f8] 'deft)
+#+end_src
+
+Also, I think you'd like to use =deft-find-file= to replace build-in =C-x C-f= since it supports sub-folders.
+
+* Word wrap
+
+We use Emacs for writing notes instead of codes, so the 80-width rule (or 120-width) won't apply here well. It's easy to enable word wrap in Emacs:
+#+begin_src elisp
+M-x toggle-word-wrap
+#+end_src
+
+If you want to it enable by default, you can add the following to your config file like me:
+#+begin_src elisp 
+;; enable word wrap
+(spacemacs/toggle-truncate-lines-on)
+;; Visual line navigation for textual modes
+(add-hook 'text-mode-hook 'spacemacs/toggle-visual-line-navigation-on)
+#+end_src
+
+* Display online images
+
+
