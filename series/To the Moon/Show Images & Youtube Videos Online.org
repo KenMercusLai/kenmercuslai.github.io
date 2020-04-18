@@ -1,1 +1,0 @@
-Emacs comes with a great feature of displaying images locally

@@ -1,0 +1,78 @@
+Emacs comes with a great feature of displaying loal images if we link images files in org files like this:
+#+begin_src 
+[[file:path-to-image][display name]]
+#+end_src
+
+But this doesn't display the image in Emacs in default, so we can toggle the inline image display on to show it:
+=M-x org-display-inline-images=
+
+This feature is good, but how can we deal with online images? There're two ways to answer this question:
+1. we can download a image first and link it as we just have talked about
+2. we generally tell Emacs that this is an online resource and how to get it displayed in Emacs
+
+Please don't be frustrated that I'm going to teach you how to write Lisp if you choose method 2, which is not my intention of this series. Instead, we can reuse other's work with small tunings.
+
+* [[https://github.com/TobiasZawada/org-yt][Org-yt]]
+:PROPERTIES:
+:ID:       1A8245EA-3EE8-4A4A-867C-9AC75425C2D7
+:END:
+
+This library is created by TobiasZawada, which created a custom link type in orgmode to identify Youtube links. Simply download the file and put the =el= file into the folder we have configured in [[id:772DBF4B-CB40-4828-8D17-02454750CAA6][Loading & Storing Paths]]. After we put another extra line =(require 'org-yt)= in the configuration, we're ready to use library.
+
+This is close to our purpose but not exactly is. Let's create another custom typs(s) to identify online images. After the line =(require 'org-yt)=, we can define more types like this:
+#+begin_src elisp
+(org-link-set-parameters
+   "imghttp"
+   :image-data-fun #'org-image-link)
+
+  (org-link-set-parameters
+   "imghttps"
+   :image-data-fun #'org-image-link)
+#+end_src
+
+Here we define two types: imghttp and imghttps to reflect online images using http and https respectively. When org detects these two types of links, it launches =org-image-link= with parameters to process them. So let's add this function:
+#+begin_src elisp
+(defun org-image-link (protocol link _description)
+    "Interpret LINK as base64-encoded image data."
+    (cl-assert (string-match "\\`img" protocol) nil
+               "Expected protocol type starting with img")
+    (let ((buf (url-retrieve-synchronously (concat (substring protocol 3) ":" link))))
+      (cl-assert buf nil
+                 "Download of image \"%s\" failed." link)
+      (with-current-buffer buf
+        (goto-char (point-min))
+        (re-search-forward "\r?\n\r?\n")
+        (buffer-substring-no-properties (point) (point-max)))))
+#+end_src
+
+The reason of having org-yt is we use functions defined by org-yt. Putting these three parts together in the right order, I can say we've achieved our goal.
+#+begin_src elisp
+(require 'org-yt)
+  (defun org-image-link (protocol link _description)
+    "Interpret LINK as base64-encoded image data."
+    (cl-assert (string-match "\\`img" protocol) nil
+               "Expected protocol type starting with img")
+    (let ((buf (url-retrieve-synchronously (concat (substring protocol 3) ":" link))))
+      (cl-assert buf nil
+                 "Download of image \"%s\" failed." link)
+      (with-current-buffer buf
+        (goto-char (point-min))
+        (re-search-forward "\r?\n\r?\n")
+        (buffer-substring-no-properties (point) (point-max)))))
+
+  (org-link-set-parameters
+   "imghttp"
+   :image-data-fun #'org-image-link)
+
+  (org-link-set-parameters
+   "imghttps"
+   :image-data-fun #'org-image-link)
+#+end_src
+
+Save the configuration and restart Emacs (=SPC q R=), here is an example of how to use it:
+#+begin_src org
+[[imghttps://pig.smmy365.com/vod/2018-08-09/5b6c145c23c44.jpg][신세계 (New World)]]
+#+end_src
+[[imghttps://pig.smmy365.com/vod/2018-08-09/5b6c145c23c44.jpg][신세계 (New World)]]
+ 
+PS: If you haven't watched this movie, I highly recommend you to watch it!

@@ -40,6 +40,9 @@ defun dotspacemacs/user-config ()
 
 if you have any experience of programming, you can easily tell if a function, which runs after all Spacemacs modules have been loaded. Here we want to add some code to customize it.
 *** Loading & Storing Paths
+:PROPERTIES:
+:ID:       772DBF4B-CB40-4828-8D17-02454750CAA6
+:END:
 I want to store my org files in Dropbox so they will be automatically synced each time I change. This allows me to work seamlessly on different devices. Also, there may some scripts I want to add but not as layers in the Spacemacs, so I need to create a folder to store them and tell the Spacemacs where they are. 
 
 Let's add the following lines as the first two lines to make sure they're defined before using.
