@@ -1,6 +1,9 @@
 We need to tune Emacs a little bit to make it fit us more.
 
 * File Exploration & Search
+:PROPERTIES:
+:ID:       02477E57-8B4C-42C0-9175-413312DA5BFD
+:END:
 
 Since I don't want to remember what each file name is and what contant each file contains, which I don't believe anyone can do as well, we need a good tool to quickly browsing, filtering, and editing our notes under the our root folder. Here I use [[https://jblevins.org/projects/deft/][Deft]] to handle it.
 
@@ -64,7 +67,4 @@ If you want to it enable by default, you can add the following to your config fi
 ;; Visual line navigation for textual modes
 (add-hook 'text-mode-hook 'spacemacs/toggle-visual-line-navigation-on)
 #+end_src
-
-* Display online images
-
 

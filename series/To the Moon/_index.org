@@ -1,0 +1,28 @@
+#+OPTIONS: toc:nil
+
+A series of articles about my experience of learning, using and tuning Emacs as an everyday tool in both life and work.
+
+* [[file:0. background.org][0). Background]]
+:PROPERTIES:
+:ID:       2C50C01B-C927-48B4-B620-6E2E52C552E8
+:END:
+* [[file:1. install.org][1). Install]]
+:PROPERTIES:
+:ID:       B8FCC880-0299-42E1-A8DE-6007F9B43ED1
+:END:
+* [[file:2. Tuning.org][2). Tuning for Better]]
+:PROPERTIES:
+:ID:       08F5059B-943D-48E6-A664-142A8A719CDA
+:END:
+[[id:02477E57-8B4C-42C0-9175-413312DA5BFD][File Exploration & Search]]
+:PROPERTIES:
+:ID:       4B656CC8-3351-41F2-B575-DCB75C101A2B
+:END:
+* [[file:3. Todo, Agenda and Calendar.org][3). Todo, Agenda and Calendar]]
+:PROPERTIES:
+:ID:       CAD2CAEA-1EC6-4AB6-BBA2-38421BAE5B0C
+:END:
+* [[file:Show Images & Youtube Videos Online.org][Show Images & Youtube Videos Online]]
+:PROPERTIES:
+:ID:       C826712D-AC19-4BF4-9D94-CD00474FD34C
+:END:
