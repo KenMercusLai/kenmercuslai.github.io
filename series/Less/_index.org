@@ -1,0 +1,7 @@
+#+OPTIONS: toc:nil
+
+I'm working on a project that tries to reduce less related YouTube videos by using machine learning.
+
+I'll try to log down as much as I can without leaking sensitive information.
+
+* [[file:0. background.org][0). Background]]
