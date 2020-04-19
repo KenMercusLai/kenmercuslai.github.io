@@ -4,6 +4,8 @@ date: 2015-09-04
 tags: [CheckIO, Python]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover123.jpg)
+
 After a long absence, I returned to continue playing CheckIO tasks by a notification mail. The UI had been optimized a lot and the tasks were still as interesting as the before.
 
 [Inside Block](http://www.checkio.org/mission/inside-block/) required checking whether a given point is inside a polygon or not. After some research on google, I found a practical method.
@@ -12,7 +14,7 @@ After a long absence, I returned to continue playing CheckIO tasks by a notifica
 # How to check if a given point is in a polygon
 
 Given a polygon and a point ‘p’, find if ‘p’ lies inside the polygon or not. The points lying on the border are considered inside.
-![1](media/15658731990633/1.png)
+![1](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/1.png)
 
 We can check whether the point is inside or outside by following three simple steps:
 
@@ -20,7 +22,7 @@ We can check whether the point is inside or outside by following three simple st
 2. Count the number of times the line intersects with polygon edges.
 3. A point is inside the polygon if either count of intersections is odd or point lies on an edge of a polygon. If none of the conditions is true, then point lies outside.
 
-![2](media/15658731990633/2.png)
+![2](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/2.png)
 
 I do think this approach is simple enough with only one question need to be solved
 
@@ -36,7 +38,7 @@ Before we discuss the solution, let us define the notion of orientation. Orienta
 - colinear
 
 The following diagram shows different possible orientations of (a, b, c)
-![3](media/15658731990633/3.png)
+![3](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/3.png)
 
 
 ## How is Orientation useful here?
@@ -49,8 +51,8 @@ Two segments (p1,q1) and (p2,q2) intersect if and only if one of the following t
 - (p2, q2, p1) and (p2, q2, q1) have different orientations
 
 Examples of General Case:
-![4](media/15658731990633/4.png)
-![5](media/15658731990633/5.png)
+![4](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/4.png)
+![5](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/5.png)
 
 ### 2. Special Case
 
@@ -59,7 +61,7 @@ Examples of General Case:
 - the y-projections of (p1, q1) and (p2, q2) intersect
 
 Examples of Special Case:
-![6](media/15658731990633/6.png)
+![6](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/6.png)
 
 - - - - - -
 
@@ -67,7 +69,7 @@ Examples of Special Case:
 # One more unexpected
 
 I really thought everything would go smoothly according to the method described above, but an unexpected error showed to me. Considering the following situation:
-![7](media/15658731990633/7.png)
+![7](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/7.png)
 
 
 The line intersects with the point that connects two segments. This leads the programme considers the there are two intersections and determines the point is outside of the polygon.

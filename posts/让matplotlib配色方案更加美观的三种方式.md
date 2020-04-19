@@ -4,6 +4,8 @@ date: 2016-04-07
 tags: [matplotlib, Python]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover.jpg)
+
 不管是谁，第一眼看到matplotlib配色方案的时候都至少不会觉得他很漂亮。我遇到很多使用Python的人问过我用什么module可以画出漂亮的图表，我的答复都是matplotlib。当然这对他们来讲都是一个比较吃惊的回答。
 
 matplotlib配色如此“不舒适”的原因我不太清除，不过我希望通过他提供的灵活配置方式来得更加美观的图表。
@@ -18,7 +20,7 @@ matplotlib配色如此“不舒适”的原因我不太清除，不过我希望�
 ## brewer2mpl
 
 通过pip安装[brewer2mpl](https://pypi.python.org/pypi/brewer2mpl/1.4)包可以直接获得一些不错的方案。
-![cbrewer_previe](media/15658731990301/cbrewer_preview.jpeg)
+![cbrewer_previe](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cbrewer_preview.jpeg)
 
 这里给出一个简单的定义全局配色方案的例子：
 

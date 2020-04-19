@@ -4,6 +4,8 @@ date: 2018-01-13
 tags: [Python, CheckIO]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/coverdice.jpg)
+
 ## 题目需求
 
 题目的原意可以总结为：求N个M面骰子（骰子点数为1-M）掷出X点数的概率。

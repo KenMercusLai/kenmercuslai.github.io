@@ -10,7 +10,7 @@ It works by detecting a user's bandwidth in real time and adjusting the quality 
 
 More specifically, and as the implementations in use today are, adaptive bitrate streaming is method of video streaming over HTTP where the source content is encoded at multiple bit rates, then each of the different bit rate streams are segmented into small multi-second parts. The streaming client is made aware of the available streams at differing bit rates, and segments of the streams by a manifest file.
 
-![800px-Adaptive_streaming_overview_bit_rates_2011_07_28](media/15658731987460/800px-Adaptive_streaming_overview_bit_rates_2011_07_28.png)
+![800px-Adaptive_streaming_overview_bit_rates_2011_07_28](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/800px-Adaptive_streaming_overview_bit_rates_2011_07_28.png)
 
 # Benefits for using ABR
 
@@ -121,7 +121,7 @@ Now we have to segment these two files.
 	ffmpeg -i test-low.mp4   -codec copy -map 0 -f segment -vbsf h264_mp4toannexb -flags -global_header -segment_format mpegts -segment_list test-low.m3u8 -segment_time 3 test-low%03d.ts
 
 After the processes, we the segmented video files are ready to go, there will be a lot of files in your folder depends on the original video length.
-![Screen Shot 2014-02-03 at 9.37.39 A](media/15658731987460/Screen%20Shot%202014-02-03%20at%209.37.39%20AM.png)
+![Screen Shot 2014-02-03 at 9.37.39 A](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/Screen%20Shot%202014-02-03%20at%209.37.39%20AM.png)
 
 Here are the info for the first segments of each.
 
@@ -183,7 +183,7 @@ HD file:
 	Service name                             : Service01
 	Service provider                         : FFmpeg
 	Service type                             : digital television
-	
+
 SD file:
 
 	General
@@ -267,17 +267,17 @@ In /var/www folder.
 	    </div>
 	</body>
 	</html>
-
+	
 	$cat ss.m3u8
 	#EXTM3U
 	#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=500000
 	http://192.168.123.106/test-low.m3u8
 	#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2000000
 	http://192.168.123.106/test.m3u8
-	
+
 Also, you can create page that only play HD or SD video for comparison.
 
-#Test
+# Test
 
 Here is the test video
 
@@ -285,7 +285,7 @@ Here is the test video
 
 Please note the different quality between video time 0:17. I'll give the vmware image link for download in the end of the post, you can download it to test it by your self.
 
-#Q&A 
+# Q&A 
 
 1. **Q**: The switch between video streaming with different quality is not smooth in the test video.
 

@@ -4,6 +4,7 @@ date: 2016-04-22
 tags: [imposter syndrome, self-improvement]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/coverfj.png)
 # 什么是冒充者综合症(Impostor Syndrome)
 
 [冒充者综合症(Impostor Syndrome)](http://en.wikipedia.org/wiki/Impostor_syndrome) 也被称为自我能力否定倾向，具有这种倾向的人往往在一些领域有所成就，但对自己的成功又心存怀疑——认为这些成功不是靠能力取得，感觉是在欺骗他人。这就像一个冒名顶替者，害怕被别人发现自己的欺骗行为。

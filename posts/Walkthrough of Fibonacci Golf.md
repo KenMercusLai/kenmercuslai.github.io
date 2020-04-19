@@ -4,7 +4,10 @@ date: 2018-01-13
 tags: [CheckIO, Python]
 ---
 
-##题目需求
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/coverfibo.jpg)
+
+## 题目需求
+
 题目的原意可以总结为：以尽量简洁的方式，完成各种类Fibonacci计算。
 提到的类型有：
 
@@ -41,7 +44,7 @@ if __name__ == '__main__':
     assert fibgolf('padovan', 10) == 9
 ```
 
-##思路
+## 思路
 
 其实从题目给出的例子来看，各种数列在计算方式上都是高度类似的。我们只需要将计算方式和初始数值确定，就能确定各种f(n)的值。
 

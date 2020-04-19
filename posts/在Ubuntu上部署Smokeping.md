@@ -4,6 +4,8 @@ date: 2016-05-10
 tags: [Ubuntu, Linux, Smokeping]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/coversmokeping.jpg)
+
 Smokeping是rrdtool的作者Tobi Oetiker的作品，是用Perl写的，主要是监视网络性能，包括常规的ping，用echoping监www 服务器性能，监视dns查询性能，监视ssh性能等。底层也是rrdtool做支持，特点是画的图非常亮，网络丢包和延迟用颜色和阴影来表示。
 
 #部署smokeping

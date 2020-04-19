@@ -4,6 +4,8 @@ date: 2016-05-13
 tags: [GFW, Router, DIY]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover1.jpg)
+
 前面两篇([Part.1](https://kenmlai.me/zi-dong-fan-qiang-lu-you-qi-zhi-zuo-part-1/) 和 [Part. 2](https://kenmlai.me/zi-dong-fan-qiang-lu-you-qi-zhi-zuo-part-2/))中，我们完成了路由器的刷机和基础设置。这一篇作为收尾，我们需要完成剩下的部分——脚本配置。
 
 ## chnroutes
@@ -5168,6 +5170,6 @@ cat /jffs/pptp/vpnc.txt | sh
 
 然后我们选择**Save Startup**  
 
-![save_config](media/15658731987143/save_config.png)
+![save-config](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/save_config.png)
 
 到此位置，重启你的路由器来测试吧：）

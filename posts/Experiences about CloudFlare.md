@@ -4,6 +4,8 @@ date: 2014-06-08
 tags: [CDN, CloudFlare]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover1231321.jpg)
+
 I spent about three hours to migrate my tech blog from [OpenShift](http://openshift.com) & [CloudFlare](http://cloudflare.com) to GitHub again, after my moving all from GitHub to OpenShift about 2 month ago. Experience with OpenShift & CloudFlare was frustrating and awful. It didn’t hit any expectations that I thought before the first migration.
 
 # Why I want to use CDN
@@ -20,7 +22,7 @@ If the request is for a type of resource it doesn’t cache, or if it doesn’t 
 
 According to its official website, they have servers all over the world. As we can see, no Chinese mainland is included. But with servers in HK and Tokyo, it should be at least ok for visitors from China.
 
-![network-map](media/15658731987397/network-map.jpg)
+![network-map](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/network-map.jpg)
 
 # Experience of CloudFlare
 

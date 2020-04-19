@@ -4,6 +4,8 @@ date: 2016-05-11
 tags: [GFW, Router, DIY]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover1.jpg)
+
 # 原因
 
 互联网技术与英语在网络上被称为现时了解世界的两大必要手段，这其中的互联网技术也就是翻墙。虽然翻墙的技术已经非常的多，而且也非常成熟，但是基本都是对应了单机如何配置。现今在家里只有一台设备需要上网的情况已经几乎不存在了，所以一台能够自由访问网络的翻墙路由器才是最需要。
@@ -38,9 +40,7 @@ tags: [GFW, Router, DIY]
 
 拿到了设备第一件事就是按照**官方**教程刷机。为什么我要强调**官方**两个字，就是因为总有人喜欢baidu一些乱七八糟的文章——不知道是哪一年或者拼凑的哪里的文章，搞得最后一堆麻烦。
 
-在[ddwrt官方wiki](http://www.dd-wrt.com/wiki/index.php/Main_Page)的右上角输入你的路由器型号就可以找到对应的教程，然后就是检验你前面两大能力的另外一项的时候了:-)  
-
-![screenshot](media/15658731987279/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/screenshot.png)
 
 如果你顺利完成刷机，我们就准备进入配置阶段了。
 

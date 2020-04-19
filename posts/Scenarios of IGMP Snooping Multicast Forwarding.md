@@ -4,12 +4,14 @@ date: 2016-04-16
 tags: [IGMP, Multicast]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/cover.png)
+
 I've discussed what is IGMP snooping and its forwarding rules for different packets in my [last post](https://kenmlai.me/what-is-igmp-snooping/). I just want to give some typical scenarios in IGMP snooping for your better understanding.
 
 
 ## Scenario 1: Switch forwarding multicast traffic to a multicast router and hosts
 
-![1](media/15658731989609/1.png)
+![1](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/11.png)
 
 In the topology shown above, the switch acting as a pure L2 device interconnects multicast router, which directly connects to the Source A for multicast group 239.10.1.1, Source B which is the source of 225.100.100.1 and four hosts. All interfaces on the switch belong to the same VLAN.
 
@@ -22,7 +24,7 @@ Host B responds the membership queries of 225.100.100.1. The switch adds interfa
 
 ## Scenario 2: Switch forwarding multicast traffic to another switch
 
-![2](media/15658731989609/2.png)
+![2](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/12.png)
 
 In the network shown above, a multicast source is connected to Switch A, which is connected to another switch. Both switches have receivers of the multicast source from Switch A connected. Both switches are acting as L2 devices and all interfaces on the switches are members of the same VLAN.
 
@@ -34,7 +36,7 @@ Switch B forwards membership report to its multicast-router interface Po6, which
 
 
 ## Scenario 3: Switch connected to hosts only (w/o IGMP querier)
-![3](media/15658731989609/3.png)
+![3](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/13.png)
 
 In the topology shown above, a switch connects to multicast source and hosts. Because there is no multicast router in this topology, no IGMP querier will be sent. Without the querier to respond to, a host does not send membership reports periodically. As a result, even if the host sends join message to join a multicast group, its membership times up.
 
@@ -46,6 +48,6 @@ For making IGMP snooping to work correctly in this network so that the switch fo
 
 ## Scenario 4: L2/L3 Switch forwarding multicast traffic between VLANs
 
-![4](media/15658731989609/4.png)
+![4](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/14.png)
 
 In this topology, we can easily analyze the interfaces' statuses according to previous examples. In a pure L2 environment, traffic will not be forwarded between VLANs. To make Host C receive multicast from VLAN 10, the switch must be permitted routing traffic between VLAN 10 and VLAN 20, while PIM is enabled on a switch to perform the multicast routing.

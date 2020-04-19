@@ -4,6 +4,8 @@ date: 2016-03-02
 tags: [IGMP]
 ---
 
+![cover](https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/coverigmp.png)
+
 ## What does IGMP Snooping Do
 
 IGMP snooping is used to monitor the traffic of IGMP protocol between hosts and multicast-enabled routers. The switch uses it to learn which interface has an interested receiver and forward multicast traffic only to these interfaces. This feature could save bandwidth by allowing it to send traffic only needed, rather than flooding all multicast packets to all interfaces.
