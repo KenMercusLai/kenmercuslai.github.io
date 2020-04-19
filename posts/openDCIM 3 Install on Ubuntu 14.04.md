@@ -4,7 +4,7 @@ date: 2016-03-03
 tags: [Linux, Ubuntu, openDCIM]
 ---
 
-[中文版链接](/networking/opendcim-3-install-on-ubuntu-14.04/)
+[中文版链接]([https://kenmlai.me/cn/posts/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/](https://kenmlai.me/cn/posts/如何在Ubuntu-14.04上安装openDCIM-3/))
 
 # What is openDCIM
 
