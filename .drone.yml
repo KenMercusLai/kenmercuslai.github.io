@@ -18,7 +18,7 @@ steps:
   - git clone --single-branch --branch content http://git.kenmlai.me:3000/ken/kenmlai.me.git content
   - hugo
   - cd public
-  - echo "kenmlai.me" > CNAME
+  - echo "kenlai.me" > CNAME
   - git init
   - git config user.name "KenMercusLai"
   - git config user.email "ken.mercus.lai@gmail.com"

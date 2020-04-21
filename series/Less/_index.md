@@ -5,7 +5,7 @@ I want to share my experience of building it. I'll use some dummy functions to r
 In the series, I'll try to express everything in my first person though not every idea is originated by myself.
 
 
-# [0). Background](0. background.md)
+# [0). Background](https://kenmlai.me/series/Less/0.-background/)
 
 
 # [1). Build a Simple(st) REST API Backend](1. build a simple(st) rest api.md)
