@@ -36,10 +36,6 @@ jobs:
         cd source
         git clone --single-branch --branch content https://github.com/KenMercusLai/kenmercuslai.github.io.git content
         hugo
-        
-    - name: Push
-      run: |
-        cd $GITHUB_WORKSPACE
         cd public
         echo "kenlai.me" > CNAME
         git init
