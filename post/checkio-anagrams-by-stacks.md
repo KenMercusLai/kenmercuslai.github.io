@@ -1,6 +1,6 @@
 ---
 title: "CheckIO - Anagrams By Stacks"
-Date: 2013-9-12
+Date: 2013-09-12
 tags: [CheckIO, Python]
 ---
 

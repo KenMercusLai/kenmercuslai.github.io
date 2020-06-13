@@ -1,6 +1,6 @@
 ---
 title: "CheckIO - Three Points Circle"
-Date: 2013-9-9
+Date: 2013-09-09
 tags: [CheckIO, Python]
 ---
 

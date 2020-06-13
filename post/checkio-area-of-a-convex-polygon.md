@@ -1,6 +1,6 @@
 ---
 title: "CheckIO - Area of a convex polygon"
-Date: 2013-9-11
+Date: 2013-09-11
 tags: [CheckIO, Python]
 ---
 
