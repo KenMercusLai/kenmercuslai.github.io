@@ -30,6 +30,8 @@ jobs:
         sudo dpkg -i hugo_extended_0.68.3_Linux-64bit.deb
         
     - name: Build
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
       run: |
         cd $GITHUB_WORKSPACE
         git clone --single-branch --branch source https://github.com/KenMercusLai/kenmercuslai.github.io.git source
