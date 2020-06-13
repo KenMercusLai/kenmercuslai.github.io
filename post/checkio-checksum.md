@@ -1,5 +1,5 @@
 ---
-title: CheckIO - CheckSum
+title: "CheckIO - CheckSum"
 date: 2013-09-08
 Tags: [CHECKIO, PYTHON]
 ---

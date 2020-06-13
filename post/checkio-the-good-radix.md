@@ -1,7 +1,7 @@
 ---
-title: CheckIO - The Good Radix
+title: "CheckIO - The Good Radix"
 date: 2013-09-08
-Tags: CHECKIO, PYTHON
+Tags: [CHECKIO, PYTHON]
 ---
 
 [Task描述][1]简单的说就是这样：
