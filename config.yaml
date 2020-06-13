@@ -34,15 +34,27 @@ sitemap:                 # essential                     # 必需
   priority: 0.5
   filename: "sitemap.xml"
 
-menu:
-  # before: []
-  after:
-    - name: "Linkedin"
-      url: "https://www.linkedin.com/in/kenmercuslai/"
-      weight: 10
-    - name: "Twitter"
-      url: "https://twitter.com/Ken_M_Lai"
-      weight: 15
+menu: 
+  main:             # config your menu              # 配置目录
+  - name: "This is Home"
+    weight: 10
+    identifier: "home"
+    url: "/"
+  - name: "Archives"
+    weight: 20
+    identifier: "archives"
+    url: "/post/"
+  - name: "Tags"
+    weight: 30
+    identifier: "tags"
+    url: "/tags/"
+  - name: "Categories"
+    weight: 40
+    identifier: "categories"
+    url: "/categories/"
+  - name: "external-link"
+    weight: 50
+    url: "https://gohugo.io"
 
 params:
   since: "2014"            # Site creation time          # 站点建立时间
