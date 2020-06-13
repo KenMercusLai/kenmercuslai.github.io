@@ -32,9 +32,9 @@ jobs:
     - name: Build
       run: |
         cd $GITHUB_WORKSPACE
-        git clone --single-branch --branch source http://git.kenmlai.me:3000/ken/kenmlai.me.git source
+        git clone --single-branch --branch source git@github.com:KenMercusLai/kenmercuslai.github.io.git source
         cd source
-        git clone --single-branch --branch content http://git.kenmlai.me:3000/ken/kenmlai.me.git content
+        git clone --single-branch --branch content git@github.com:KenMercusLai/kenmercuslai.github.io.git content
         hugo
         
     - name: Push
