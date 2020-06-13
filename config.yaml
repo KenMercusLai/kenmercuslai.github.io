@@ -93,7 +93,7 @@ params:
   # You can get your appid and appkey from https://leancloud.cn
   # more info please open https://valine.js.org
   valine:
-    enable: false
+    enable: enable
     appId: 'HRVXwifaSeWcsjMaWIeaMCxa-MdYXbMMI'
     appKey: 'NxTb7qTWsfkjJ6Xoutu8x9bh'
     notify: false  # If you are using valine-admin(https://github.com/DesertsP/Valine-Admin) to notify users, do NOT enable this.
