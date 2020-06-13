@@ -52,9 +52,6 @@ menu:
     weight: 40
     identifier: "categories"
     url: "/categories/"
-  - name: "external-link"
-    weight: 50
-    url: "https://gohugo.io"
 
 params:
   since: "2014"            # Site creation time          # 站点建立时间
@@ -82,11 +79,5 @@ params:
 
   social:                                         # 社交链接
     a-email: "mailto:ken.mercus.lai@gmail.com"
-    b-stack-overflow: "http://localhost:1313"
-    c-twitter: "http://localhost:1313"
-    e-linkedin: "http://localhost:1313"
-    g-github: "http://localhost:1313"
-    o-goodreads: "http://localhost:1313"
-    q-bilibili: "http://localhost:1313"
-    r-codeforces: "http://localhost:1313"
-    s-mastodon: "http://localhost:1313"
+    c-twitter: "https://twitter.com/Ken_M_Lai"
+    e-linkedin: "https://www.linkedin.com/in/kenmercuslai/"
