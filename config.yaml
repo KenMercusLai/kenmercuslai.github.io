@@ -48,10 +48,10 @@ menu:
     weight: 30
     identifier: "tags"
     url: "/tags/"
-  - name: "Links"
-    weight: 40
-    identifier: "links"
-    url: "/links/"
+  # - name: "Links"
+  #   weight: 40
+  #   identifier: "links"
+  #   url: "/links/"
 
 params:
   since: "2013"            # Site creation time          # 站点建立时间
