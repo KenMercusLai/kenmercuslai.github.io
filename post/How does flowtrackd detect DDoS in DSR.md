@@ -11,7 +11,7 @@ Here're some things we need to know before talking about how flowtrackd works. L
 # TCP connection establishment and termination
 A TCP connection between the client and server is identified by Src_IP:Src_Port:Dst_IP:Dst_Port. Hence, there can be one TCP connection between the pair of Src_IP:Src_Port and Dst_IP:Dst_Port. 
 
-Whenever the client tries to establish a TCP connection to the server. A 3-handshake is required in the following steps:
+Whenever the client tries to establish a TCP connection to the server. [A 3-handshake is required in the following steps](https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/):
 - The client sends a TCP packet with SYN flag and a random SEQ number A
 - Once the server receives the SYN packet, it returns a TCP packet with ACK flag and ACK number A+1, where the SYN flag is also set with another random SEQ B
 - Similarly, once the client receives the packet from the server with ACK number A+1, it confirm the uni-directional tunnel is established from its side. It also responds an ACK packet with ACK number B+1 to acknowledge the server
