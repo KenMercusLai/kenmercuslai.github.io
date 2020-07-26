@@ -1,7 +1,7 @@
 ---
 title: "CheckIO - CheckSum"
 date: 2013-09-08
-Tags: [CHECKIO, PYTHON]
+Tags: [CHECKIO, Python]
 ---
 
 [题目][1]的描述超级麻烦，不过逻辑很简单，没有什么特别注意的地方，全是非常基础的知识。

@@ -1,25 +1,25 @@
 ---
-title: "实例配置分布式Smokeping"
+title: "实例配置分布式SmokePing"
 date: 2016-05-17
-tags: [Linux, Smokeping, Tutorial, Distribution]
+tags: [Linux, SmokePing, Tutorial, Distribution]
 ---
 
-在[前一篇文章中](https://kenmlai.me/zai-ubuntushang-bu-shu-smokeping/)，简单的介绍了如何在Ubuntu 14.04中安装smokeping，安装之后smokeping是以单机的形式来运行。但是在这样的情况下，安装smokeping的主机测试的是自己到被检测点之间的状态。又或者单独一台主机的性能已经完全不能满足监控的需求。这时，我们需要考虑采用分布式smokeping来进行监控。分布式smokeping相比单点有这样一些重要的优势：
+在[前一篇文章中](https://kenmlai.me/zai-ubuntushang-bu-shu-smokeping/)，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样的情况下，安装smokeping的主机测试的是自己到被检测点之间的状态。又或者单独一台主机的性能已经完全不能满足监控的需求。这时，我们需要考虑采用分布式smokeping来进行监控。分布式smokeping相比单点有这样一些重要的优势：
 
 - 分担单台主机负担。
 - 可以通过不同的网络环境监控对于同一监控点。
 - 避免干扰因素。
 
 
-# 分布式Smokeping架构
+# 分布式SmokePing架构
 
-Smokeping采用Master/Slave的主从结构架构进行分布式部署。默认开启Master和Slave所有的探针检测远程主机（Master监测功能可以通过配置关闭）。一个Master可以管理多个Slave，而且Slave配置起来也很简单。
+SmokePing采用Master/Slave的主从结构架构进行分布式部署。默认开启Master和Slave所有的探针检测远程主机（Master监测功能可以通过配置关闭）。一个Master可以管理多个Slave，而且Slave配置起来也很简单。
 
 Slave从master上获取自己的配置信息，所有的检测数据以及web呈现都在Master上。Slave只负责按照从Master获取的配置信息进行数据检测，所以Master/Slave的架构也只需要维护Master的配置文件即可，其他的信息Slave都会动态获取到。
 
-简单说，一个Slave就是一个单独的实例。Slave的配置信息来自于Master,不是来自于本地配置文件，这样就减少了大量的维护成本。Slave在完成每一轮的作业任务后，就会尝试连接Master提交自己的结果。如果无法连接到Master，这个结果将会和下一轮的结果一块发送给Master，Master收到结果后，将检测的数据存储在本地的数据文件中，以便于重启了Smokeping实例后，不会丢失这些数据。
+简单说，一个Slave就是一个单独的实例。Slave的配置信息来自于Master,不是来自于本地配置文件，这样就减少了大量的维护成本。Slave在完成每一轮的作业任务后，就会尝试连接Master提交自己的结果。如果无法连接到Master，这个结果将会和下一轮的结果一块发送给Master，Master收到结果后，将检测的数据存储在本地的数据文件中，以便于重启了SmokePing实例后，不会丢失这些数据。
 
-Smokeping分布式的检测方式是被动模式，由Slave启动时向Master发起连接。主从通信验证是通过类似于rsync的密码认证方式，在启动slave节点时指定–shared-secret=filename来和主进行密码验证。
+SmokePing分布式的检测方式是被动模式，由Slave启动时向Master发起连接。主从通信验证是通过类似于rsync的密码认证方式，在启动slave节点时指定–shared-secret=filename来和主进行密码验证。
 
 从官方获取的Master/Slave的架构图可以看出，Slave是将采集的结果汇集给Master。
 
@@ -35,7 +35,7 @@ Smokeping分布式的检测方式是被动模式，由Slave启动时向Master发
 ```
 
 
-# 分布式Smokeping配置
+# 分布式SmokePing配置
 
 
 ## Master配置部分
@@ -93,7 +93,7 @@ host = xxx.xxx.xxx.xxx
 
 # Slave配置部分
 
-Slave端实际上不需要太多的配置，只需要将smokeping正确安装即可，具体可参照 [Smokeping的安装](http://kenmlai.me/在ubuntu上部署smokeping/) 一文。
+Slave端实际上不需要太多的配置，只需要将smokeping正确安装即可，具体可参照 [SmokePing的安装](http://kenmlai.me/在ubuntu上部署smokeping/) 一文。
 
 1.创建master与slave的密码文件
 
