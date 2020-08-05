@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading List on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Reading-List/</link>
+    <description>Recent content in Reading List on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 04 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Reading-List/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CCIE Data Center Online Resources and Reading List</title>
+      <link>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</guid>
+      <description>Install, Config and Troubleshoot Guides
+Install, Config and Troubleshoot Guide for Cisco Nexus 7000 NXOS Switch
+Install, Config and Troubleshoot Guide for Cisco Nexus 5000 NXOS Switch
+Install, Config Guide for Cisco Nexus 2000 NXOS SwitchInstall, Configure and Troubleshoot Guide for Cisco Nexus 1000v NXOS Virtual SwitchInstall, Config and Troubleshoot Guide for Cisco MDS SAN NXOS SwitchInstall, Config and Troubleshoot Guide for Cisco ACE 4710 ApplianceCisco NX-OS FCoE Configuration Guide for Nexus 7000 and MDS 9500Install, Config and Troubleshoot guide for Cisco UCS ManagerInstall and Config Guide for Data Center Network Manager (DCNM)Configuration examplesCisco Nexus 7000 NXOS Config ExamplesCisco Nexus 5000 NXOS Config ExamplesCisco Nexus 1000v NXOS Config ExamplesCisco MDS SAN Switches NXOS Config ExamplesCisco UCS Manager Config ExamplesWhite Papers and Other Useful Online ResourcesCisco Product Support Documentation a central repository for all Cisco Documentation (by product or technology) - formerly known as Documentation CD, or CCO Documentation.</description>
+    </item>
+    
+  </channel>
+</rss>

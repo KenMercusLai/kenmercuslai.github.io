@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Protocol on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Protocol/</link>
+    <description>Recent content in Protocol on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Protocol/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>并不安全的VXLAN?</title>
+      <link>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</guid>
+      <description>随着前几年数据中心的火热，VXLAN也成为了一个非常热门的技术。本质上来说，它和我们常见的NVGRE类似，都是在原有的数据包外面封装一层信息</description>
+    </item>
+    
+    <item>
+      <title>TCP 三次握手</title>
+      <link>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
+      <description>TCP建立连接时，实际上时建立两个单向连接来进行双向通信，双方都需要一个发起连接，接收和确认的过程。过程如下： Reference: https://www.guru99.com/tcp-3-way-handshake.html 发起方发送SYN，附带一个</description>
+    </item>
+    
+    <item>
+      <title>What is Segment Routing</title>
+      <link>https://kenlai.me/post/What-is-Segment-Routing/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-Segment-Routing/</guid>
+      <description>When networks are getting deeper and deeper into our everyday work life, they have become more and more complex. Opposed to traditional networks, their functionalities are wider and wider, which challenge the principles existed. Today&amp;rsquo;s networks demand better performance, scalability, flexibility, better operational cost efficiency and maximize link capacities. All the requirements force the network to have certain automation and can be managed by a centralized controller. This idea of managing the network is call software-defined-network (SDN).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Network/</link>
+    <description>Recent content in Network on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>并不安全的VXLAN?</title>
+      <link>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</guid>
+      <description>随着前几年数据中心的火热，VXLAN也成为了一个非常热门的技术。本质上来说，它和我们常见的NVGRE类似，都是在原有的数据包外面封装一层信息</description>
+    </item>
+    
+    <item>
+      <title>TCP 三次握手</title>
+      <link>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
+      <description>TCP建立连接时，实际上时建立两个单向连接来进行双向通信，双方都需要一个发起连接，接收和确认的过程。过程如下： Reference: https://www.guru99.com/tcp-3-way-handshake.html 发起方发送SYN，附带一个</description>
+    </item>
+    
+    <item>
+      <title>How does flowtrackd detect DDoS in DSR</title>
+      <link>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</guid>
+      <description>Cloudflare recently announced flowtrackd which can detect DDoS in [DSR]([[Direct Server Return]]) scenarios. It&amp;rsquo;s quite interesting since most DDoS protections need the gateway working in the reverse proxy mode, in which the traffic coming and leaving through the same device. Then the gateway can track connection statuses since it observes every packet. I am not an employee of Cloudflare and have no insight of how flowtrackd is designed, but I&amp;rsquo;d like to have an educated guess.</description>
+    </item>
+    
+    <item>
+      <title>灾备中的环路</title>
+      <link>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</guid>
+      <description>Active/Passive的灾备情况下，如果灾备中心是冷备，那么分离的3层DCI并没有多大的作用。但真正的冷备有多少呢？绝大部分有一个以上</description>
+    </item>
+    
+    <item>
+      <title>网络架构师与网络自动化</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+      <description>网络架构师如同建筑行业的建筑师（架构师和建筑师的英文都是architect）一样，在理解材料、工具和操作过程中的优缺点的基础上，来实现自己心</description>
+    </item>
+    
+    <item>
+      <title>网络可靠性工程师 NRE</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</guid>
+      <description>可靠性工程师顾名思义就是保证可靠性的工程师。非常著名的《Site Reliability Engineering: How Google Runs》提到了Google内部是如何保障可靠性的。网络行业中有类似</description>
+    </item>
+    
+    <item>
+      <title>云平台网络的一点思考</title>
+      <link>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</guid>
+      <description>不管云平台的架构如何变化，有一点是始终不变的：虚拟主机通过网卡来发送和接收数据。这些网卡可能是用软件模拟的，或者半虚拟的。对于虚机来讲，网卡</description>
+    </item>
+    
+  </channel>
+</rss>

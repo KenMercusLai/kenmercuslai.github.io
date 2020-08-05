@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ISP on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/ISP/</link>
+    <description>Recent content in ISP on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 30 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/ISP/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Huawei is providing outsourcing management services for SPs</title>
+      <link>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</guid>
+      <description>I recently had a chance to speak with a supervisor, who is called such by his colleagues, from Huawei. He mentioned that Huawei was trying doing outsourcing IT management service for SP customers. This approaching reminds me that Cisco is also thriving to bring management service into China. I don’t think this is a coincidence that two biggest companies in the same industry are doing the same.
+The only difference is that Huawei is expecting to have a proliferation out of China mainland, while Cisco is trying to bring this concept into China.</description>
+    </item>
+    
+    <item>
+      <title>Tsukkomi about Chinese Cable SP Providers</title>
+      <link>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</guid>
+      <description>Companies usually take experiences from others in the same industry or the ones share a lot of characters. This is also similar to Chinese companies in cable SPs. Every time I heard about what they wanted to learn from when we were discussing future business development, Comcast is always the one they like. But from my personal view, I prefer to consider this is an error to position themselves like Comcast because there are no share characteristics except for being called cable SPs.</description>
+    </item>
+    
+    <item>
+      <title>Different Orientation of Wasu</title>
+      <link>https://kenlai.me/post/Different-Orientation-of-Wasu/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Different-Orientation-of-Wasu/</guid>
+      <description>As I mentioned in my earlier post, regional government media groups were chasing for profits in SP business. But glad to say, not all of them shared the same goal. A minority of them noticed their advantages and disadvantages and chose to orient to the content providers. Wasu is one of the minority group members, and it has a totally different business orientation with other three strongest MG in China.</description>
+    </item>
+    
+  </channel>
+</rss>

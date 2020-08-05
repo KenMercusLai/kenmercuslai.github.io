@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zsh on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/zsh/</link>
+    <description>Recent content in zsh on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Better process for zsh virtualenvwrapper plugin</title>
+      <link>https://kenlai.me/post/Better-process-for-zsh-virtualenvwrapper-plugin/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Better-process-for-zsh-virtualenvwrapper-plugin/</guid>
+      <description>Virtualenvwrapper is one of the must-have scripts for building a Python development environment. With the power of zsh oh-my-zsh plugin framework, we can automate some processes such as activate &amp;amp; deactivate.
+But the build-in virtualenvwrapper fails to work sometimes what it should be. I decided to fix it by myself after googling for existed solutions.
+virtualenvwrapper plugin analyze &amp;amp; optimize The existed virtualenvwrapper plugin is quite useful in most of the time, but it would malfunction occasionally.</description>
+    </item>
+    
+  </channel>
+</rss>

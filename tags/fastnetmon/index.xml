@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fastnetmon on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/fastnetmon/</link>
+    <description>Recent content in fastnetmon on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/fastnetmon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</guid>
+      <description>最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候</description>
+    </item>
+    
+  </channel>
+</rss>

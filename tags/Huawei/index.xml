@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Huawei on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Huawei/</link>
+    <description>Recent content in Huawei on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 30 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Huawei/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Huawei is providing outsourcing management services for SPs</title>
+      <link>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</guid>
+      <description>I recently had a chance to speak with a supervisor, who is called such by his colleagues, from Huawei. He mentioned that Huawei was trying doing outsourcing IT management service for SP customers. This approaching reminds me that Cisco is also thriving to bring management service into China. I don’t think this is a coincidence that two biggest companies in the same industry are doing the same.
+The only difference is that Huawei is expecting to have a proliferation out of China mainland, while Cisco is trying to bring this concept into China.</description>
+    </item>
+    
+    <item>
+      <title>Huawei has published SDN product</title>
+      <link>https://kenlai.me/post/Huawei-has-published-SDN-product/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-has-published-SDN-product/</guid>
+      <description>I&amp;rsquo;ve walked through the news from official website about SDN, which I thought was a missing part of their product line, and found a interesting one. Seems Huawei finally caught up with the SDN bus.
+I personally don&amp;rsquo;t think what has been mentioned in the news will bring truly impact to the SDN market, and prefer to take it as only a symbol for Huawei entering the SDN game. Here are some of my reasons:</description>
+    </item>
+    
+    <item>
+      <title>Huawei is abandoning CDN</title>
+      <link>https://kenlai.me/post/Huawei-is-abandoning-CDN/</link>
+      <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-is-abandoning-CDN/</guid>
+      <description>Companies drop their products while they are benefit-able, it seems that Huawei is abandoning CDN from its mainstream products in China.
+Lacking of clients may be one critical fact that this product cannot provide sufficient profit for Huawei. From this aspect of how many new clients a product has been sold while no expansion for old clients, the only considerable one is China Mobile Sichuan. Less R&amp;amp;D force for less profitable product principle makes CDN have less support.</description>
+    </item>
+    
+  </channel>
+</rss>

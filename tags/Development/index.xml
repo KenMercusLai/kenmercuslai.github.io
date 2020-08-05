@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Development/</link>
+    <description>Recent content in Development on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git-flow 与 GitHub-Flow 分支策略</title>
+      <link>https://kenlai.me/post/Git-flow-%E4%B8%8E-GitHub-Flow-%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Git-flow-%E4%B8%8E-GitHub-Flow-%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5/</guid>
+      <description>Git 自身丰富的功能可以满足各种不同的需求，但是通常会让人对于怎么有效使用它感到困惑。除了功能上需要细究的地方之外，最常见的无非就是如何有效的管</description>
+    </item>
+    
+    <item>
+      <title>试验性分支</title>
+      <link>https://kenlai.me/post/%E8%AF%95%E9%AA%8C%E6%80%A7%E5%88%86%E6%94%AF/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%AF%95%E9%AA%8C%E6%80%A7%E5%88%86%E6%94%AF/</guid>
+      <description>通常来说，我会在想要实验一些第三方库和现有项目的兼容和可用程度时使用试验性分支。这些分支的共同点就是他们不一定会被合并到master中，更明</description>
+    </item>
+    
+  </channel>
+</rss>

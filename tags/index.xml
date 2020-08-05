@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/</link>
+    <description>Recent content in Tags on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Network</title>
+      <link>https://kenlai.me/tags/Network/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protocol</title>
+      <link>https://kenlai.me/tags/Protocol/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Protocol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://kenlai.me/tags/Security/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fastnetmon</title>
+      <link>https://kenlai.me/tags/fastnetmon/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/fastnetmon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grafana</title>
+      <link>https://kenlai.me/tags/Grafana/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://kenlai.me/tags/Linux/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NetFlow</title>
+      <link>https://kenlai.me/tags/NetFlow/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/NetFlow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pmacct</title>
+      <link>https://kenlai.me/tags/pmacct/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/pmacct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thinking</title>
+      <link>https://kenlai.me/tags/Thinking/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://kenlai.me/tags/Productivity/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Management</title>
+      <link>https://kenlai.me/tags/Time-Management/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Time-Management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://kenlai.me/tags/Development/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://kenlai.me/tags/Git/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DDoS</title>
+      <link>https://kenlai.me/tags/DDoS/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/DDoS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Architecture</title>
+      <link>https://kenlai.me/tags/Architecture/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>https://kenlai.me/tags/Design/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>https://kenlai.me/tags/Automation/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reliability</title>
+      <link>https://kenlai.me/tags/Reliability/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Reliability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>https://kenlai.me/tags/Cloud/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CCIE</title>
+      <link>https://kenlai.me/tags/CCIE/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/CCIE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scaling</title>
+      <link>https://kenlai.me/tags/Scaling/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Scaling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHECKIO</title>
+      <link>https://kenlai.me/tags/CHECKIO/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/CHECKIO/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://kenlai.me/tags/python/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Segment Routing</title>
+      <link>https://kenlai.me/tags/Segment-Routing/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Segment-Routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Healthy</title>
+      <link>https://kenlai.me/tags/Healthy/</link>
+      <pubDate>Sun, 29 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Healthy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workout</title>
+      <link>https://kenlai.me/tags/Workout/</link>
+      <pubDate>Sun, 29 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Workout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugin</title>
+      <link>https://kenlai.me/tags/plugin/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/plugin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://kenlai.me/tags/shell/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualenv</title>
+      <link>https://kenlai.me/tags/virtualenv/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/virtualenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>https://kenlai.me/tags/zsh/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distribution</title>
+      <link>https://kenlai.me/tags/Distribution/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SmokePing</title>
+      <link>https://kenlai.me/tags/SmokePing/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/SmokePing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://kenlai.me/tags/Tutorial/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNS</title>
+      <link>https://kenlai.me/tags/DNS/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/DNS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIY</title>
+      <link>https://kenlai.me/tags/DIY/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/DIY/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GFW</title>
+      <link>https://kenlai.me/tags/GFW/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/GFW/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Router</title>
+      <link>https://kenlai.me/tags/Router/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Router/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://kenlai.me/tags/Ubuntu/</link>
+      <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>career</title>
+      <link>https://kenlai.me/tags/career/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dressing</title>
+      <link>https://kenlai.me/tags/dressing/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/dressing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FFMpeg</title>
+      <link>https://kenlai.me/tags/FFMpeg/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/FFMpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japanese</title>
+      <link>https://kenlai.me/tags/Japanese/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Japanese/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenShift</title>
+      <link>https://kenlai.me/tags/OpenShift/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/OpenShift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tones</title>
+      <link>https://kenlai.me/tags/Tones/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Tones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Huawei</title>
+      <link>https://kenlai.me/tags/Huawei/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Huawei/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ISP</title>
+      <link>https://kenlai.me/tags/ISP/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/ISP/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>https://kenlai.me/tags/Simulation/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>controller</title>
+      <link>https://kenlai.me/tags/controller/</link>
+      <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/controller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SDN</title>
+      <link>https://kenlai.me/tags/SDN/</link>
+      <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/SDN/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>imposter syndrome</title>
+      <link>https://kenlai.me/tags/imposter-syndrome/</link>
+      <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/imposter-syndrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self-improvement</title>
+      <link>https://kenlai.me/tags/self-improvement/</link>
+      <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/self-improvement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>management</title>
+      <link>https://kenlai.me/tags/management/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>advantage</title>
+      <link>https://kenlai.me/tags/advantage/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/advantage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>business</title>
+      <link>https://kenlai.me/tags/business/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IGMP</title>
+      <link>https://kenlai.me/tags/IGMP/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/IGMP/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multicast</title>
+      <link>https://kenlai.me/tags/Multicast/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Multicast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certificate</title>
+      <link>https://kenlai.me/tags/Certificate/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Certificate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ABR</title>
+      <link>https://kenlai.me/tags/ABR/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/ABR/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streaming</title>
+      <link>https://kenlai.me/tags/Streaming/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>matplotlib</title>
+      <link>https://kenlai.me/tags/matplotlib/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/matplotlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BPDU</title>
+      <link>https://kenlai.me/tags/BPDU/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/BPDU/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>https://kenlai.me/tags/Twitter/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://kenlai.me/tags/Hardware/</link>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trouble Shooting</title>
+      <link>https://kenlai.me/tags/Trouble-Shooting/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Trouble-Shooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leadership</title>
+      <link>https://kenlai.me/tags/leadership/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>team</title>
+      <link>https://kenlai.me/tags/team/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://kenlai.me/tags/Programming/</link>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SWOT</title>
+      <link>https://kenlai.me/tags/SWOT/</link>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/SWOT/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openDCIM</title>
+      <link>https://kenlai.me/tags/openDCIM/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/openDCIM/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AP</title>
+      <link>https://kenlai.me/tags/AP/</link>
+      <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/AP/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wifi</title>
+      <link>https://kenlai.me/tags/Wifi/</link>
+      <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Wifi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>https://kenlai.me/tags/Reading-List/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Reading-List/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Complexity</title>
+      <link>https://kenlai.me/tags/Complexity/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Complexity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Center</title>
+      <link>https://kenlai.me/tags/Data-Center/</link>
+      <pubDate>Thu, 25 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Data-Center/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASA</title>
+      <link>https://kenlai.me/tags/ASA/</link>
+      <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/ASA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>https://kenlai.me/tags/Cisco/</link>
+      <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Cisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firewall</title>
+      <link>https://kenlai.me/tags/Firewall/</link>
+      <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Firewall/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MacOS</title>
+      <link>https://kenlai.me/tags/MacOS/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/MacOS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preview</title>
+      <link>https://kenlai.me/tags/Preview/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>https://kenlai.me/tags/networking/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CDN</title>
+      <link>https://kenlai.me/tags/CDN/</link>
+      <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/CDN/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudFlare</title>
+      <link>https://kenlai.me/tags/CloudFlare/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/CloudFlare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gadget</title>
+      <link>https://kenlai.me/tags/gadget/</link>
+      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/gadget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jawbone</title>
+      <link>https://kenlai.me/tags/Jawbone/</link>
+      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Jawbone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://kenlai.me/tags/Review/</link>
+      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/Review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>App</title>
+      <link>https://kenlai.me/tags/App/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/App/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPhone</title>
+      <link>https://kenlai.me/tags/iPhone/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/iPhone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>https://kenlai.me/tags/CI/CD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/tags/CI/CD/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

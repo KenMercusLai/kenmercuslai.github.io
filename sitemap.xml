@@ -1,0 +1,1212 @@
+<?xml-stylesheet type="text/xsl" href="https://kenlai.me/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://kenlai.me/links/</loc>
+    <lastmod>2020-07-24T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Network/</loc>
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/</loc>
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Protocol/</loc>
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Security/</loc>
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/</loc>
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</loc>
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/fastnetmon/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Grafana/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Linux/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/NetFlow/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/pmacct/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Thinking/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%96%9C%E6%AC%A2%E9%BB%91%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Productivity/</loc>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Time-Management/</loc>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E6%97%B6%E9%97%B4/</loc>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</loc>
+    <lastmod>2020-07-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Development/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Git/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Git-flow-%E4%B8%8E-GitHub-Flow-%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/DDoS/</loc>
+    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</loc>
+    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Architecture/</loc>
+    <lastmod>2020-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Design/</loc>
+    <lastmod>2020-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</loc>
+    <lastmod>2020-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Automation/</loc>
+    <lastmod>2020-07-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2020-07-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Reliability/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E8%AF%95%E9%AA%8C%E6%80%A7%E5%88%86%E6%94%AF/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Cloud/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Blue-Team-and-Red-Team/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/CCIE/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/I-have-a-CCIE-so-whats-my-level-of-security/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Security-devices-arent-good-enough-because-they-arent-bought-properly/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Scaling/</loc>
+    <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/When-a-paper-plane-scales-up-to-a-Boeing-747-escalation-problems-for-a-network/</loc>
+    <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/CHECKIO/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/python/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Walkthrough-of-Fibonacci-Golf/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Walkthrough-of-Probably-Dice/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/</loc>
+    <lastmod>2020-07-24T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Segment-Routing/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/What-is-Segment-Routing/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Healthy/</loc>
+    <lastmod>2016-05-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Workout/</loc>
+    <lastmod>2016-05-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E4%B8%80%E4%BA%9B%E4%BD%A0%E4%B8%8D%E4%B8%BA%E7%86%9F%E7%9F%A5%E7%9A%84%E8%BF%90%E5%8A%A8%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2016-05-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Better-process-for-zsh-virtualenvwrapper-plugin/</loc>
+    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/plugin/</loc>
+    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/shell/</loc>
+    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/virtualenv/</loc>
+    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/zsh/</loc>
+    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Distribution/</loc>
+    <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/SmokePing/</loc>
+    <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Tutorial/</loc>
+    <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/</loc>
+    <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/DNS/</loc>
+    <lastmod>2016-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/smokeping%E4%B8%ADDNS%E7%9B%91%E6%8E%A7%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2016-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/DIY/</loc>
+    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/GFW/</loc>
+    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Router/</loc>
+    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-3/</loc>
+    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-2/</loc>
+    <lastmod>2016-05-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-1/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Ubuntu/</loc>
+    <lastmod>2016-05-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</loc>
+    <lastmod>2016-05-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/career/</loc>
+    <lastmod>2016-05-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/dressing/</loc>
+    <lastmod>2016-05-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%B7%A5%E4%BD%9C%E5%9C%BA%E5%90%88%E5%A6%82%E4%BD%95%E7%A9%BF%E8%A1%A3/</loc>
+    <lastmod>2016-05-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/FFMpeg/</loc>
+    <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/How-to-install-ffmpeg-on-OpenShift/</loc>
+    <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Japanese/</loc>
+    <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/OpenShift/</loc>
+    <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Tones/</loc>
+    <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E9%9F%B3%E8%B0%83/</loc>
+    <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Huawei/</loc>
+    <lastmod>2016-04-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</loc>
+    <lastmod>2016-04-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/ISP/</loc>
+    <lastmod>2016-04-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Real-World-Network-Simulation/</loc>
+    <lastmod>2016-04-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Simulation/</loc>
+    <lastmod>2016-04-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/controller/</loc>
+    <lastmod>2016-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Controller-discussion-is-excessive-we-need-more-about-other-aspects/</loc>
+    <lastmod>2016-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/SDN/</loc>
+    <lastmod>2016-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/imposter-syndrome/</loc>
+    <lastmod>2016-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/self-improvement/</loc>
+    <lastmod>2016-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%86%92%E5%85%85%E8%80%85%E7%BB%BC%E5%90%88%E7%97%87Impostor-Syndrome/</loc>
+    <lastmod>2016-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/management/</loc>
+    <lastmod>2016-04-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E7%BB%99%E4%BA%88%E8%B4%9F%E9%9D%A2%E8%AF%84%E4%BB%B7/</loc>
+    <lastmod>2016-04-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/advantage/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/business/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/IGMP/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Multicast/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Scenarios-of-IGMP-Snooping-Multicast-Forwarding/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E8%BF%99%E4%BA%9B%E4%B8%8D%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AB%9E%E4%BA%89%E4%BC%98%E5%8A%BF/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Certificate/</loc>
+    <lastmod>2016-04-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Some-words-for-CCIE-candidates/</loc>
+    <lastmod>2016-04-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/ABR/</loc>
+    <lastmod>2016-04-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Streaming/</loc>
+    <lastmod>2016-04-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/What-is-ABR/</loc>
+    <lastmod>2016-04-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/matplotlib/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E8%AE%A9matplotlib%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88%E6%9B%B4%E5%8A%A0%E7%BE%8E%E8%A7%82%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/BPDU/</loc>
+    <lastmod>2016-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/BPDU-filter-VS-BPDU-guard/</loc>
+    <lastmod>2016-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Twitter/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Hardware/</loc>
+    <lastmod>2016-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/</loc>
+    <lastmod>2016-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E4%B8%AD%E7%9A%84%E6%98%9F%E6%9C%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A5%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E5%9C%9F/</loc>
+    <lastmod>2016-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Trouble-Shooting/</loc>
+    <lastmod>2016-03-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Troubleshooting-is-an-interactive-process/</loc>
+    <lastmod>2016-03-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/leadership/</loc>
+    <lastmod>2016-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/New-Team-Leader-Todo-List/</loc>
+    <lastmod>2016-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/team/</loc>
+    <lastmod>2016-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Programming/</loc>
+    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/SWOT/</loc>
+    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/SWOT-Analysis-for-Personal-Improvement/</loc>
+    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/openDCIM/</loc>
+    <lastmod>2016-03-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</loc>
+    <lastmod>2016-03-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Huawei-has-published-SDN-product/</loc>
+    <lastmod>2016-03-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/What-is-IGMP-Snooping/</loc>
+    <lastmod>2016-03-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/AP/</loc>
+    <lastmod>2015-10-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Wifi/</loc>
+    <lastmod>2015-10-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E7%98%A6AP%E4%B8%80%E8%88%AC%E8%83%BD%E5%B9%B2%E5%98%9B/</loc>
+    <lastmod>2015-10-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</loc>
+    <lastmod>2015-09-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Reading-List/</loc>
+    <lastmod>2015-09-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Walkthrough-of-CheckIO-Inside-Block/</loc>
+    <lastmod>2015-09-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Complexity/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/The-number-of-management-nodes-is-important-take-it-into-your-consideration/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Data-Center/</loc>
+    <lastmod>2015-06-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/What-is-hotcold-aisle-in-data-center/</loc>
+    <lastmod>2015-06-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/ASA/</loc>
+    <lastmod>2015-01-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Cisco/</loc>
+    <lastmod>2015-01-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Firewall/</loc>
+    <lastmod>2015-01-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/NO-NAT-configuration-on-Cisco-ASA-Firewall/</loc>
+    <lastmod>2015-01-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/CopyPaste-in-Quick-Look-on-MacOS/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/MacOS/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Preview/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/networking/</loc>
+    <lastmod>2015-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</loc>
+    <lastmod>2015-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/CDN/</loc>
+    <lastmod>2014-09-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Huawei-is-abandoning-CDN/</loc>
+    <lastmod>2014-09-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Walkthrough-of-Text-Holes-Golf/</loc>
+    <lastmod>2014-08-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</loc>
+    <lastmod>2014-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/CloudFlare/</loc>
+    <lastmod>2014-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Different-Orientation-of-Wasu/</loc>
+    <lastmod>2014-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Experiences-about-CloudFlare/</loc>
+    <lastmod>2014-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/gadget/</loc>
+    <lastmod>2014-01-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Jawbone/</loc>
+    <lastmod>2014-01-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/Review/</loc>
+    <lastmod>2014-01-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Review-Jawbone-UP-1st-generation/</loc>
+    <lastmod>2014-01-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/checkio-anagrams-by-stacks/</loc>
+    <lastmod>2013-09-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/CheckIO-Snake/</loc>
+    <lastmod>2013-09-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/checkio-area-of-a-convex-polygon/</loc>
+    <lastmod>2013-09-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/App/</loc>
+    <lastmod>2013-09-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/iPhone/</loc>
+    <lastmod>2013-09-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Yo-%E5%B0%8F%E5%BF%83%E5%9D%91%E7%88%B9%E7%9A%84iPhone%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2013-09-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/checkio-three-points-circle/</loc>
+    <lastmod>2013-09-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/Review-My-iPhone-Apps/</loc>
+    <lastmod>2013-09-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/checkio-checksum/</loc>
+    <lastmod>2013-09-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/post/checkio-the-good-radix/</loc>
+    <lastmod>2013-09-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/Less/0.-background/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/Less/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/To-the-Moon/0.-background/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/To-the-Moon/1.-install/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/To-the-Moon/2.-File-Management-Word-Wrap/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/To-the-Moon/3.-Show-Images-Youtube-Videos-Online/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/To-the-Moon/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/tags/CI/CD/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kenlai.me/series/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>

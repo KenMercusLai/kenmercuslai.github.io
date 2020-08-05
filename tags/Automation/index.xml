@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Automation/</link>
+    <description>Recent content in Automation on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>网络架构师与网络自动化</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+      <description>网络架构师如同建筑行业的建筑师（架构师和建筑师的英文都是architect）一样，在理解材料、工具和操作过程中的优缺点的基础上，来实现自己心</description>
+    </item>
+    
+  </channel>
+</rss>

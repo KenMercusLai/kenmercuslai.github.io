@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tones on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Tones/</link>
+    <description>Recent content in Tones on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Tones/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>日语单词的音调</title>
+      <link>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E9%9F%B3%E8%B0%83/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E9%9F%B3%E8%B0%83/</guid>
+      <description>日语学习的过程中，单词发音一直是一个很大的问题——同样假名搭配不同的音调将产生完全不同的意思，比如：かみ可以表示神，也可能是纸的意思。在很多</description>
+    </item>
+    
+  </channel>
+</rss>

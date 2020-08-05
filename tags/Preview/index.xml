@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preview on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Preview/</link>
+    <description>Recent content in Preview on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Preview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Copy/Paste in Quick Look on MacOS</title>
+      <link>https://kenlai.me/post/CopyPaste-in-Quick-Look-on-MacOS/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CopyPaste-in-Quick-Look-on-MacOS/</guid>
+      <description>Quick Look, which is triggered by tapping space bar, of Mac OS system is the first feature that has impressed me since I switched from Windows to Mac years ago. This feature has saved me uncountable time for my from opening applications to open a file. Here is how to do copy/paste in quick look if you want to make it more powerful:
+But the default setting does’t allow you to select the quick looked file.</description>
+    </item>
+    
+  </channel>
+</rss>

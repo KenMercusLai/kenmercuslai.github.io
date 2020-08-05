@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Security/</link>
+    <description>Recent content in Security on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>并不安全的VXLAN?</title>
+      <link>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</guid>
+      <description>随着前几年数据中心的火热，VXLAN也成为了一个非常热门的技术。本质上来说，它和我们常见的NVGRE类似，都是在原有的数据包外面封装一层信息</description>
+    </item>
+    
+    <item>
+      <title>How does flowtrackd detect DDoS in DSR</title>
+      <link>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</guid>
+      <description>Cloudflare recently announced flowtrackd which can detect DDoS in [DSR]([[Direct Server Return]]) scenarios. It&amp;rsquo;s quite interesting since most DDoS protections need the gateway working in the reverse proxy mode, in which the traffic coming and leaving through the same device. Then the gateway can track connection statuses since it observes every packet. I am not an employee of Cloudflare and have no insight of how flowtrackd is designed, but I&amp;rsquo;d like to have an educated guess.</description>
+    </item>
+    
+    <item>
+      <title>Blue Team and Red Team</title>
+      <link>https://kenlai.me/post/Blue-Team-and-Red-Team/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Blue-Team-and-Red-Team/</guid>
+      <description>One of the most common questions is the difference between the red and blue teams. People are also confused about why there are two teams in cybersecurity and can one replace the other? In short, there are two teams by standing on two perspectives in cybersecurity, and we need them both.
+The blue team stands on the defender&amp;rsquo;s side, in which the team focuses on visibility, context, and control. On the other hand, the red team is on the attacker&amp;rsquo;s point to test the strength of points in defense.</description>
+    </item>
+    
+    <item>
+      <title>I have a CCIE, so what&#39;s my level of security</title>
+      <link>https://kenlai.me/post/I-have-a-CCIE-so-whats-my-level-of-security/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/I-have-a-CCIE-so-whats-my-level-of-security/</guid>
+      <description>CCIE is a good proof of what you have learnt, but it may be far away from what you will experience.
+The past 2018, I hosted a couple of security workshops all over the world. During them, I was asked the same question for many times: &amp;ldquo;I am trying to have/have passed a certificate of xxx, what&amp;rsquo;s my level in the security area?&amp;rdquo; Like what I always suggest people who ask a similar question of CCIE, I&amp;rsquo;d like to use the most well-known terminology in the networking industry: It depends, which can be illustrated in two perspectives.</description>
+    </item>
+    
+    <item>
+      <title>Security devices aren&#39;t good enough because they aren&#39;t bought properly</title>
+      <link>https://kenlai.me/post/Security-devices-arent-good-enough-because-they-arent-bought-properly/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Security-devices-arent-good-enough-because-they-arent-bought-properly/</guid>
+      <description>Through my consulting experience started from last year, there were a couple of times when attendees were talking about the performance and usability issues of their security products. Interestingly enough, I found most of these issues were not related to the performance and features at all. Instead, they were more close to how devices are bought.
+Among the discussions, a shared process is locking a brand, then deciding which models had the best fit in their environment and finally sought partners for the final procurement.</description>
+    </item>
+    
+  </channel>
+</rss>

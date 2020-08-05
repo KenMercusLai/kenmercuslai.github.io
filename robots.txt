@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kenlai.me/sitemap.xml

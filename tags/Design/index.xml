@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Design/</link>
+    <description>Recent content in Design on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>灾备中的环路</title>
+      <link>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</guid>
+      <description>Active/Passive的灾备情况下，如果灾备中心是冷备，那么分离的3层DCI并没有多大的作用。但真正的冷备有多少呢？绝大部分有一个以上</description>
+    </item>
+    
+  </channel>
+</rss>

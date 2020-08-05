@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>controller on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/controller/</link>
+    <description>Recent content in controller on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 24 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/controller/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Controller discussion is excessive, we need more about other aspects</title>
+      <link>https://kenlai.me/post/Controller-discussion-is-excessive-we-need-more-about-other-aspects/</link>
+      <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Controller-discussion-is-excessive-we-need-more-about-other-aspects/</guid>
+      <description>Ever since SDN has been revealed and considered as the future in the industry by the public. There are abundant discussions about OpenFlow, ACI, NSX, etc. The main focus right now is the software part including southern API, northern API and more.
+The discussion about those new features which SDN could bring us has instigated the aspires of this Old-thought-with-new-implementation for network fellows who have been suffered for a long time for the poor management &amp;amp; controllability of network entities.</description>
+    </item>
+    
+  </channel>
+</rss>

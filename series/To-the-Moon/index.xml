@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering Field Notes</title>
+    <link>https://kenlai.me/series/To-the-Moon/</link>
+    <description>Recent content on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://kenlai.me/series/To-the-Moon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenlai.me/series/To-the-Moon/0.-background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/series/To-the-Moon/0.-background/</guid>
+      <description>I&amp;rsquo;ve been collecting documents and articles related to my work and life. The oldest file dates back for more than 10 years. I&amp;rsquo;m actively learning and trying studying methods to get more from what I&amp;rsquo;ve collected to avoid The Collector&amp;rsquo;s Fallacy.
+I&amp;rsquo;d like to consider myself lucky to finally land on DEVONthink for storing all my files with its power searching capability. I dump all sources of information into it for later processing and organizing.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenlai.me/series/To-the-Moon/1.-install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/series/To-the-Moon/1.-install/</guid>
+      <description>To first get org-mode work, I need to install Emacs first on my Mac system. There&amp;rsquo;re several versions of Emacs when I write this part (2020): emacsformacsosx, aquamacs, emacs, emacs-plus and emacs-mac from homebrew. I&amp;rsquo;d like to skip wasting my time comparing the nuances among these versions since I don&amp;rsquo;t believe there&amp;rsquo;re important differences for beginners like me. If there is any, I can simply google and switch to another one, which I don&amp;rsquo;t think will happen recently.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenlai.me/series/To-the-Moon/2.-File-Management-Word-Wrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/series/To-the-Moon/2.-File-Management-Word-Wrap/</guid>
+      <description>We need to tune Emacs a little bit to make it fit us more.
+File Exploration &amp;amp; Search Since I don&amp;rsquo;t want to remember what each file name is and what contant each file contains, which I don&amp;rsquo;t believe anyone can do as well, we need a good tool to quickly browsing, filtering, and editing our notes under the our root folder. Here I use Deft to handle it.
+It&amp;rsquo;s easy to install it in Spacemacs by simply add deft in the layer section of its ~/.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kenlai.me/series/To-the-Moon/3.-Show-Images-Youtube-Videos-Online/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/series/To-the-Moon/3.-Show-Images-Youtube-Videos-Online/</guid>
+      <description>Emacs comes with a great feature of displaying loal images if we link images files in org files like this: [[file:path-to-image][display name]] But this doesn&amp;rsquo;t display the image in Emacs in default, so we can toggle the inline image display on to show it: M-x org-display-inline-images (C-c C-x C-v) Or we can set (setq org-startup-with-inline-images t) in the config file to enable it globally or put #+STARTUP: inlineimages at the</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AP on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/AP/</link>
+    <description>Recent content in AP on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 10 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/AP/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>瘦AP一般能干嘛</title>
+      <link>https://kenlai.me/post/%E7%98%A6AP%E4%B8%80%E8%88%AC%E8%83%BD%E5%B9%B2%E5%98%9B/</link>
+      <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%98%A6AP%E4%B8%80%E8%88%AC%E8%83%BD%E5%B9%B2%E5%98%9B/</guid>
+      <description>在讨论无线的时候，通常都会问到：“瘦AP都有些什么功能？” 或者 “AP和WLC各负责什么？” 瘦AP一般的功能包括： Real-Time 802.11/MAC Functionality: Beacon Generation Probe Response Power management/Packet buffering 802.11e/WMM scheduling, queueing MAC</description>
+    </item>
+    
+  </channel>
+</rss>

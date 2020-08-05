@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CDN on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/CDN/</link>
+    <description>Recent content in CDN on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/CDN/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Huawei is abandoning CDN</title>
+      <link>https://kenlai.me/post/Huawei-is-abandoning-CDN/</link>
+      <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-is-abandoning-CDN/</guid>
+      <description>Companies drop their products while they are benefit-able, it seems that Huawei is abandoning CDN from its mainstream products in China.
+Lacking of clients may be one critical fact that this product cannot provide sufficient profit for Huawei. From this aspect of how many new clients a product has been sold while no expansion for old clients, the only considerable one is China Mobile Sichuan. Less R&amp;amp;D force for less profitable product principle makes CDN have less support.</description>
+    </item>
+    
+    <item>
+      <title>Experiences about CloudFlare</title>
+      <link>https://kenlai.me/post/Experiences-about-CloudFlare/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Experiences-about-CloudFlare/</guid>
+      <description>I spent about three hours to migrate my tech blog from OpenShift &amp;amp; CloudFlare to GitHub again, after my moving all from GitHub to OpenShift about 2 month ago. Experience with OpenShift &amp;amp; CloudFlare was frustrating and awful. It didn’t hit any expectations that I thought before the first migration.
+Why I want to use CDN Choosing a free hosting by OpenShift for me is mesmerized by its potential customization in the future, rather than cost consideration.</description>
+    </item>
+    
+  </channel>
+</rss>

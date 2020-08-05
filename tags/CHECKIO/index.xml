@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CHECKIO on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/CHECKIO/</link>
+    <description>Recent content in CHECKIO on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/CHECKIO/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Walkthrough of Fibonacci Golf</title>
+      <link>https://kenlai.me/post/Walkthrough-of-Fibonacci-Golf/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-Fibonacci-Golf/</guid>
+      <description>题目需求 题目的原意可以总结为：以尽量简洁的方式，完成各种类Fibonacci计算。 提到的类型有： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 fibonacci: f(0)=0, f(1)=1, f(n)=f(n-1)+f(n-2) tribonacci: f(0)=0, f(1)=1, f(2)=1,</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of Probably Dice</title>
+      <link>https://kenlai.me/post/Walkthrough-of-Probably-Dice/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-Probably-Dice/</guid>
+      <description>题目需求 题目的原意可以总结为：求N个M面骰子（骰子点数为1-M）掷出X点数的概率。 其中，N，M，X依次为我们需要编写的函数的三个参数。返回值</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of CheckIO Inside Block</title>
+      <link>https://kenlai.me/post/Walkthrough-of-CheckIO-Inside-Block/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-CheckIO-Inside-Block/</guid>
+      <description>After a long absence, I returned to continue playing CheckIO tasks by a notification mail. The UI had been optimized a lot and the tasks were still as interesting as the before.
+Inside Block required checking whether a given point is inside a polygon or not. After some research on google, I found a practical method.
+How to check if a given point is in a polygon Given a polygon and a point ‘p’, find if ‘p’ lies inside the polygon or not.</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of Text Holes Golf</title>
+      <link>https://kenlai.me/post/Walkthrough-of-Text-Holes-Golf/</link>
+      <pubDate>Sat, 30 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-Text-Holes-Golf/</guid>
+      <description>冲分的时候又到了！！ 题目要求 题目要求一如既往的简单明了： 1 统计一段文字中，有多少空格满足周围都不是空格字符的数量 而原始代码嘛…… 1 2 def golf(text): return 0</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Anagrams By Stacks</title>
+      <link>https://kenlai.me/post/checkio-anagrams-by-stacks/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-anagrams-by-stacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Snake</title>
+      <link>https://kenlai.me/post/CheckIO-Snake/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CheckIO-Snake/</guid>
+      <description>http://www.checkio.org/mission/task/info/snake/python-27/ 呀〜贪吃蛇啊…… 和其他的task不同的是，这个是一次multicall。不过我其实完全可以不考虑这点，每次给出当前map，然后程序给出走法</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Area of a convex polygon</title>
+      <link>https://kenlai.me/post/checkio-area-of-a-convex-polygon/</link>
+      <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-area-of-a-convex-polygon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Three Points Circle</title>
+      <link>https://kenlai.me/post/checkio-three-points-circle/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-three-points-circle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CheckIO - CheckSum</title>
+      <link>https://kenlai.me/post/checkio-checksum/</link>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-checksum/</guid>
+      <description>题目的描述超级麻烦，不过逻辑很简单，没有什么特别注意的地方，全是非常基础的知识。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - The Good Radix</title>
+      <link>https://kenlai.me/post/checkio-the-good-radix/</link>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-the-good-radix/</guid>
+      <description>Task描述简单的说就是这样： 给出的字符串数字是k进制的 这个k进制的数换算成10进制之后，能够被k-1整除。 从题目来看非常的简单，不过第二点</description>
+    </item>
+    
+  </channel>
+</rss>

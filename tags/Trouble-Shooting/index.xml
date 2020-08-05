@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trouble Shooting on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Trouble-Shooting/</link>
+    <description>Recent content in Trouble Shooting on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 22 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Trouble-Shooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Troubleshooting is an interactive process</title>
+      <link>https://kenlai.me/post/Troubleshooting-is-an-interactive-process/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Troubleshooting-is-an-interactive-process/</guid>
+      <description>I believe that everyone who ever has a connection with Cisco whether it is business or personal knows TAC. This team provides post-sales technical support for customers who have bought it.
+I was once working in a regional ISP and responsible for a range of technical problems. Our department always had a lot of problems that would have been procrastinated, and of course, we thought that they all were Cisco problems’.</description>
+    </item>
+    
+  </channel>
+</rss>

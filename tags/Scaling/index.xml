@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scaling on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Scaling/</link>
+    <description>Recent content in Scaling on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Scaling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>When a paper plane scales up to a Boeing 747 — escalation problems for a network</title>
+      <link>https://kenlai.me/post/When-a-paper-plane-scales-up-to-a-Boeing-747-escalation-problems-for-a-network/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/When-a-paper-plane-scales-up-to-a-Boeing-747-escalation-problems-for-a-network/</guid>
+      <description>Scaling up a network will face a lot of issues that don&amp;rsquo;t appear when it&amp;rsquo;s small. In this post, let&amp;rsquo;s look at what problems are they.
+Stateful applications One of the most important decisions that make the Internet possible is to make the network stateless and push applications which are usually need to store states to end users. In the development of the network, stateful applications are inserted for certain purposes.</description>
+    </item>
+    
+  </channel>
+</rss>

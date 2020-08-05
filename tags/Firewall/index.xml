@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firewall on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Firewall/</link>
+    <description>Recent content in Firewall on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Firewall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NO-NAT configuration on Cisco ASA Firewall</title>
+      <link>https://kenlai.me/post/NO-NAT-configuration-on-Cisco-ASA-Firewall/</link>
+      <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/NO-NAT-configuration-on-Cisco-ASA-Firewall/</guid>
+      <description>Cisco ASA firewall has upgraded its command line at the version 8.3 and changed a lot of configurations from their previous style. I recently faced two cases about NO-NAT in both version and want to leave a quick note here.
+Example details:
+ inside IP address: 1.1.1.0/24 outside IP address: 2.2.2.0/24 traffic go through from inside interface to outside interface  Before 8.3 An access-list is needed to filter the interested traffic.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Architecture/</link>
+    <description>Recent content in Architecture on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>灾备中的环路</title>
+      <link>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</guid>
+      <description>Active/Passive的灾备情况下，如果灾备中心是冷备，那么分离的3层DCI并没有多大的作用。但真正的冷备有多少呢？绝大部分有一个以上</description>
+    </item>
+    
+    <item>
+      <title>网络架构师与网络自动化</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+      <description>网络架构师如同建筑行业的建筑师（架构师和建筑师的英文都是architect）一样，在理解材料、工具和操作过程中的优缺点的基础上，来实现自己心</description>
+    </item>
+    
+  </channel>
+</rss>

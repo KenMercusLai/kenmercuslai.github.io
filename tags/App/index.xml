@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/App/</link>
+    <description>Recent content in App on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 10 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/App/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yo, 小心坑爹的iPhone应用</title>
+      <link>https://kenlai.me/post/Yo-%E5%B0%8F%E5%BF%83%E5%9D%91%E7%88%B9%E7%9A%84iPhone%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Yo-%E5%B0%8F%E5%BF%83%E5%9D%91%E7%88%B9%E7%9A%84iPhone%E5%BA%94%E7%94%A8/</guid>
+      <description>iPhone上总是有各种坑爹的应用，而且很多还要收费。这里我说的坑爹不只是应用的品质不行，而是完全的虚假宣传。虽然我自己对iPhone的开发</description>
+    </item>
+    
+    <item>
+      <title>Review My iPhone Apps</title>
+      <link>https://kenlai.me/post/Review-My-iPhone-Apps/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Review-My-iPhone-Apps/</guid>
+      <description>I’ve never been an apple fan even there are 2 iPhones, 3 iPads, 4 iPods and 2 Laptops in my house. And I’m glad to recommend using iPhone &amp;amp; some great iPhone apps to my friends every time when I was asked. One major reason for addicting into apple is the softwares on them which give me simplicity and convenience, also have improved my productivity.</description>
+    </item>
+    
+  </channel>
+</rss>

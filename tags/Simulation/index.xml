@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simulation on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Simulation/</link>
+    <description>Recent content in Simulation on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 29 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Simulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Real World Network Simulation</title>
+      <link>https://kenlai.me/post/Real-World-Network-Simulation/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Real-World-Network-Simulation/</guid>
+      <description>Why we need network simulation As a network engineer, I have to spend a lot of time in the lab or test environment on testing concepts, configuration, troubleshooting and so on. This is also true for people whose work environment is related to a network such as developers, DBAs. The problem here is that the lab sometimes so perfect that it cannot emulate the real world flaws like latency, packet loss, re-order or bandwidth limitation.</description>
+    </item>
+    
+  </channel>
+</rss>

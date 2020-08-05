@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificate on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Certificate/</link>
+    <description>Recent content in Certificate on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Certificate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Some words for CCIE candidates</title>
+      <link>https://kenlai.me/post/Some-words-for-CCIE-candidates/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Some-words-for-CCIE-candidates/</guid>
+      <description>I had been planned to be a game/software developer since 10, but I’ve jumped into another industry — network — right after my graduation from college. After dedication of my most of time, I finally have passed three tracks of it – R&amp;amp;S, SP, Sec. Within these years, a lot of people in this industry or not have talked and discussion about CCIE with me. I’d like to share my personal ideas of CCIE about WHAT, WHY and HOW.</description>
+    </item>
+    
+    <item>
+      <title>CCIE Data Center Online Resources and Reading List</title>
+      <link>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</guid>
+      <description>Install, Config and Troubleshoot Guides
+Install, Config and Troubleshoot Guide for Cisco Nexus 7000 NXOS Switch
+Install, Config and Troubleshoot Guide for Cisco Nexus 5000 NXOS Switch
+Install, Config Guide for Cisco Nexus 2000 NXOS SwitchInstall, Configure and Troubleshoot Guide for Cisco Nexus 1000v NXOS Virtual SwitchInstall, Config and Troubleshoot Guide for Cisco MDS SAN NXOS SwitchInstall, Config and Troubleshoot Guide for Cisco ACE 4710 ApplianceCisco NX-OS FCoE Configuration Guide for Nexus 7000 and MDS 9500Install, Config and Troubleshoot guide for Cisco UCS ManagerInstall and Config Guide for Data Center Network Manager (DCNM)Configuration examplesCisco Nexus 7000 NXOS Config ExamplesCisco Nexus 5000 NXOS Config ExamplesCisco Nexus 1000v NXOS Config ExamplesCisco MDS SAN Switches NXOS Config ExamplesCisco UCS Manager Config ExamplesWhite Papers and Other Useful Online ResourcesCisco Product Support Documentation a central repository for all Cisco Documentation (by product or technology) - formerly known as Documentation CD, or CCO Documentation.</description>
+    </item>
+    
+    <item>
+      <title>CCIE Data Center Lab Exam Topics</title>
+      <link>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</link>
+      <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</guid>
+      <description>The CCIE Data Center lab exam topics provided are general guidelines for the content likely to be included on the lab exam. However, other related topics may also appear on any specific delivery of the exam. In order to better reflect the contents of the exam and for clarity purposes, the guidelines below may change at any time without notice.
+Cisco Data Center Infrastructure - NXOS
+  Implement NXOS L2 functionality</description>
+    </item>
+    
+  </channel>
+</rss>

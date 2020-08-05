@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Cloud/</link>
+    <description>Recent content in Cloud on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>云平台网络的一点思考</title>
+      <link>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</guid>
+      <description>不管云平台的架构如何变化，有一点是始终不变的：虚拟主机通过网卡来发送和接收数据。这些网卡可能是用软件模拟的，或者半虚拟的。对于虚机来讲，网卡</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>What is ABR - Engineering Field Notes</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Ken Lai" />
+  <meta name="description" content="ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&amp;rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet. It works by detecting a user&amp;rsquo;s bandwidth in real time and adjusting the quality" />
+
+  <meta name="keywords" content="Network, Automation, Notes, Thoughts" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+
+<link rel="canonical" href="https://kenlai.me/post/What-is-ABR/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa3d941d1d0e0ddc985804227feabffea55c89883eb0af34e0532a7ae9135151.css" integrity="sha256-&#43;j2UHR0ODdyYWAQif&#43;q//qVciYg&#43;sK804FMqeukTUVE=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="What is ABR" />
+<meta property="og:description" content="ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet. It works by detecting a user&rsquo;s bandwidth in real time and adjusting the quality" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kenlai.me/post/What-is-ABR/" />
+<meta property="article:published_time" content="2016-04-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-04-09T00:00:00+00:00" />
+<meta itemprop="name" content="What is ABR">
+<meta itemprop="description" content="ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet. It works by detecting a user&rsquo;s bandwidth in real time and adjusting the quality">
+<meta itemprop="datePublished" content="2016-04-09T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2016-04-09T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2174">
+
+
+
+<meta itemprop="keywords" content="ABR,Streaming," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What is ABR"/>
+<meta name="twitter:description" content="ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet. It works by detecting a user&rsquo;s bandwidth in real time and adjusting the quality"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-26670277-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Engineering Field Notes</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Engineering Field Notes
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">What is ABR</h1>
+      
+      <div class="post-meta">
+        <time datetime="2016-04-09" class="post-time">
+          2016-04-09
+        </time>
+        
+        <span class="more-meta"> 2174 words </span>
+          <span class="more-meta"> 5 min read </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup-a-http-server">Setup a HTTP server</a></li>
+    <li><a href="#video-file">Video file</a></li>
+    <li><a href="#create-video-webpage">Create video webpage</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet.</p>
+<p>It works by detecting a user&rsquo;s bandwidth in real time and adjusting the quality of a video stream accordingly. It requires the use of an encoder which can encode a single source video at multiple bit rates. The player client switches between streaming the different encodings depending on available resources. &ldquo;The result: very little buffering, fast start time and a good experience for both high-end and low-end connections.&rdquo;</p>
+<p>More specifically, and as the implementations in use today are, adaptive bitrate streaming is method of video streaming over HTTP where the source content is encoded at multiple bit rates, then each of the different bit rate streams are segmented into small multi-second parts. The streaming client is made aware of the available streams at differing bit rates, and segments of the streams by a manifest file.</p>
+<p><img src="https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/800px-Adaptive_streaming_overview_bit_rates_2011_07_28.png" alt="800px-Adaptive_streaming_overview_bit_rates_2011_07_28"></p>
+<h1 id="benefits-for-using-abr">Benefits for using ABR</h1>
+<p>Adaptive bitrate streaming provides consumers of streaming media with the best-possible experience, since the media server automatically adapts to any changes in each user&rsquo;s network and playback conditions.</p>
+<p>A scalable CDN is used to deliver media streaming to the Internet audiences. It receives the stream from the source at its origin server, then replicates it to many or all of its Edge cache servers. The end-user requests the stream and is redirected to the &ldquo;closest&rdquo; Edge server. The use of HTTP-based adaptive streaming allows the edge server to run a simple HTTP server software, whose license cost is cheap or free, reducing software licensing cost, compared to costly media server licenses (e.g. Adobe Flash Media Streaming Server). The CDN cost for HTTP streaming media is then similar to HTTP web caching CDN cost.</p>
+<h1 id="current-implementations">Current Implementations</h1>
+<p>Since this is not an ABR comparison article, I won&rsquo;t dig the details for the different implementations except for Apple HTTP Adaptive Streaming.</p>
+<p>HLS, which is short for HTTP Live Streaming, is an HTTP-based media streaming communications protocol implemented by Apple Inc. It works by breaking down streams into several small HTTP-based file downloads that load simultaneously at variable adaptive rates. It becomes a standard feature in the iPhone 3.0 and newer versions.</p>
+<p>HLS streams can be identified by the playlist url format extension of .m3u8. These adaptive streams can be made available in many different bitrates and the client device interacts with the server to obtain the best available bitrate which can reliably be delivered.</p>
+<p>Other implementations, such as MPEG-DASH, Adobe Dynamic Streaming for Flash,  MS Smooth Streaming, please google them for further information if you are interested in.</p>
+<h1 id="steps-for-building-up-an-abr-server">Steps for building up an ABR server</h1>
+<h2 id="setup-a-http-server">Setup a HTTP server</h2>
+<p>I choose the easiest way to build up a HTTP server with Ubuntu on vmware.</p>
+<p>After the server system installation has finished. Install HTTP server and config it.</p>
+<pre><code>:::bash
+$sudo apt-get install lighttpd
+</code></pre>
+<p>Yes!! It&rsquo;s done. No further config.</p>
+<h2 id="video-file">Video file</h2>
+<p>The video file I choose is an original MAD video for 烟 from Makichangu. You can <a href="http://www.bilibili.tv/video/av616901/">watch it online</a>. Below is the detail information about the file by Mediainfo.</p>
+<pre><code>General
+Complete name                            : /Users/KenMercusLai/Downloads/test.mp4
+Format                                   : MPEG-4
+Format profile                           : Base Media / Version 2
+Codec ID                                 : mp42
+File size                                : 53.3 MiB
+Duration                                 : 3mn 51s
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 1 933 Kbps
+Encoded date                             : UTC 2013-06-24 12:17:13
+Tagged date                              : UTC 2013-06-24 12:17:13
+Writing application                      : x264 0.128.2216+688+32 a17ff54 tMod [8-bit@4:2:0 X86]
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L3.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 5 frames
+Codec ID                                 : avc1
+Codec ID/Info                            : Advanced Video Coding
+Duration                                 : 3mn 51s
+Bit rate                                 : 1 800 Kbps
+Width                                    : 1 280 pixels
+Height                                   : 720 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.081
+Stream size                              : 49.6 MiB (93%)
+Writing library                          : x264 core 128 r2216+688+32 a17ff54 tMod [8-bit@4:2:0 X86]
+Encoding settings                        : cabac=1 / ref=5 / deblock=1:1:1 / analyse=0x3:0x133 / me=umh / subme=10 / psy=1 / fade_compensate=0.00 / psy_rd=0.30:0.00 / mixed_ref=1 / me_range=24 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=3 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / fgo=0 / bframes=5 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=infinite / keyint_min=1 / scenecut=60 / intra_refresh=0 / rc_lookahead=60 / rc=2pass / mbtree=1 / bitrate=1800 / ratetol=1.0 / qcomp=0.50 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / ip_ratio=1.40 / aq=2:0.80
+Encoded date                             : UTC 2013-06-24 12:17:13
+Tagged date                              : UTC 2013-06-24 12:17:13
+Matrix coefficients                      : BT.601
+
+Audio
+ID                                       : 2
+Format                                   : AAC
+Format/Info                              : Advanced Audio Codec
+Format profile                           : LC
+Codec ID                                 : 40
+Duration                                 : 3mn 51s
+Source duration                          : 3mn 51s
+Bit rate mode                            : Variable
+Bit rate                                 : 128 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 3.52 MiB (7%)
+Source stream size                       : 3.52 MiB (7%)
+Encoded date                             : UTC 2013-06-24 12:17:13
+Tagged date                              : UTC 2013-06-24 12:17:13
+</code></pre>
+<p>Note that, the resolution is 1080p with overall bitrate more than 1900Kbps is enough to be a HD quality. and we have to transcode it into a SD quality file and then segment them.</p>
+<p>To be simple in the demonstration, I only reduce the bitrate. But in the real production environment, it&rsquo;s recommended to reduce the video resolution while reducing the bitrate to mitigate the blur for audiences of low bitrate video. Below is the re-encoding command.</p>
+<pre><code>:::bash
+ffmpeg -i test.mp4 -f mpegts -acodec libmp3lame -ar 48000 -ab 64k  -vcodec libx264 -b:v 96k -flags +loop -partitions +parti4x4+partp8x8+partb8x8 -subq 5 -trellis 1 -refs 1 -coder 0 -me_range 16 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -bt 200k -maxrate 96k -bufsize 96k -rc_eq 'blurCplx^(1-qComp)' -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -level 30  -g 30 -async 2 test-low.mp4
+</code></pre>
+<p>Now we have to segment these two files.</p>
+<pre><code>:::bash
+ffmpeg -i test.mp4   -codec copy -map 0 -f segment -vbsf h264_mp4toannexb -flags -global_header -segment_format mpegts -segment_list test.m3u8 -segment_time 3 test%03d.ts
+
+ffmpeg -i test-low.mp4   -codec copy -map 0 -f segment -vbsf h264_mp4toannexb -flags -global_header -segment_format mpegts -segment_list test-low.m3u8 -segment_time 3 test-low%03d.ts
+</code></pre>
+<p>After the processes, we the segmented video files are ready to go, there will be a lot of files in your folder depends on the original video length.
+<img src="https://raw.githubusercontent.com/KenMercusLai/kenmercuslai.github.io/pics/uPic/Screen%20Shot%202014-02-03%20at%209.37.39%20AM.png" alt="Screen Shot 2014-02-03 at 9.37.39 A"></p>
+<p>Here are the info for the first segments of each.</p>
+<p>HD file:</p>
+<pre><code>General
+ID                                       : 1 (0x1)
+Complete name                            : /Users/KenMercusLai/Downloads/test000.ts
+Format                                   : MPEG-TS
+File size                                : 4.24 MiB
+Duration                                 : 22s 356ms
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 1 585 Kbps
+
+Video
+ID                                       : 256 (0x100)
+Menu ID                                  : 1 (0x1)
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L3.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 5 frames
+Codec ID                                 : 27
+Duration                                 : 22s 439ms
+Nominal bit rate                         : 1 800 Kbps
+Width                                    : 1 280 pixels
+Height                                   : 720 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Variable
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Writing library                          : x264 core 128 r2216+688+32 a17ff54 tMod [8-bit@4:2:0 X86]
+Encoding settings                        : cabac=1 / ref=5 / deblock=1:1:1 / analyse=0x3:0x133 / me=umh / subme=10 / psy=1 / fade_compensate=0.00 / psy_rd=0.30:0.00 / mixed_ref=1 / me_range=24 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=3 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / fgo=0 / bframes=5 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=infinite / keyint_min=1 / scenecut=60 / intra_refresh=0 / rc_lookahead=60 / rc=2pass / mbtree=1 / bitrate=1800 / ratetol=1.0 / qcomp=0.50 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / ip_ratio=1.40 / aq=2:0.80
+Matrix coefficients                      : BT.601
+
+Audio
+ID                                       : 257 (0x101)
+Menu ID                                  : 1 (0x1)
+Format                                   : AAC
+Format/Info                              : Advanced Audio Codec
+Format version                           : Version 4
+Format profile                           : LC
+Muxing mode                              : ADTS
+Codec ID                                 : 15
+Duration                                 : 22s 357ms
+Bit rate mode                            : Variable
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+
+Menu
+ID                                       : 4096 (0x1000)
+Menu ID                                  : 1 (0x1)
+Duration                                 : 22s 356ms
+List                                     : 256 (0x100) (AVC) / 257 (0x101) (AAC)
+Service name                             : Service01
+Service provider                         : FFmpeg
+Service type                             : digital television
+</code></pre>
+<p>SD file:</p>
+<pre><code>General
+ID                                       : 1 (0x1)
+Complete name                            : /Users/KenMercusLai/Downloads/test-low000.ts
+Format                                   : MPEG-TS
+File size                                : 185 KiB
+Duration                                 : 3s 670ms
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 410 Kbps
+
+Video
+ID                                       : 256 (0x100)
+Menu ID                                  : 1 (0x1)
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L3.0
+Format settings, CABAC                   : No
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : 27
+Duration                                 : 3s 712ms
+Bit rate                                 : 96.0 Kbps
+Width                                    : 1 280 pixels
+Height                                   : 720 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Variable
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Stream size                              : 43.5 KiB (23%)
+Writing library                          : x264 core 125
+Encoding settings                        : cabac=0 / ref=1 / deblock=1:0:0 / analyse=0x3:0x111 / me=hex / subme=5 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=0 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=0 / threads=3 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=1 / b_bias=0 / direct=1 / weightb=1 / open_gop=0 / weightp=2 / keyint=30 / keyint_min=16 / scenecut=40 / intra_refresh=0 / rc_lookahead=30 / rc=cbr / mbtree=1 / bitrate=96 / ratetol=1.0 / qcomp=0.60 / qpmin=10 / qpmax=51 / qpstep=4 / vbv_maxrate=96 / vbv_bufsize=96 / nal_hrd=none / ip_ratio=1.41 / aq=1:1.00
+
+Audio
+ID                                       : 257 (0x101)
+Menu ID                                  : 1 (0x1)
+Format                                   : MPEG Audio
+Format version                           : Version 1
+Format profile                           : Layer 3
+Mode                                     : Joint stereo
+Mode extension                           : MS Stereo
+Codec ID                                 : 3
+Duration                                 : 3s 672ms
+Bit rate mode                            : Constant
+Bit rate                                 : 64.0 Kbps
+Channel(s)                               : 2 channels
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 28.7 KiB (15%)
+
+Menu
+ID                                       : 4096 (0x1000)
+Menu ID                                  : 1 (0x1)
+Duration                                 : 3s 670ms
+List                                     : 256 (0x100) (AVC) / 257 (0x101) (MPEG Audio)
+Service name                             : Service01
+Service provider                         : FFmpeg
+Service type                             : digital television
+</code></pre>
+<h2 id="create-video-webpage">Create video webpage</h2>
+<p>Upload those segmented files onto the Ubuntu in vmware, then we have to create a simple page to play the video.</p>
+<p>In /var/www folder.</p>
+<pre><code>:::bash	
+$cat index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;ABR&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id=&quot;player&quot;&gt;
+        &lt;video autoplay=&quot;true&quot; controls=&quot;controls&quot; width=&quot;800&quot; height=&quot;600&quot;&gt;
+            &lt;source src=&quot;ss.m3u8&quot; type=&quot;audio/x-mpegURL&quot; /&gt;
+ Your browser does not support HTML5 streaming!
+        &lt;/video&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+$cat ss.m3u8
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=500000
+http://192.168.123.106/test-low.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2000000
+http://192.168.123.106/test.m3u8
+</code></pre>
+<p>Also, you can create page that only play HD or SD video for comparison.</p>
+<h1 id="test">Test</h1>
+<p>Here is the test video</p>
+<!-- raw HTML omitted -->
+<p>Please note the different quality between video time 0:17. I&rsquo;ll give the vmware image link for download in the end of the post, you can download it to test it by your self.</p>
+<h1 id="qa">Q&amp;A</h1>
+<ol>
+<li>
+<p><strong>Q</strong>: The switch between video streaming with different quality is not smooth in the test video.</p>
+<p><strong>A</strong>: I believe it&rsquo;s the video recording issue, I can&rsquo;t recreate it without recording.</p>
+</li>
+<li>
+<p><strong>Q</strong>: Can I use 2-pass transcoding setting?</p>
+<p><strong>A</strong>: No. Or you will see a blurry I-frame “popping” at the beginning of each 10 second video segment.</p>
+</li>
+<li>
+<p><strong>Q</strong>: How can I set the m3u8 file mime type in other HTTP server?</p>
+<p><strong>A</strong>: application/x-mpegURL</p>
+</li>
+<li>
+<p><strong>Q</strong>: Why can&rsquo;t I see the video switching into higher quality?/Why can&rsquo;t I see the video quality switch from SD to HD and them switch back.</p>
+<p><strong>A</strong>: Fluctuating between different quality video streaming will significantly reduce audience&rsquo;s viewing experience. So ABR has algorithm to reduce the unnecessary  switching.</p>
+</li>
+</ol>
+<h1 id="kens-view">Ken&rsquo;s View</h1>
+<ul>
+<li>ABR is essential for video providers provides non-stop video service in variance network situations</li>
+<li>Migration from traditional streaming to ABR could be easy. Since the CPs have already provided video in different quality for variant devices.</li>
+<li>NO special or advance feature is needed for ABR server, a dump server is good enough. A server cluster may easy to deploy in production environment.</li>
+</ul>
+<p>PS: After this, I&rsquo;ve given up to deploy it in my Home.</p>
+<pre><code>_(:3」∠)_
+</code></pre>
+<hr>
+<p>Download link: <a href="https://dl.dropboxusercontent.com/u/299446/Ubuntu%2064-bit.7z.001">Part.1</a> <a href="https://dl.dropboxusercontent.com/u/299446/Ubuntu%2064-bit.7z.002">Part.2</a></p>
+<p>username/password: cisco/cisco</p>
+<p>PS2: I&rsquo;m not a Cisco employee.</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Ken Lai</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2016-04-09
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://kenlai.me/tags/ABR/">ABR</a>
+          <a href="https://kenlai.me/tags/Streaming/">Streaming</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/Some-words-for-CCIE-candidates/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Some words for CCIE candidates</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/%E8%AE%A9matplotlib%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88%E6%9B%B4%E5%8A%A0%E7%BE%8E%E8%A7%82%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/">
+            <span class="next-text nav-default">让matplotlib配色方案更加美观的三种方式</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  <div id="comments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 700);
+              clearInterval(checkExist);
+            }
+        }, 10);
+    }
+  </script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        appId: 'HRVXwifaSeWcsjMaWIeaMCxa-MdYXbMMI',
+        appKey: 'NxTb7qTWsfkjJ6Xoutu8x9bh',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mm', 
+        placeholder: '',
+        visitor:  false 
+    });
+  </script>
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:ken.mercus.lai@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://twitter.com/Ken_M_Lai" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://www.linkedin.com/in/kenmercuslai/" rel="me noopener" class="iconfont"
+      title="linkedin"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="33" height="33">
+  <path d="M872.405333 872.618667h-151.637333v-237.610667c0-56.661333-1.152-129.578667-79.018667-129.578667-79.061333 0-91.136 61.653333-91.136 125.397334v241.792H398.976V384h145.664v66.602667h1.962667c20.352-38.4 69.845333-78.933333 143.786666-78.933334 153.642667 0 182.058667 101.12 182.058667 232.746667v268.202667zM227.712 317.141333a87.978667 87.978667 0 0 1-88.021333-88.106666 88.064 88.064 0 1 1 88.021333 88.106666z m76.032 555.477334H151.68V384h152.064v488.618667zM948.266667 0H75.562667C33.792 0 0 33.024 0 73.770667v876.458666C0 991.018667 33.792 1024 75.562667 1024h872.576C989.866667 1024 1024 991.018667 1024 950.229333V73.770667C1024 33.024 989.866667 0 948.138667 0h0.128z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://kenlai.me/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2013 -
+    2020
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Ken Lai
+        
+      </span></span>
+
+  
+  
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

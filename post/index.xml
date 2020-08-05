@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Engineering Field Notes</title>
+    <link>https://kenlai.me/post/</link>
+    <description>Recent content in Posts on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>并不安全的VXLAN?</title>
+      <link>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/</guid>
+      <description>随着前几年数据中心的火热，VXLAN也成为了一个非常热门的技术。本质上来说，它和我们常见的NVGRE类似，都是在原有的数据包外面封装一层信息</description>
+    </item>
+    
+    <item>
+      <title>如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</guid>
+      <description>最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候</description>
+    </item>
+    
+    <item>
+      <title>为什么我不喜欢黑客马拉松</title>
+      <link>https://kenlai.me/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%96%9C%E6%AC%A2%E9%BB%91%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%96%9C%E6%AC%A2%E9%BB%91%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/</guid>
+      <description>我还记得10几年前我还在大学的时候，为了解决一个编程问题可以熬通宵直到第二天中午，然后睡一觉之后吃点东西继续熬夜。毕业之后我仍然在一段时间内</description>
+    </item>
+    
+    <item>
+      <title>如何有效的管理时间</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E6%97%B6%E9%97%B4/</guid>
+      <description>时间是永远不够的。不管对任何人来说，似乎总有那么一些事是没有时间完成的。既然如此，倒过来想如何在有限的时间内完成最有价值的事情可能是收益最大</description>
+    </item>
+    
+    <item>
+      <title>TCP 三次握手</title>
+      <link>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
+      <description>TCP建立连接时，实际上时建立两个单向连接来进行双向通信，双方都需要一个发起连接，接收和确认的过程。过程如下： Reference: https://www.guru99.com/tcp-3-way-handshake.html 发起方发送SYN，附带一个</description>
+    </item>
+    
+    <item>
+      <title>Git-flow 与 GitHub-Flow 分支策略</title>
+      <link>https://kenlai.me/post/Git-flow-%E4%B8%8E-GitHub-Flow-%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Git-flow-%E4%B8%8E-GitHub-Flow-%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5/</guid>
+      <description>Git 自身丰富的功能可以满足各种不同的需求，但是通常会让人对于怎么有效使用它感到困惑。除了功能上需要细究的地方之外，最常见的无非就是如何有效的管</description>
+    </item>
+    
+    <item>
+      <title>How does flowtrackd detect DDoS in DSR</title>
+      <link>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</guid>
+      <description>Cloudflare recently announced flowtrackd which can detect DDoS in [DSR]([[Direct Server Return]]) scenarios. It&amp;rsquo;s quite interesting since most DDoS protections need the gateway working in the reverse proxy mode, in which the traffic coming and leaving through the same device. Then the gateway can track connection statuses since it observes every packet. I am not an employee of Cloudflare and have no insight of how flowtrackd is designed, but I&amp;rsquo;d like to have an educated guess.</description>
+    </item>
+    
+    <item>
+      <title>灾备中的环路</title>
+      <link>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%81%BE%E5%A4%87%E4%B8%AD%E7%9A%84%E7%8E%AF%E8%B7%AF/</guid>
+      <description>Active/Passive的灾备情况下，如果灾备中心是冷备，那么分离的3层DCI并没有多大的作用。但真正的冷备有多少呢？绝大部分有一个以上</description>
+    </item>
+    
+    <item>
+      <title>网络架构师与网络自动化</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B8%8E%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+      <description>网络架构师如同建筑行业的建筑师（架构师和建筑师的英文都是architect）一样，在理解材料、工具和操作过程中的优缺点的基础上，来实现自己心</description>
+    </item>
+    
+    <item>
+      <title>网络可靠性工程师 NRE</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</guid>
+      <description>可靠性工程师顾名思义就是保证可靠性的工程师。非常著名的《Site Reliability Engineering: How Google Runs》提到了Google内部是如何保障可靠性的。网络行业中有类似</description>
+    </item>
+    
+    <item>
+      <title>试验性分支</title>
+      <link>https://kenlai.me/post/%E8%AF%95%E9%AA%8C%E6%80%A7%E5%88%86%E6%94%AF/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%AF%95%E9%AA%8C%E6%80%A7%E5%88%86%E6%94%AF/</guid>
+      <description>通常来说，我会在想要实验一些第三方库和现有项目的兼容和可用程度时使用试验性分支。这些分支的共同点就是他们不一定会被合并到master中，更明</description>
+    </item>
+    
+    <item>
+      <title>云平台网络的一点思考</title>
+      <link>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</guid>
+      <description>不管云平台的架构如何变化，有一点是始终不变的：虚拟主机通过网卡来发送和接收数据。这些网卡可能是用软件模拟的，或者半虚拟的。对于虚机来讲，网卡</description>
+    </item>
+    
+    <item>
+      <title>Blue Team and Red Team</title>
+      <link>https://kenlai.me/post/Blue-Team-and-Red-Team/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Blue-Team-and-Red-Team/</guid>
+      <description>One of the most common questions is the difference between the red and blue teams. People are also confused about why there are two teams in cybersecurity and can one replace the other? In short, there are two teams by standing on two perspectives in cybersecurity, and we need them both.
+The blue team stands on the defender&amp;rsquo;s side, in which the team focuses on visibility, context, and control. On the other hand, the red team is on the attacker&amp;rsquo;s point to test the strength of points in defense.</description>
+    </item>
+    
+    <item>
+      <title>I have a CCIE, so what&#39;s my level of security</title>
+      <link>https://kenlai.me/post/I-have-a-CCIE-so-whats-my-level-of-security/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/I-have-a-CCIE-so-whats-my-level-of-security/</guid>
+      <description>CCIE is a good proof of what you have learnt, but it may be far away from what you will experience.
+The past 2018, I hosted a couple of security workshops all over the world. During them, I was asked the same question for many times: &amp;ldquo;I am trying to have/have passed a certificate of xxx, what&amp;rsquo;s my level in the security area?&amp;rdquo; Like what I always suggest people who ask a similar question of CCIE, I&amp;rsquo;d like to use the most well-known terminology in the networking industry: It depends, which can be illustrated in two perspectives.</description>
+    </item>
+    
+    <item>
+      <title>Security devices aren&#39;t good enough because they aren&#39;t bought properly</title>
+      <link>https://kenlai.me/post/Security-devices-arent-good-enough-because-they-arent-bought-properly/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Security-devices-arent-good-enough-because-they-arent-bought-properly/</guid>
+      <description>Through my consulting experience started from last year, there were a couple of times when attendees were talking about the performance and usability issues of their security products. Interestingly enough, I found most of these issues were not related to the performance and features at all. Instead, they were more close to how devices are bought.
+Among the discussions, a shared process is locking a brand, then deciding which models had the best fit in their environment and finally sought partners for the final procurement.</description>
+    </item>
+    
+    <item>
+      <title>When a paper plane scales up to a Boeing 747 — escalation problems for a network</title>
+      <link>https://kenlai.me/post/When-a-paper-plane-scales-up-to-a-Boeing-747-escalation-problems-for-a-network/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/When-a-paper-plane-scales-up-to-a-Boeing-747-escalation-problems-for-a-network/</guid>
+      <description>Scaling up a network will face a lot of issues that don&amp;rsquo;t appear when it&amp;rsquo;s small. In this post, let&amp;rsquo;s look at what problems are they.
+Stateful applications One of the most important decisions that make the Internet possible is to make the network stateless and push applications which are usually need to store states to end users. In the development of the network, stateful applications are inserted for certain purposes.</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of Fibonacci Golf</title>
+      <link>https://kenlai.me/post/Walkthrough-of-Fibonacci-Golf/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-Fibonacci-Golf/</guid>
+      <description>题目需求 题目的原意可以总结为：以尽量简洁的方式，完成各种类Fibonacci计算。 提到的类型有： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 fibonacci: f(0)=0, f(1)=1, f(n)=f(n-1)+f(n-2) tribonacci: f(0)=0, f(1)=1, f(2)=1,</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of Probably Dice</title>
+      <link>https://kenlai.me/post/Walkthrough-of-Probably-Dice/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-Probably-Dice/</guid>
+      <description>题目需求 题目的原意可以总结为：求N个M面骰子（骰子点数为1-M）掷出X点数的概率。 其中，N，M，X依次为我们需要编写的函数的三个参数。返回值</description>
+    </item>
+    
+    <item>
+      <title>What is Segment Routing</title>
+      <link>https://kenlai.me/post/What-is-Segment-Routing/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-Segment-Routing/</guid>
+      <description>When networks are getting deeper and deeper into our everyday work life, they have become more and more complex. Opposed to traditional networks, their functionalities are wider and wider, which challenge the principles existed. Today&amp;rsquo;s networks demand better performance, scalability, flexibility, better operational cost efficiency and maximize link capacities. All the requirements force the network to have certain automation and can be managed by a centralized controller. This idea of managing the network is call software-defined-network (SDN).</description>
+    </item>
+    
+    <item>
+      <title>一些你不为熟知的运动知识</title>
+      <link>https://kenlai.me/post/%E4%B8%80%E4%BA%9B%E4%BD%A0%E4%B8%8D%E4%B8%BA%E7%86%9F%E7%9F%A5%E7%9A%84%E8%BF%90%E5%8A%A8%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 29 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E4%B8%80%E4%BA%9B%E4%BD%A0%E4%B8%8D%E4%B8%BA%E7%86%9F%E7%9F%A5%E7%9A%84%E8%BF%90%E5%8A%A8%E7%9F%A5%E8%AF%86/</guid>
+      <description>即使完全不运动的人，也明白运动对身体的好处。但是这里我想列举一些平时不为熟知的运动知识： 大约80%的健身会员是完全没有使用过的 仰卧起坐会增强</description>
+    </item>
+    
+    <item>
+      <title>Better process for zsh virtualenvwrapper plugin</title>
+      <link>https://kenlai.me/post/Better-process-for-zsh-virtualenvwrapper-plugin/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Better-process-for-zsh-virtualenvwrapper-plugin/</guid>
+      <description>Virtualenvwrapper is one of the must-have scripts for building a Python development environment. With the power of zsh oh-my-zsh plugin framework, we can automate some processes such as activate &amp;amp; deactivate.
+But the build-in virtualenvwrapper fails to work sometimes what it should be. I decided to fix it by myself after googling for existed solutions.
+virtualenvwrapper plugin analyze &amp;amp; optimize The existed virtualenvwrapper plugin is quite useful in most of the time, but it would malfunction occasionally.</description>
+    </item>
+    
+    <item>
+      <title>实例配置分布式SmokePing</title>
+      <link>https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/</guid>
+      <description>在前一篇文章中，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样</description>
+    </item>
+    
+    <item>
+      <title>smokeping中DNS监控配置</title>
+      <link>https://kenlai.me/post/smokeping%E4%B8%ADDNS%E7%9B%91%E6%8E%A7%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/smokeping%E4%B8%ADDNS%E7%9B%91%E6%8E%A7%E9%85%8D%E7%BD%AE/</guid>
+      <description>smokeping的一个很大的优势是其丰富的probe。最近根据客户需求，需要监控DNS解析的延时情况。不过smokeping中DNS监控配</description>
+    </item>
+    
+    <item>
+      <title>自动翻墙路由器制作 Part. 3</title>
+      <link>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-3/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-3/</guid>
+      <description>前面两篇(Part.1 和 Part. 2)中，我们完成了路由器的刷机和基础设置。这一篇作为收尾，我们需要完成剩下的部分——脚本配置。 chnroutes 我们为了实现流量的</description>
+    </item>
+    
+    <item>
+      <title>自动翻墙路由器制作 Part. 2</title>
+      <link>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-2/</link>
+      <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-2/</guid>
+      <description>在上一篇文章中，我们已经搞定了路由器刷机问题，这一次我们需要做的是进行路由器的基本配置。 基本配置 我们首先不考虑NAS BT下载设备的存在。我们</description>
+    </item>
+    
+    <item>
+      <title>自动翻墙路由器制作 Part. 1</title>
+      <link>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-1/</link>
+      <pubDate>Wed, 11 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%87%AA%E5%8A%A8%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B6%E4%BD%9C-Part.-1/</guid>
+      <description>原因 互联网技术与英语在网络上被称为现时了解世界的两大必要手段，这其中的互联网技术也就是翻墙。虽然翻墙的技术已经非常的多，而且也非常成熟，但是</description>
+    </item>
+    
+    <item>
+      <title>在Ubuntu上部署SmokePing</title>
+      <link>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</link>
+      <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</guid>
+      <description>SmokePing是rrdtool的作者Tobi Oetiker的作品，是用Perl写的，主要是监视网络性能，包括常规的ping，用echop</description>
+    </item>
+    
+    <item>
+      <title>工作场合如何穿衣？</title>
+      <link>https://kenlai.me/post/%E5%B7%A5%E4%BD%9C%E5%9C%BA%E5%90%88%E5%A6%82%E4%BD%95%E7%A9%BF%E8%A1%A3/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%B7%A5%E4%BD%9C%E5%9C%BA%E5%90%88%E5%A6%82%E4%BD%95%E7%A9%BF%E8%A1%A3/</guid>
+      <description>我在工作中看过各种各样我个人认为并不合适的服饰，有些实在过于个性或者怪异；有些虽是想表现出庄重的感觉，但是无奈总体现出了一种廉价感。 知乎上葛</description>
+    </item>
+    
+    <item>
+      <title>How to install ffmpeg on OpenShift</title>
+      <link>https://kenlai.me/post/How-to-install-ffmpeg-on-OpenShift/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/How-to-install-ffmpeg-on-OpenShift/</guid>
+      <description>We, ProjectMercury, recently wanted to move encoding jobs into OpenShift to make our workflow more efficiently. After some effort, we made it work. Here is a quick note of the process
+Pre-requests:
+ git rhc  I assume you already have both of them
+After sshed into your openshift virtual machine. Using following commands to install ffmpeg
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  cd $OPENSHIFT_DATA_DIR mkdir bin wget http://www.</description>
+    </item>
+    
+    <item>
+      <title>日语单词的音调</title>
+      <link>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E9%9F%B3%E8%B0%83/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E9%9F%B3%E8%B0%83/</guid>
+      <description>日语学习的过程中，单词发音一直是一个很大的问题——同样假名搭配不同的音调将产生完全不同的意思，比如：かみ可以表示神，也可能是纸的意思。在很多</description>
+    </item>
+    
+    <item>
+      <title>Huawei is providing outsourcing management services for SPs</title>
+      <link>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-is-providing-outsourcing-management-services-for-SPs/</guid>
+      <description>I recently had a chance to speak with a supervisor, who is called such by his colleagues, from Huawei. He mentioned that Huawei was trying doing outsourcing IT management service for SP customers. This approaching reminds me that Cisco is also thriving to bring management service into China. I don’t think this is a coincidence that two biggest companies in the same industry are doing the same.
+The only difference is that Huawei is expecting to have a proliferation out of China mainland, while Cisco is trying to bring this concept into China.</description>
+    </item>
+    
+    <item>
+      <title>Real World Network Simulation</title>
+      <link>https://kenlai.me/post/Real-World-Network-Simulation/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Real-World-Network-Simulation/</guid>
+      <description>Why we need network simulation As a network engineer, I have to spend a lot of time in the lab or test environment on testing concepts, configuration, troubleshooting and so on. This is also true for people whose work environment is related to a network such as developers, DBAs. The problem here is that the lab sometimes so perfect that it cannot emulate the real world flaws like latency, packet loss, re-order or bandwidth limitation.</description>
+    </item>
+    
+    <item>
+      <title>Controller discussion is excessive, we need more about other aspects</title>
+      <link>https://kenlai.me/post/Controller-discussion-is-excessive-we-need-more-about-other-aspects/</link>
+      <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Controller-discussion-is-excessive-we-need-more-about-other-aspects/</guid>
+      <description>Ever since SDN has been revealed and considered as the future in the industry by the public. There are abundant discussions about OpenFlow, ACI, NSX, etc. The main focus right now is the software part including southern API, northern API and more.
+The discussion about those new features which SDN could bring us has instigated the aspires of this Old-thought-with-new-implementation for network fellows who have been suffered for a long time for the poor management &amp;amp; controllability of network entities.</description>
+    </item>
+    
+    <item>
+      <title>如何避免冒充者综合症(Impostor Syndrome)</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%86%92%E5%85%85%E8%80%85%E7%BB%BC%E5%90%88%E7%97%87Impostor-Syndrome/</link>
+      <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%86%92%E5%85%85%E8%80%85%E7%BB%BC%E5%90%88%E7%97%87Impostor-Syndrome/</guid>
+      <description>什么是冒充者综合症(Impostor Syndrome) 冒充者综合症(Impostor Syndrome) 也被称为自我能力否定倾向，具有这种倾向的人往往在一些领域有所成就，但对</description>
+    </item>
+    
+    <item>
+      <title>如何给予负面评价</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E7%BB%99%E4%BA%88%E8%B4%9F%E9%9D%A2%E8%AF%84%E4%BB%B7/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E7%BB%99%E4%BA%88%E8%B4%9F%E9%9D%A2%E8%AF%84%E4%BB%B7/</guid>
+      <description>我们在工作中，无论处于什么位置，都会或多或少的需要评价别人的工作。唯一的区别在于，有些是需要用口头或者文字的方式进行表达，有些只用存在心里。</description>
+    </item>
+    
+    <item>
+      <title>Scenarios of IGMP Snooping Multicast Forwarding</title>
+      <link>https://kenlai.me/post/Scenarios-of-IGMP-Snooping-Multicast-Forwarding/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Scenarios-of-IGMP-Snooping-Multicast-Forwarding/</guid>
+      <description>I&amp;rsquo;ve discussed what is IGMP snooping and its forwarding rules for different packets in my last post. I just want to give some typical scenarios in IGMP snooping for your better understanding.
+Scenario 1: Switch forwarding multicast traffic to a multicast router and hosts In the topology shown above, the switch acting as a pure L2 device interconnects multicast router, which directly connects to the Source A for multicast group 239.</description>
+    </item>
+    
+    <item>
+      <title>这些不是我们的竞争优势</title>
+      <link>https://kenlai.me/post/%E8%BF%99%E4%BA%9B%E4%B8%8D%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AB%9E%E4%BA%89%E4%BC%98%E5%8A%BF/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%BF%99%E4%BA%9B%E4%B8%8D%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AB%9E%E4%BA%89%E4%BC%98%E5%8A%BF/</guid>
+      <description>Jason Cohen 在近期的文章中提出一些经常被误解为竞争优势的项目。我总结了一下，也加上了自己的看法： 我们有功能X。除非对手不能模仿，或者被模仿后，客户和</description>
+    </item>
+    
+    <item>
+      <title>Some words for CCIE candidates</title>
+      <link>https://kenlai.me/post/Some-words-for-CCIE-candidates/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Some-words-for-CCIE-candidates/</guid>
+      <description>I had been planned to be a game/software developer since 10, but I’ve jumped into another industry — network — right after my graduation from college. After dedication of my most of time, I finally have passed three tracks of it – R&amp;amp;S, SP, Sec. Within these years, a lot of people in this industry or not have talked and discussion about CCIE with me. I’d like to share my personal ideas of CCIE about WHAT, WHY and HOW.</description>
+    </item>
+    
+    <item>
+      <title>What is ABR</title>
+      <link>https://kenlai.me/post/What-is-ABR/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-ABR/</guid>
+      <description>ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&amp;rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet. It works by detecting a user&amp;rsquo;s bandwidth in real time and adjusting the quality</description>
+    </item>
+    
+    <item>
+      <title>让matplotlib配色方案更加美观的三种方式</title>
+      <link>https://kenlai.me/post/%E8%AE%A9matplotlib%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88%E6%9B%B4%E5%8A%A0%E7%BE%8E%E8%A7%82%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%AE%A9matplotlib%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88%E6%9B%B4%E5%8A%A0%E7%BE%8E%E8%A7%82%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/</guid>
+      <description>不管是谁，第一眼看到matplotlib配色方案的时候都至少不会觉得他很漂亮。我遇到很多使用Python的人问过我用什么module可以画出</description>
+    </item>
+    
+    <item>
+      <title>BPDU filter VS BPDU guard</title>
+      <link>https://kenlai.me/post/BPDU-filter-VS-BPDU-guard/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/BPDU-filter-VS-BPDU-guard/</guid>
+      <description>I read Michael’s new blog post about how to reduce the possibility of the network unavailable time. He talked about BPDU filter and BPDU guard in his second point, and it was quite a confusion that they seem the same. But actually, they are not.
+BPDU is short for the phrase Bridge Protocol Data Unit, which is part of the STP that helps describe and identify attributes of a switch port.</description>
+    </item>
+    
+    <item>
+      <title>如何增加Twitter关注者</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/</guid>
+      <description>Twitter作为互联网中重要的社交工具，是一个非常不错表达自己观点和个人营销的平台。但是如果和其他用户缺乏联系，那就成了自己的自言自语，其</description>
+    </item>
+    
+    <item>
+      <title>SDN时代硬件依然重要</title>
+      <link>https://kenlai.me/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/</link>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/</guid>
+      <description>不管从什么地方看到SDN的文章，都是集中于本身的实现与将来的美好愿景，似乎传统的硬件厂商在这一次的技术革新中都难逃厄运。但是我的观点是：SD</description>
+    </item>
+    
+    <item>
+      <title>日语中的星期为什么是“日月火水木金土”</title>
+      <link>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E4%B8%AD%E7%9A%84%E6%98%9F%E6%9C%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A5%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E5%9C%9F/</link>
+      <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E6%97%A5%E8%AF%AD%E4%B8%AD%E7%9A%84%E6%98%9F%E6%9C%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A5%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E5%9C%9F/</guid>
+      <description>最近正在用以前下载的上海交大于杨老师的日语二外课程。其中一个麻烦的地方就是日语对于星期的叫法非常特别。老师在上课中说这是类似“五行”的叫法（</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting is an interactive process</title>
+      <link>https://kenlai.me/post/Troubleshooting-is-an-interactive-process/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Troubleshooting-is-an-interactive-process/</guid>
+      <description>I believe that everyone who ever has a connection with Cisco whether it is business or personal knows TAC. This team provides post-sales technical support for customers who have bought it.
+I was once working in a regional ISP and responsible for a range of technical problems. Our department always had a lot of problems that would have been procrastinated, and of course, we thought that they all were Cisco problems’.</description>
+    </item>
+    
+    <item>
+      <title>New Team Leader Todo List</title>
+      <link>https://kenlai.me/post/New-Team-Leader-Todo-List/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/New-Team-Leader-Todo-List/</guid>
+      <description>To be a leader for a team is not as easy as working with machines, because people have their own ideas, attitudes, preferences, and styles of working, etc. I have experienced forming a team and taking over existing teams many times in my working experience, here are some important things I think worth noting for new team leaders.
+Know your team member It&amp;rsquo;s definitely worthy to spend time and energy to establish how you want the team to work, but how to express your idea and be accepted by your members should be considered as the first thing for a new team leader todo list.</description>
+    </item>
+    
+    <item>
+      <title>SWOT Analysis for Personal Improvement</title>
+      <link>https://kenlai.me/post/SWOT-Analysis-for-Personal-Improvement/</link>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/SWOT-Analysis-for-Personal-Improvement/</guid>
+      <description>The SWOT analysis is a structured planning method used to evaluate the strengths, weaknesses, opportunities, and threats involved in a project or in a business venture. It involves specifying the objective and identify the internal and external factors that are favorable and unfavorable to achieve that objective. Here we will it SWOT analysis for personal improvement.
+What does SWOT Analysis do SWOT stands for Strengths, Weaknesses, Opportunities, and Threats. Performing a SWOT Analysis is helpful to use in your career planning for answering the following two questions:</description>
+    </item>
+    
+    <item>
+      <title>openDCIM 3 Install on Ubuntu 14.04</title>
+      <link>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</guid>
+      <description>中文版链接 What is openDCIM openDCIM is a free web-based Data Center Infrastructure Management application. DCIM means many different things to many different people, and there is a multitude of commercial applications available. The number one goal for openDCIM is to eliminate the excuse for anybody to ever track their data center inventory using a spreadsheet or word processing document again. installation Install Apache, PHP, MySQL Thanks</description>
+    </item>
+    
+    <item>
+      <title>Huawei has published SDN product</title>
+      <link>https://kenlai.me/post/Huawei-has-published-SDN-product/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-has-published-SDN-product/</guid>
+      <description>I&amp;rsquo;ve walked through the news from official website about SDN, which I thought was a missing part of their product line, and found a interesting one. Seems Huawei finally caught up with the SDN bus.
+I personally don&amp;rsquo;t think what has been mentioned in the news will bring truly impact to the SDN market, and prefer to take it as only a symbol for Huawei entering the SDN game. Here are some of my reasons:</description>
+    </item>
+    
+    <item>
+      <title>What is IGMP Snooping</title>
+      <link>https://kenlai.me/post/What-is-IGMP-Snooping/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-IGMP-Snooping/</guid>
+      <description>What does IGMP Snooping Do IGMP snooping is used to monitor the traffic of IGMP protocol between hosts and multicast-enabled routers. The switch uses it to learn which interface has an interested receiver and forward multicast traffic only to these interfaces. This feature could save bandwidth by allowing it to send traffic only needed, rather than flooding all multicast packets to all interfaces.
+IGMP Snooping and Forwarding Interfaces To determine how to forward multicast traffic, IGMP snooping maintains a “table” about the interfaces information:</description>
+    </item>
+    
+    <item>
+      <title>瘦AP一般能干嘛</title>
+      <link>https://kenlai.me/post/%E7%98%A6AP%E4%B8%80%E8%88%AC%E8%83%BD%E5%B9%B2%E5%98%9B/</link>
+      <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%98%A6AP%E4%B8%80%E8%88%AC%E8%83%BD%E5%B9%B2%E5%98%9B/</guid>
+      <description>在讨论无线的时候，通常都会问到：“瘦AP都有些什么功能？” 或者 “AP和WLC各负责什么？” 瘦AP一般的功能包括： Real-Time 802.11/MAC Functionality: Beacon Generation Probe Response Power management/Packet buffering 802.11e/WMM scheduling, queueing MAC</description>
+    </item>
+    
+    <item>
+      <title>CCIE Data Center Online Resources and Reading List</title>
+      <link>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CCIE-Data-Center-Online-Resources-and-Reading-List/</guid>
+      <description>Install, Config and Troubleshoot Guides
+Install, Config and Troubleshoot Guide for Cisco Nexus 7000 NXOS Switch
+Install, Config and Troubleshoot Guide for Cisco Nexus 5000 NXOS Switch
+Install, Config Guide for Cisco Nexus 2000 NXOS SwitchInstall, Configure and Troubleshoot Guide for Cisco Nexus 1000v NXOS Virtual SwitchInstall, Config and Troubleshoot Guide for Cisco MDS SAN NXOS SwitchInstall, Config and Troubleshoot Guide for Cisco ACE 4710 ApplianceCisco NX-OS FCoE Configuration Guide for Nexus 7000 and MDS 9500Install, Config and Troubleshoot guide for Cisco UCS ManagerInstall and Config Guide for Data Center Network Manager (DCNM)Configuration examplesCisco Nexus 7000 NXOS Config ExamplesCisco Nexus 5000 NXOS Config ExamplesCisco Nexus 1000v NXOS Config ExamplesCisco MDS SAN Switches NXOS Config ExamplesCisco UCS Manager Config ExamplesWhite Papers and Other Useful Online ResourcesCisco Product Support Documentation a central repository for all Cisco Documentation (by product or technology) - formerly known as Documentation CD, or CCO Documentation.</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of CheckIO Inside Block</title>
+      <link>https://kenlai.me/post/Walkthrough-of-CheckIO-Inside-Block/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-CheckIO-Inside-Block/</guid>
+      <description>After a long absence, I returned to continue playing CheckIO tasks by a notification mail. The UI had been optimized a lot and the tasks were still as interesting as the before.
+Inside Block required checking whether a given point is inside a polygon or not. After some research on google, I found a practical method.
+How to check if a given point is in a polygon Given a polygon and a point ‘p’, find if ‘p’ lies inside the polygon or not.</description>
+    </item>
+    
+    <item>
+      <title>The number of management nodes is important, take it into your consideration</title>
+      <link>https://kenlai.me/post/The-number-of-management-nodes-is-important-take-it-into-your-consideration/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/The-number-of-management-nodes-is-important-take-it-into-your-consideration/</guid>
+      <description>The reason behind why I almost instantly became a big fan of Cisco FEX and satellite card technology is that, both of them provide tremendous complexity reduction in many aspects, like planning, managing, deploying and even the knowledge requirements for engineers.
+I think no one would argue that there are a lot of great tools from CLI to GUI or whole sets of applications can improve the engineer&amp;rsquo;s work effectiveness and efficiency.</description>
+    </item>
+    
+    <item>
+      <title>What is hot/cold aisle in data center</title>
+      <link>https://kenlai.me/post/What-is-hotcold-aisle-in-data-center/</link>
+      <pubDate>Thu, 25 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-hotcold-aisle-in-data-center/</guid>
+      <description>A hot/cold aisle is a layout design for server racks in a data center. The goal of it is to increase the effectiveness of the cooling system by managing airflow in a data center.
+In the simplest form, this design involves lining up server racks in different rows with cold air facing one way and hot exhausts facing the other. Typically, cold aisles, which are usually composed of rack fronts, face AC output, and hot aisles face return ducts.</description>
+    </item>
+    
+    <item>
+      <title>NO-NAT configuration on Cisco ASA Firewall</title>
+      <link>https://kenlai.me/post/NO-NAT-configuration-on-Cisco-ASA-Firewall/</link>
+      <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/NO-NAT-configuration-on-Cisco-ASA-Firewall/</guid>
+      <description>Cisco ASA firewall has upgraded its command line at the version 8.3 and changed a lot of configurations from their previous style. I recently faced two cases about NO-NAT in both version and want to leave a quick note here.
+Example details:
+ inside IP address: 1.1.1.0/24 outside IP address: 2.2.2.0/24 traffic go through from inside interface to outside interface  Before 8.3 An access-list is needed to filter the interested traffic.</description>
+    </item>
+    
+    <item>
+      <title>Copy/Paste in Quick Look on MacOS</title>
+      <link>https://kenlai.me/post/CopyPaste-in-Quick-Look-on-MacOS/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CopyPaste-in-Quick-Look-on-MacOS/</guid>
+      <description>Quick Look, which is triggered by tapping space bar, of Mac OS system is the first feature that has impressed me since I switched from Windows to Mac years ago. This feature has saved me uncountable time for my from opening applications to open a file. Here is how to do copy/paste in quick look if you want to make it more powerful:
+But the default setting does’t allow you to select the quick looked file.</description>
+    </item>
+    
+    <item>
+      <title>如何在Ubuntu 14.04上安装openDCIM 3</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</guid>
+      <description>English version link openDCIM简介 openDCIM是一个免费且开源的数据中心（你也可以说“机房”这个名词=_=）基础网络管理软件。基础网络管理对于不</description>
+    </item>
+    
+    <item>
+      <title>Tsukkomi about Chinese Cable SP Providers</title>
+      <link>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</guid>
+      <description>Companies usually take experiences from others in the same industry or the ones share a lot of characters. This is also similar to Chinese companies in cable SPs. Every time I heard about what they wanted to learn from when we were discussing future business development, Comcast is always the one they like. But from my personal view, I prefer to consider this is an error to position themselves like Comcast because there are no share characteristics except for being called cable SPs.</description>
+    </item>
+    
+    <item>
+      <title>Huawei is abandoning CDN</title>
+      <link>https://kenlai.me/post/Huawei-is-abandoning-CDN/</link>
+      <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Huawei-is-abandoning-CDN/</guid>
+      <description>Companies drop their products while they are benefit-able, it seems that Huawei is abandoning CDN from its mainstream products in China.
+Lacking of clients may be one critical fact that this product cannot provide sufficient profit for Huawei. From this aspect of how many new clients a product has been sold while no expansion for old clients, the only considerable one is China Mobile Sichuan. Less R&amp;amp;D force for less profitable product principle makes CDN have less support.</description>
+    </item>
+    
+    <item>
+      <title>Walkthrough of Text Holes Golf</title>
+      <link>https://kenlai.me/post/Walkthrough-of-Text-Holes-Golf/</link>
+      <pubDate>Sat, 30 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Walkthrough-of-Text-Holes-Golf/</guid>
+      <description>冲分的时候又到了！！ 题目要求 题目要求一如既往的简单明了： 1 统计一段文字中，有多少空格满足周围都不是空格字符的数量 而原始代码嘛…… 1 2 def golf(text): return 0</description>
+    </item>
+    
+    <item>
+      <title>CCIE Data Center Lab Exam Topics</title>
+      <link>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</link>
+      <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</guid>
+      <description>The CCIE Data Center lab exam topics provided are general guidelines for the content likely to be included on the lab exam. However, other related topics may also appear on any specific delivery of the exam. In order to better reflect the contents of the exam and for clarity purposes, the guidelines below may change at any time without notice.
+Cisco Data Center Infrastructure - NXOS
+  Implement NXOS L2 functionality</description>
+    </item>
+    
+    <item>
+      <title>Different Orientation of Wasu</title>
+      <link>https://kenlai.me/post/Different-Orientation-of-Wasu/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Different-Orientation-of-Wasu/</guid>
+      <description>As I mentioned in my earlier post, regional government media groups were chasing for profits in SP business. But glad to say, not all of them shared the same goal. A minority of them noticed their advantages and disadvantages and chose to orient to the content providers. Wasu is one of the minority group members, and it has a totally different business orientation with other three strongest MG in China.</description>
+    </item>
+    
+    <item>
+      <title>Experiences about CloudFlare</title>
+      <link>https://kenlai.me/post/Experiences-about-CloudFlare/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Experiences-about-CloudFlare/</guid>
+      <description>I spent about three hours to migrate my tech blog from OpenShift &amp;amp; CloudFlare to GitHub again, after my moving all from GitHub to OpenShift about 2 month ago. Experience with OpenShift &amp;amp; CloudFlare was frustrating and awful. It didn’t hit any expectations that I thought before the first migration.
+Why I want to use CDN Choosing a free hosting by OpenShift for me is mesmerized by its potential customization in the future, rather than cost consideration.</description>
+    </item>
+    
+    <item>
+      <title>Review: Jawbone UP 1st generation</title>
+      <link>https://kenlai.me/post/Review-Jawbone-UP-1st-generation/</link>
+      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Review-Jawbone-UP-1st-generation/</guid>
+      <description>A little history I have spent a lot of time on reading, researching tech gadgets articles and products, sometimes I’ll really buy some of them that I think are useful and interesting. I was mesmerized by Jawbone UP as soon as it came out — not only for the idea but also for its features were all I wanted at that time.
+Without any doubt, I purchased one from the Internet even it had never been released in China.</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Anagrams By Stacks</title>
+      <link>https://kenlai.me/post/checkio-anagrams-by-stacks/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-anagrams-by-stacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Snake</title>
+      <link>https://kenlai.me/post/CheckIO-Snake/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CheckIO-Snake/</guid>
+      <description>http://www.checkio.org/mission/task/info/snake/python-27/ 呀〜贪吃蛇啊…… 和其他的task不同的是，这个是一次multicall。不过我其实完全可以不考虑这点，每次给出当前map，然后程序给出走法</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Area of a convex polygon</title>
+      <link>https://kenlai.me/post/checkio-area-of-a-convex-polygon/</link>
+      <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-area-of-a-convex-polygon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yo, 小心坑爹的iPhone应用</title>
+      <link>https://kenlai.me/post/Yo-%E5%B0%8F%E5%BF%83%E5%9D%91%E7%88%B9%E7%9A%84iPhone%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Yo-%E5%B0%8F%E5%BF%83%E5%9D%91%E7%88%B9%E7%9A%84iPhone%E5%BA%94%E7%94%A8/</guid>
+      <description>iPhone上总是有各种坑爹的应用，而且很多还要收费。这里我说的坑爹不只是应用的品质不行，而是完全的虚假宣传。虽然我自己对iPhone的开发</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - Three Points Circle</title>
+      <link>https://kenlai.me/post/checkio-three-points-circle/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-three-points-circle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review My iPhone Apps</title>
+      <link>https://kenlai.me/post/Review-My-iPhone-Apps/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Review-My-iPhone-Apps/</guid>
+      <description>I’ve never been an apple fan even there are 2 iPhones, 3 iPads, 4 iPods and 2 Laptops in my house. And I’m glad to recommend using iPhone &amp;amp; some great iPhone apps to my friends every time when I was asked. One major reason for addicting into apple is the softwares on them which give me simplicity and convenience, also have improved my productivity.</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - CheckSum</title>
+      <link>https://kenlai.me/post/checkio-checksum/</link>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-checksum/</guid>
+      <description>题目的描述超级麻烦，不过逻辑很简单，没有什么特别注意的地方，全是非常基础的知识。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</description>
+    </item>
+    
+    <item>
+      <title>CheckIO - The Good Radix</title>
+      <link>https://kenlai.me/post/checkio-the-good-radix/</link>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/checkio-the-good-radix/</guid>
+      <description>Task描述简单的说就是这样： 给出的字符串数字是k进制的 这个k进制的数换算成10进制之后，能够被k-1整除。 从题目来看非常的简单，不过第二点</description>
+    </item>
+    
+  </channel>
+</rss>

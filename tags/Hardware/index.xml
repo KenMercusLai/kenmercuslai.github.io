@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Hardware/</link>
+    <description>Recent content in Hardware on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 26 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SDN时代硬件依然重要</title>
+      <link>https://kenlai.me/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/</link>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/</guid>
+      <description>不管从什么地方看到SDN的文章，都是集中于本身的实现与将来的美好愿景，似乎传统的硬件厂商在这一次的技术革新中都难逃厄运。但是我的观点是：SD</description>
+    </item>
+    
+  </channel>
+</rss>

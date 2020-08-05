@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>networking on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/networking/</link>
+    <description>Recent content in networking on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 13 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tsukkomi about Chinese Cable SP Providers</title>
+      <link>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Tsukkomi-about-Chinese-Cable-SP-Providers/</guid>
+      <description>Companies usually take experiences from others in the same industry or the ones share a lot of characters. This is also similar to Chinese companies in cable SPs. Every time I heard about what they wanted to learn from when we were discussing future business development, Comcast is always the one they like. But from my personal view, I prefer to consider this is an error to position themselves like Comcast because there are no share characteristics except for being called cable SPs.</description>
+    </item>
+    
+  </channel>
+</rss>

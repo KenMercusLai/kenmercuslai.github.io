@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering Field Notes</title>
+    <link>https://kenlai.me/series/Less/</link>
+    <description>Recent content on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://kenlai.me/series/Less/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kenlai.me/series/Less/0.-background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/series/Less/0.-background/</guid>
+      <description>I&amp;rsquo;m an avid Youtube user because there&amp;rsquo;re a lot of good videos that always bring me something new. The only problem I have is its machine learning backed recommendation system which usually give me things totally out of sense, like videos in a language that I don&amp;rsquo;t understand, clickbaits and poorly made videos etc. This system is so sensitive that I may be bombasted with uninterested videos after I accidentally watch a video of a type.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>实例配置分布式SmokePing - Engineering Field Notes</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Ken Lai" />
+  <meta name="description" content="在前一篇文章中，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样" />
+
+  <meta name="keywords" content="Network, Automation, Notes, Thoughts" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+
+<link rel="canonical" href="https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa3d941d1d0e0ddc985804227feabffea55c89883eb0af34e0532a7ae9135151.css" integrity="sha256-&#43;j2UHR0ODdyYWAQif&#43;q//qVciYg&#43;sK804FMqeukTUVE=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="实例配置分布式SmokePing" />
+<meta property="og:description" content="在前一篇文章中，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/" />
+<meta property="article:published_time" content="2016-05-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-05-17T00:00:00+00:00" />
+<meta itemprop="name" content="实例配置分布式SmokePing">
+<meta itemprop="description" content="在前一篇文章中，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样">
+<meta itemprop="datePublished" content="2016-05-17T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2016-05-17T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2499">
+
+
+
+<meta itemprop="keywords" content="Linux,SmokePing,Tutorial,Distribution," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="实例配置分布式SmokePing"/>
+<meta name="twitter:description" content="在前一篇文章中，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-26670277-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Engineering Field Notes</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Engineering Field Notes
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">实例配置分布式SmokePing</h1>
+      
+      <div class="post-meta">
+        <time datetime="2016-05-17" class="post-time">
+          2016-05-17
+        </time>
+        
+        <span class="more-meta"> 2499 words </span>
+          <span class="more-meta"> 5 min read </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#master配置部分">Master配置部分</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>在<a href="https://kenmlai.me/zai-ubuntushang-bu-shu-smokeping/">前一篇文章中</a>，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样的情况下，安装smokeping的主机测试的是自己到被检测点之间的状态。又或者单独一台主机的性能已经完全不能满足监控的需求。这时，我们需要考虑采用分布式smokeping来进行监控。分布式smokeping相比单点有这样一些重要的优势：</p>
+<ul>
+<li>分担单台主机负担。</li>
+<li>可以通过不同的网络环境监控对于同一监控点。</li>
+<li>避免干扰因素。</li>
+</ul>
+<h1 id="分布式smokeping架构">分布式SmokePing架构</h1>
+<p>SmokePing采用Master/Slave的主从结构架构进行分布式部署。默认开启Master和Slave所有的探针检测远程主机（Master监测功能可以通过配置关闭）。一个Master可以管理多个Slave，而且Slave配置起来也很简单。</p>
+<p>Slave从master上获取自己的配置信息，所有的检测数据以及web呈现都在Master上。Slave只负责按照从Master获取的配置信息进行数据检测，所以Master/Slave的架构也只需要维护Master的配置文件即可，其他的信息Slave都会动态获取到。</p>
+<p>简单说，一个Slave就是一个单独的实例。Slave的配置信息来自于Master,不是来自于本地配置文件，这样就减少了大量的维护成本。Slave在完成每一轮的作业任务后，就会尝试连接Master提交自己的结果。如果无法连接到Master，这个结果将会和下一轮的结果一块发送给Master，Master收到结果后，将检测的数据存储在本地的数据文件中，以便于重启了SmokePing实例后，不会丢失这些数据。</p>
+<p>SmokePing分布式的检测方式是被动模式，由Slave启动时向Master发起连接。主从通信验证是通过类似于rsync的密码认证方式，在启动slave节点时指定–shared-secret=filename来和主进行密码验证。</p>
+<p>从官方获取的Master/Slave的架构图可以看出，Slave是将采集的结果汇集给Master。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[slave 1]     [slave 2]      [slave 3]
+   |             |              |
+   +-------+     |     +--------+
+           |     |     |
+           v     v     v
+         +---------------+
+         |    master     |
+         +---------------+
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="分布式smokeping配置">分布式SmokePing配置</h1>
+<h2 id="master配置部分">Master配置部分</h2>
+<p>配置一个主从结构，需要在Master的配置文件中添加Slave的部分，所有Slave需要被定义在Master的Slave section中。</p>
+<p>1.在配置文件中定义Slave</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">*** Slaves ***
+<span class="nv">secrets</span><span class="o">=</span>/usr/local/smokeping/etc/smokeping_secrets.dist
+<span class="c1"># 定义通信用的秘钥文件，里面包含slave的名字以及对应密码</span>
+
++ Slave1                <span class="c1"># slave的名字</span>
+<span class="nv">display_name</span><span class="o">=</span>Slave1    <span class="c1"># slave的别名</span>
+<span class="nv">location</span><span class="o">=</span>changzhou    <span class="c1"># 这个字段用来定义slave主机的位置，类似于description</span>
+<span class="nv">color</span><span class="o">=</span>0000ff        <span class="c1"># slave收集的数据在图像中显示的颜色，</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>2.将定义的Slave节点分配给你需要监控的主机</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">*** Targets ***
+<span class="c1"># 定义一个菜单，这个值将会作为data下的一个目录名被创建，属于这个菜单下所有数据都会被存放在这个目录下</span>
+++ changzhou
+<span class="c1"># 定义web上显示的菜单名</span>
+<span class="nv">menu</span> <span class="o">=</span> 常州机房
+<span class="c1"># 定义web上显示的头部名</span>
+<span class="nv">title</span> <span class="o">=</span> 常州机房
+
+<span class="c1"># 定义一个主机，这个主机的数据将会被存放在　data/changzhou/29gui目录下</span>
++++ 29gui&lt;-<span class="o">(</span>xxx.xxx.xxx.xxx.xxx<span class="o">)</span>
+<span class="c1"># web上显示的菜单名，可点击</span>
+<span class="nv">menu</span> <span class="o">=</span> 29柜&lt;-<span class="o">(</span>xxx.xxx.xxx.xxx<span class="o">)</span>
+<span class="c1"># 图表头部名称</span>
+<span class="nv">title</span> <span class="o">=</span> 29柜&lt;-<span class="o">(</span>xxx.xxx.xxx.xxx<span class="o">)</span>
+<span class="c1"># 报警</span>
+<span class="nv">alerts</span> <span class="o">=</span> someloss
+<span class="c1"># slave节点</span>
+<span class="nv">slaves</span> <span class="o">=</span> Slave1
+<span class="c1"># 被监控的主机IP或者域名</span>
+<span class="nv">host</span> <span class="o">=</span> xxx.xxx.xxx.xxx
+</code></pre></td></tr></table>
+</div>
+</div><p>3.Master和Slave通信的秘钥文件</p>
+<p>通信用的秘钥文件内容为“slave的名字:密码”,这里需要注意秘钥文件的权限，由于smokeping的master/slave是通过smokeping程序进行验证的，所以这个<strong>秘钥文件owner必须是smokeping进程的运行用户身份，并且权限为600</strong>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># echo &#34;Slave1:helloworld&#34; &gt; /usr/local/smokeping/etc/smokeping_secrets.dist</span>
+<span class="c1"># chown daemon:daemon /usr/local/smokeping/etc/smokeping_secrets.dist</span>
+<span class="c1"># chmod 600 /usr/local/smokeping/etc/smokeping_secrets.dist</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="slave配置部分">Slave配置部分</h1>
+<p>Slave端实际上不需要太多的配置，只需要将smokeping正确安装即可，具体可参照 <a href="http://kenmlai.me/%E5%9C%A8ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2smokeping/">SmokePing的安装</a> 一文。</p>
+<p>1.创建master与slave的密码文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># echo &#34;helloworld&#34; &gt; /usr/local/smokeping/etc/secrets</span>
+<span class="c1"># chown daemon:daemon /usr/local/smokeping/etc/secrets</span>
+<span class="c1"># chmod 600 /usr/local/smokeping/etc/secrets</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>2.启动slave</p>
+<p>可以使用<code>/usr/local/smokeping/bin/smokeping --help</code>
+观察到与slave有关的几个参数如下：</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /usr/local/smokeping/bin/smokeping --master-url=http://xxx.xxx.xxx.xxx/smokeping.cgi --cache-dir=/usr/local/smokeping/cache/ --shared-secret=/usr/local/smokeping/etc/secrets --slave-name=tuosi --logfile=/usr/local/smokeping/slave.log</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>写成脚本，启动方便一点，内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>#
+<span class="c1"># when: 2013/10/18</span>
+<span class="c1"># who: http://blog.coocla.org</span>
+
+<span class="nv">SMKEPING</span><span class="o">=</span>/usr/local/smokeping/bin/smokeping
+<span class="nv">MASTERURL</span><span class="o">=</span>http://xxxx/smokeping.cgi
+<span class="nv">SLAVENAME</span><span class="o">=</span>tuosi
+<span class="nv">CACHEDIR</span><span class="o">=</span>/usr/local/smokeping/cache
+<span class="nv">SECRET</span><span class="o">=</span>/usr/local/smokeping/etc/secrets
+<span class="nv">LOGFILE</span><span class="o">=</span>/usr/local/smokeping/slave.log
+
+<span class="k">if</span> <span class="o">[</span> -f <span class="nv">$PIDFILE</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+    <span class="nv">PID</span><span class="o">=</span><span class="sb">`</span>cat <span class="nv">$PIDFILE</span><span class="sb">`</span>
+    <span class="k">if</span> <span class="nb">kill</span> -0 <span class="nv">$PID</span> 2&gt;/dev/null <span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&#34;smokeping is running with PID </span><span class="nv">$PID</span><span class="s2">&#34;</span>
+        <span class="nb">exit</span> <span class="m">0</span>
+    <span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">&#34;smokeping not running but PID file exists =&gt; delete PID file&#34;</span>
+        rm -f <span class="nv">$PIDFILE</span>
+    <span class="k">fi</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&#34;smokeping (no pid file) not running&#34;</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="nv">$SMKEPING</span> --master-url<span class="o">=</span><span class="nv">$MASTERURL</span> --slave-name<span class="o">=</span><span class="nv">$SLAVENAME</span> --cache-dir<span class="o">=</span><span class="nv">$CACHEDIR</span> --shared-secret<span class="o">=</span><span class="nv">$SECRET</span> --logfile<span class="o">=</span><span class="nv">$LOGFILE</span> &gt; /dev/null<span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&#34;smokeping started&#34;</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&#34;smokeping could not be started&#34;</span>
+<span class="k">fi</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>很简单的一个脚本，没有做过多的判断。</p>
+<p>一些个人新的：</p>
+<ol>
+<li>定义好smokeping和web服务器的运行用户，因为会涉及一些权限；</li>
+<li>smokeping的运行用户调用rrdtools进行数据收集绘图，所以存放rrd数据文件，以及图像文件的目录smokeping的运行用户一定要拥有写权限；</li>
+<li>web前端对于该况图和监控图的展示，是通过web服务器的运行用户通过smokeping.cgi对所绘制的图像进行展示，所以web服务器的运行用户一定也要对图像目录拥有读写选项；</li>
+<li>对于web页面的中文显示，无外乎与设置web的字符集以及所在的操作系统要支持对应的字符集；</li>
+<li>对于其他的rrd文件不更新，web页面没有图像，或者web页面有图像但没有数据，这些一般都是因为以上权限设置不正确或者rrdtool安装不正确导致的；</li>
+<li>对于master/slave的架构，首先也明白其认证的原理，一定要将slave-name和master配置文件中配置的slave节点名以及密钥文件中的节点名相对应；</li>
+<li>对于master的密钥文件(包含slave节点名和密码)，slave的密码文件(只有密码)，要这样去思考，这样两个文件的内容都是smokeping通过smokeping的api进行交互通信的，那么交互通信的用户肯定是smokeping的运行用户，因此这两个文件的属主一定要属于smokeping的运行用户，其次要想到rsync的配置，其文件的属性权限一定要是600；</li>
+</ol>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Ken Lai</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2016-05-17
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://kenlai.me/tags/Linux/">Linux</a>
+          <a href="https://kenlai.me/tags/SmokePing/">SmokePing</a>
+          <a href="https://kenlai.me/tags/Tutorial/">Tutorial</a>
+          <a href="https://kenlai.me/tags/Distribution/">Distribution</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/Better-process-for-zsh-virtualenvwrapper-plugin/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Better process for zsh virtualenvwrapper plugin</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/smokeping%E4%B8%ADDNS%E7%9B%91%E6%8E%A7%E9%85%8D%E7%BD%AE/">
+            <span class="next-text nav-default">smokeping中DNS监控配置</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  <div id="comments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 700);
+              clearInterval(checkExist);
+            }
+        }, 10);
+    }
+  </script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        appId: 'HRVXwifaSeWcsjMaWIeaMCxa-MdYXbMMI',
+        appKey: 'NxTb7qTWsfkjJ6Xoutu8x9bh',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mm', 
+        placeholder: '',
+        visitor:  false 
+    });
+  </script>
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:ken.mercus.lai@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://twitter.com/Ken_M_Lai" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://www.linkedin.com/in/kenmercuslai/" rel="me noopener" class="iconfont"
+      title="linkedin"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="33" height="33">
+  <path d="M872.405333 872.618667h-151.637333v-237.610667c0-56.661333-1.152-129.578667-79.018667-129.578667-79.061333 0-91.136 61.653333-91.136 125.397334v241.792H398.976V384h145.664v66.602667h1.962667c20.352-38.4 69.845333-78.933333 143.786666-78.933334 153.642667 0 182.058667 101.12 182.058667 232.746667v268.202667zM227.712 317.141333a87.978667 87.978667 0 0 1-88.021333-88.106666 88.064 88.064 0 1 1 88.021333 88.106666z m76.032 555.477334H151.68V384h152.064v488.618667zM948.266667 0H75.562667C33.792 0 0 33.024 0 73.770667v876.458666C0 991.018667 33.792 1024 75.562667 1024h872.576C989.866667 1024 1024 991.018667 1024 950.229333V73.770667C1024 33.024 989.866667 0 948.138667 0h0.128z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://kenlai.me/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2013 -
+    2020
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Ken Lai
+        
+      </span></span>
+
+  
+  
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

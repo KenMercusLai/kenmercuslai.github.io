@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Twitter/</link>
+    <description>Recent content in Twitter on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Twitter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何增加Twitter关注者</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/</guid>
+      <description>Twitter作为互联网中重要的社交工具，是一个非常不错表达自己观点和个人营销的平台。但是如果和其他用户缺乏联系，那就成了自己的自言自语，其</description>
+    </item>
+    
+  </channel>
+</rss>

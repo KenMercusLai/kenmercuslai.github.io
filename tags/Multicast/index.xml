@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multicast on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Multicast/</link>
+    <description>Recent content in Multicast on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 16 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Multicast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scenarios of IGMP Snooping Multicast Forwarding</title>
+      <link>https://kenlai.me/post/Scenarios-of-IGMP-Snooping-Multicast-Forwarding/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Scenarios-of-IGMP-Snooping-Multicast-Forwarding/</guid>
+      <description>I&amp;rsquo;ve discussed what is IGMP snooping and its forwarding rules for different packets in my last post. I just want to give some typical scenarios in IGMP snooping for your better understanding.
+Scenario 1: Switch forwarding multicast traffic to a multicast router and hosts In the topology shown above, the switch acting as a pure L2 device interconnects multicast router, which directly connects to the Source A for multicast group 239.</description>
+    </item>
+    
+  </channel>
+</rss>

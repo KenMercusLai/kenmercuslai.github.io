@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Streaming on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Streaming/</link>
+    <description>Recent content in Streaming on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 09 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Streaming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is ABR</title>
+      <link>https://kenlai.me/post/What-is-ABR/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-ABR/</guid>
+      <description>ABR is short for Adaptive Bitrate Streaming, which is a technique used in streaming multimedia over networks. While in the past most video streaming technologies utilized streaming protocols such RTP with RTSP, today&amp;rsquo;s adaptive streaming technologies are almost exclusively based on HTTP and designed to work efficiently over large distributed HTTP networks such as the Internet. It works by detecting a user&amp;rsquo;s bandwidth in real time and adjusting the quality</description>
+    </item>
+    
+  </channel>
+</rss>

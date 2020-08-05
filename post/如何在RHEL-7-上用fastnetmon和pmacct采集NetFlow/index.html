@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow - Engineering Field Notes</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Ken Lai" />
+  <meta name="description" content="最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候" />
+
+  <meta name="keywords" content="Network, Automation, Notes, Thoughts" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+
+<link rel="canonical" href="https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa3d941d1d0e0ddc985804227feabffea55c89883eb0af34e0532a7ae9135151.css" integrity="sha256-&#43;j2UHR0ODdyYWAQif&#43;q//qVciYg&#43;sK804FMqeukTUVE=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow" />
+<meta property="og:description" content="最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/" />
+<meta property="article:published_time" content="2020-07-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-31T00:00:00+00:00" />
+<meta itemprop="name" content="如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow">
+<meta itemprop="description" content="最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候">
+<meta itemprop="datePublished" content="2020-07-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1857">
+
+
+
+<meta itemprop="keywords" content="Linux,NetFlow,Grafana,pmacct,fastnetmon," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow"/>
+<meta name="twitter:description" content="最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-26670277-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Engineering Field Notes</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Engineering Field Notes
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow</h1>
+      
+      <div class="post-meta">
+        <time datetime="2020-07-31" class="post-time">
+          2020-07-31
+        </time>
+        
+        <span class="more-meta"> 1857 words </span>
+          <span class="more-meta"> 4 min read </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候直接用既成事实来代替整个流程。😊</p>
+<p>现在针对网络监控的平台已经非常成熟了，免费的Nagios和Zabbix都是非常不错的选择。不仅配置简单，而且在功能上一点都不缺。不过由于需要经常性的对数据进行交叉分析，我比较习惯能用一个平台来管理所有的数据。在比较之后，我便打算直接用telegraf来采集SNMP数据，加上pmacct和fastnetmon来采集NetFlow，前台直接套用一个Grafana作为dashboard。虽然整个流程上不如Nagios和Zabbix方便，但是在强在数据展示的灵活和可配置型。</p>
+<p>整个流程都是基于公司的RHEL 7.8系统</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fext-cerebrum%2F2bOKv8nQfw.png?alt=media&amp;token=fc04b3e2-0515-4902-9f0a-eb1ff0c297f5" alt="img"></p>
+<h1 id="fastnetmon-与-influxdb-安装">fastnetmon 与 influxdb 安装</h1>
+<p>fastnetmon本身的安装非常傻瓜化，只需要按照<a href="https://fastnetmon.com/install/">官方的教程</a>即可。安装完成后，我关闭了所有ban相关的选项，因为我只用它来监控，而不用作出反应。</p>
+<p>需要注意的一点就是<code>/etc/fastnetmon.conf</code>中网络的大小设置要考虑服务器的性能，特别是内存大小。内存不够的时候会出现无法正常工作的情况。具体的内存需求可以从安装文档中提到的日志中查看。同时，如果有不只一种协议（比如同时使用NetFlow和sFlow），那么它们的监听端口不能相同。</p>
+<p>如果配置无误，那么可以运行 <code>/opt/fastnetmon/fastnetmon_client</code> 来查看接收到的数据状态。此路径可能不同，可以自己摸索一下。</p>
+<p>influxdb可以完全按照<a href="https://docs.influxdata.com/influxdb/v1.8/introduction/install/">官方教程</a>来安装。没有任何坑。安装完成后，只需要在<code>/etc/influxdb/influxdb.conf</code>设置如下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[[</span>graphite<span class="o">]]</span>
+  <span class="nv">enabled</span> <span class="o">=</span> <span class="nb">true</span>
+  bind-address <span class="o">=</span> <span class="s2">&#34;127.0.0.1:2003&#34;</span>
+  <span class="nv">database</span> <span class="o">=</span> <span class="s2">&#34;dc1&#34;</span>
+  <span class="nv">protocol</span> <span class="o">=</span> <span class="s2">&#34;tcp&#34;</span>
+  consistency-level <span class="o">=</span> <span class="s2">&#34;one&#34;</span>
+  name-separator <span class="o">=</span> <span class="s2">&#34;.&#34;</span>
+  <span class="c1"># batch-size / batch-timeout requires InfluxDB &gt;= 0.9.3  batch-size = 5000</span>
+  <span class="c1"># will flush if this many points get buffered  batch-timeout = &#34;1s&#34;</span>
+  <span class="c1"># will flush at least this often even if we haven&#39;t hit buffer limit</span>
+  <span class="nv">templates</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="s2">&#34;fastnetmon.hosts.* app.measurement.cidr.direction.function.resource&#34;</span>,    
+    <span class="s2">&#34;fastnetmon.networks.* app.measurement.cidr.direction.resource&#34;</span>,    
+    <span class="s2">&#34;fastnetmon.total.* app.measurement.direction.resource&#34;</span>  <span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>同时在<code>/etc/fastnetmon.conf</code>中加上这一部分即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">graphite</span> <span class="o">=</span> on 
+<span class="nv">graphite_host</span> <span class="o">=</span> 127.0.0.1 
+<span class="nv">graphite_port</span> <span class="o">=</span> <span class="m">2003</span> 
+<span class="nv">graphite_prefix</span> <span class="o">=</span> fastnetmon
+</code></pre></td></tr></table>
+</div>
+</div><p>最后一步就是启动influxdb</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl start influxdb
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="pmacct-与-mariadb-安装">pmacct 与 mariadb 安装</h1>
+<p>pmacct本身不能直接导出数据到influxdb，不过Grafana的好处就是可以连接各种不同后台来获取数据。本着实用的原则，我直接选用了pmacct本身就支持的mariadb来存储数据。</p>
+<p>mariadb可以直接通过yum安装并完成基本的设置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo yum install mariadb-server mariadb-devel /usr/bin/mysql_secure_installation 
+sudo systemctl restart mariadb
+</code></pre></td></tr></table>
+</div>
+</div><p>pmacct在RHEL下就没有提供包可以直接安装，需要从头编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install libtool libpcap-devel  
+git clone https://github.com/pmacct/pmacct <span class="nb">cd</span> pmacct ./autogen.sh ./configure --enable-mysql make sudo make install
+</code></pre></td></tr></table>
+</div>
+</div><p>整个编译过程非常快，完成之后就可以进行初始配置了。sql文件夹下面有v1-v9不同版本的数据库定义，可以按照自己的需求来选择。因为我的环境中都是Netflow v9，所以我就直接采用了v9的数据库定义。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> sql 
+cp pmacct-create-db_v9.mysql pmacct-create-db_v9.mysql.bak 
+sudo vi pmacct-create-db_v9.mysql
+</code></pre></td></tr></table>
+</div>
+</div><p>这里我们需要稍微修改一下数据库定义，<a href="https://github.com/pmacct/pmacct/blob/master/sql/README.timestamp">以避免后面运行的时候报错</a>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">drop database <span class="k">if</span> exists pmacct<span class="p">;</span> create database pmacct<span class="p">;</span> use pmacct<span class="p">;</span> drop table <span class="k">if</span> exists acct_v9<span class="p">;</span>  create table acct_v9 <span class="o">(</span>    tag INT<span class="o">(</span>4<span class="o">)</span> UNSIGNED NOT NULL,    class_id CHAR<span class="o">(</span>16<span class="o">)</span> NOT NULL,    mac_src CHAR<span class="o">(</span>17<span class="o">)</span> NOT NULL,    mac_dst CHAR<span class="o">(</span>17<span class="o">)</span> NOT NULL,    vlan INT<span class="o">(</span>2<span class="o">)</span> UNSIGNED NOT NULL,    as_src INT<span class="o">(</span>4<span class="o">)</span> UNSIGNED NOT NULL,    as_dst INT<span class="o">(</span>4<span class="o">)</span> UNSIGNED NOT NULL,    ip_src CHAR<span class="o">(</span>45<span class="o">)</span> NOT NULL,    ip_dst CHAR<span class="o">(</span>45<span class="o">)</span> NOT NULL,    port_src INT<span class="o">(</span>2<span class="o">)</span> UNSIGNED NOT NULL,    port_dst INT<span class="o">(</span>2<span class="o">)</span> UNSIGNED NOT NULL,    tcp_flags INT<span class="o">(</span>4<span class="o">)</span> UNSIGNED NOT NULL,    ip_proto CHAR<span class="o">(</span>6<span class="o">)</span> NOT NULL,     tos INT<span class="o">(</span>4<span class="o">)</span> UNSIGNED NOT NULL,     packets INT UNSIGNED NOT NULL,    bytes BIGINT UNSIGNED NOT NULL,    flows INT UNSIGNED NOT NULL,    stamp_inserted DATETIME NOT NULL,    stamp_updated DATETIME,    timestamp_min DATETIME NOT NULL,    timestamp_max INT UNSIGNED NOT NULL,    PRIMARY KEY <span class="o">(</span>tag, class_id, mac_src, mac_dst, vlan, as_src, as_dst, ip_src, ip_dst, port_src, port_dst, ip_proto, tos, stamp_inserted, timestamp_min, timestamp_max<span class="o">)</span> <span class="o">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>然后便可以用这个新的文件来创建表和pmacct的配置文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mysql -u root -p &lt; pmacct-create-db_v9.mysql 
+mkdir -p /etc/pmacct 
+sudo vim /etc/pmacct/pmacctd.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>配置文件如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">daemonize: <span class="nb">true</span> 
+<span class="c1"># Interface on which &#39;pmacctd&#39; listens</span>                                   
+interface: eth0                         
+<span class="c1"># Sets the maximum number of concurrent writer processes the plugin is</span> 
+allowed to start sql_max_writers: <span class="m">25</span>                         
+<span class="c1"># Enables the optimization of the statements sent to the RDBMS)</span> 
+sql_optimize_clauses: <span class="nb">true</span> 
+<span class="c1"># Forces &#39;pmacctd&#39; to join together IPv4/IPv6 fragments</span> 
+pmacctd_force_frag_handling: <span class="nb">true</span> 
+<span class="c1"># Enables debug</span> 
+debug: <span class="nb">false</span> 
+<span class="c1"># If set to true adds two new fields, timestamp_min and timestamp_max</span> 
+pmacctd_stitching: <span class="nb">true</span> 
+<span class="c1"># Plugins to be enabled</span> 
+plugins: mysql<span class="o">[</span>c<span class="o">]</span>                                 
+<span class="c1"># Aggregates used for the sole purpose of IP accounting</span> 
+aggregate<span class="o">[</span>c<span class="o">]</span>: src_host, dst_host, proto 
+<span class="c1"># Defines the SQL database to use</span> 
+sql_db<span class="o">[</span>c<span class="o">]</span>: pmacct                                
+<span class="c1"># In SQL and mongodb plugins this defines the table to use</span> 
+sql_table<span class="o">[</span>c<span class="o">]</span>: acct_v9              
+<span class="c1"># Defines the password to use when connecting to the server</span> 
+sql_passwd<span class="o">[</span>c<span class="o">]</span>: xxxxx                   
+<span class="c1"># Defines the username to use when connecting to the server</span> 
+sql_user<span class="o">[</span>c<span class="o">]</span>: root                                  
+<span class="c1"># Time interval, in seconds, between consecutive executions of the plugin cache scanner</span> 
+sql_refresh_time<span class="o">[</span>c<span class="o">]</span>: <span class="m">6</span>                        
+<span class="c1"># Sets timestamp to seconds</span> 
+timestamps_secs: <span class="nb">true</span>             
+<span class="c1"># this directive enables buffering of data transfers between core process and active plugins</span> 
+plugin_buffer_size: <span class="m">10240</span> 
+plugin_pipe_size: <span class="m">1024000</span> 
+<span class="c1"># Specifies the maximum number of bytes to capture for each packet</span> 
+snaplen: <span class="m">1500</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在第一次运行的时候，请先将daemonize设置为false，并把debug设置为true。否则数据无法正常写入也无法知道错误的原因。都完成之后，就是运行pmacct来采集数据了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">pmacctd -f /etc/pmacct/pmacctd.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>pmacct采集到的数据对于通常的监控是非常够用的，唯一的缺点就是其本身不区分流量是流出还是流入，有时候在统计的时候会比较麻烦（比如统计所有从网内流出的流量）。而这个时候fastnetmon就可以非常简单的完成这个任务了。
+同时，由于pmacct是工作在混杂模式，所以无所谓监听哪一个端口。所有送到网卡的数据包它都能接收，这样也不会和fastnetmon冲突，也避免了需要同时发送两份数据流的问题。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Ken Lai</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2020-07-31
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://kenlai.me/tags/Linux/">Linux</a>
+          <a href="https://kenlai.me/tags/NetFlow/">NetFlow</a>
+          <a href="https://kenlai.me/tags/Grafana/">Grafana</a>
+          <a href="https://kenlai.me/tags/pmacct/">pmacct</a>
+          <a href="https://kenlai.me/tags/fastnetmon/">fastnetmon</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/%E5%B9%B6%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84VXLAN/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">并不安全的VXLAN?</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%96%9C%E6%AC%A2%E9%BB%91%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/">
+            <span class="next-text nav-default">为什么我不喜欢黑客马拉松</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  <div id="comments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 700);
+              clearInterval(checkExist);
+            }
+        }, 10);
+    }
+  </script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        appId: 'HRVXwifaSeWcsjMaWIeaMCxa-MdYXbMMI',
+        appKey: 'NxTb7qTWsfkjJ6Xoutu8x9bh',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mm', 
+        placeholder: '',
+        visitor:  false 
+    });
+  </script>
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:ken.mercus.lai@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://twitter.com/Ken_M_Lai" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://www.linkedin.com/in/kenmercuslai/" rel="me noopener" class="iconfont"
+      title="linkedin"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="33" height="33">
+  <path d="M872.405333 872.618667h-151.637333v-237.610667c0-56.661333-1.152-129.578667-79.018667-129.578667-79.061333 0-91.136 61.653333-91.136 125.397334v241.792H398.976V384h145.664v66.602667h1.962667c20.352-38.4 69.845333-78.933333 143.786666-78.933334 153.642667 0 182.058667 101.12 182.058667 232.746667v268.202667zM227.712 317.141333a87.978667 87.978667 0 0 1-88.021333-88.106666 88.064 88.064 0 1 1 88.021333 88.106666z m76.032 555.477334H151.68V384h152.064v488.618667zM948.266667 0H75.562667C33.792 0 0 33.024 0 73.770667v876.458666C0 991.018667 33.792 1024 75.562667 1024h872.576C989.866667 1024 1024 991.018667 1024 950.229333V73.770667C1024 33.024 989.866667 0 948.138667 0h0.128z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://kenlai.me/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2013 -
+    2020
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Ken Lai
+        
+      </span></span>
+
+  
+  
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

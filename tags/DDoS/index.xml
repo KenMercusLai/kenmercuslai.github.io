@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DDoS on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/DDoS/</link>
+    <description>Recent content in DDoS on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/DDoS/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How does flowtrackd detect DDoS in DSR</title>
+      <link>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/How-does-flowtrackd-detect-DDoS-in-DSR/</guid>
+      <description>Cloudflare recently announced flowtrackd which can detect DDoS in [DSR]([[Direct Server Return]]) scenarios. It&amp;rsquo;s quite interesting since most DDoS protections need the gateway working in the reverse proxy mode, in which the traffic coming and leaving through the same device. Then the gateway can track connection statuses since it observes every packet. I am not an employee of Cloudflare and have no insight of how flowtrackd is designed, but I&amp;rsquo;d like to have an educated guess.</description>
+    </item>
+    
+  </channel>
+</rss>

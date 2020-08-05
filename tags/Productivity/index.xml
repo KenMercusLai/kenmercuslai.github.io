@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Productivity/</link>
+    <description>Recent content in Productivity on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何有效的管理时间</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E6%97%B6%E9%97%B4/</guid>
+      <description>时间是永远不够的。不管对任何人来说，似乎总有那么一些事是没有时间完成的。既然如此，倒过来想如何在有限的时间内完成最有价值的事情可能是收益最大</description>
+    </item>
+    
+  </channel>
+</rss>

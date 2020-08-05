@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Linux/</link>
+    <description>Recent content in Linux on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8RHEL-7-%E4%B8%8A%E7%94%A8fastnetmon%E5%92%8Cpmacct%E9%87%87%E9%9B%86NetFlow/</guid>
+      <description>最近由于苦于公司已有的监控系统存在太多的问题，各种流程又太过缓慢，所以干脆考虑自己从头建一套新的监控，在大家还没从官僚的流程中反应过来的时候</description>
+    </item>
+    
+    <item>
+      <title>实例配置分布式SmokePing</title>
+      <link>https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8FSmokeping/</guid>
+      <description>在前一篇文章中，简单的介绍了如何在Ubuntu 14.04中安装smokePing，安装之后smokePing是以单机的形式来运行。但是在这样</description>
+    </item>
+    
+    <item>
+      <title>在Ubuntu上部署SmokePing</title>
+      <link>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</link>
+      <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</guid>
+      <description>SmokePing是rrdtool的作者Tobi Oetiker的作品，是用Perl写的，主要是监视网络性能，包括常规的ping，用echop</description>
+    </item>
+    
+    <item>
+      <title>How to install ffmpeg on OpenShift</title>
+      <link>https://kenlai.me/post/How-to-install-ffmpeg-on-OpenShift/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/How-to-install-ffmpeg-on-OpenShift/</guid>
+      <description>We, ProjectMercury, recently wanted to move encoding jobs into OpenShift to make our workflow more efficiently. After some effort, we made it work. Here is a quick note of the process
+Pre-requests:
+ git rhc  I assume you already have both of them
+After sshed into your openshift virtual machine. Using following commands to install ffmpeg
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  cd $OPENSHIFT_DATA_DIR mkdir bin wget http://www.</description>
+    </item>
+    
+    <item>
+      <title>openDCIM 3 Install on Ubuntu 14.04</title>
+      <link>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</guid>
+      <description>中文版链接 What is openDCIM openDCIM is a free web-based Data Center Infrastructure Management application. DCIM means many different things to many different people, and there is a multitude of commercial applications available. The number one goal for openDCIM is to eliminate the excuse for anybody to ever track their data center inventory using a spreadsheet or word processing document again. installation Install Apache, PHP, MySQL Thanks</description>
+    </item>
+    
+    <item>
+      <title>如何在Ubuntu 14.04上安装openDCIM 3</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</guid>
+      <description>English version link openDCIM简介 openDCIM是一个免费且开源的数据中心（你也可以说“机房”这个名词=_=）基础网络管理软件。基础网络管理对于不</description>
+    </item>
+    
+  </channel>
+</rss>

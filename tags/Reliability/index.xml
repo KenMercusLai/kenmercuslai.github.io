@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reliability on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Reliability/</link>
+    <description>Recent content in Reliability on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Reliability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>网络可靠性工程师 NRE</title>
+      <link>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E7%BD%91%E7%BB%9C%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%E5%B8%88-NRE/</guid>
+      <description>可靠性工程师顾名思义就是保证可靠性的工程师。非常著名的《Site Reliability Engineering: How Google Runs》提到了Google内部是如何保障可靠性的。网络行业中有类似</description>
+    </item>
+    
+  </channel>
+</rss>

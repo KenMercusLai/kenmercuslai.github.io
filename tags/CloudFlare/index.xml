@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CloudFlare on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/CloudFlare/</link>
+    <description>Recent content in CloudFlare on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 08 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/CloudFlare/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experiences about CloudFlare</title>
+      <link>https://kenlai.me/post/Experiences-about-CloudFlare/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/Experiences-about-CloudFlare/</guid>
+      <description>I spent about three hours to migrate my tech blog from OpenShift &amp;amp; CloudFlare to GitHub again, after my moving all from GitHub to OpenShift about 2 month ago. Experience with OpenShift &amp;amp; CloudFlare was frustrating and awful. It didn’t hit any expectations that I thought before the first migration.
+Why I want to use CDN Choosing a free hosting by OpenShift for me is mesmerized by its potential customization in the future, rather than cost consideration.</description>
+    </item>
+    
+  </channel>
+</rss>

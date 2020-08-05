@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BPDU on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/BPDU/</link>
+    <description>Recent content in BPDU on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/BPDU/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BPDU filter VS BPDU guard</title>
+      <link>https://kenlai.me/post/BPDU-filter-VS-BPDU-guard/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/BPDU-filter-VS-BPDU-guard/</guid>
+      <description>I read Michael’s new blog post about how to reduce the possibility of the network unavailable time. He talked about BPDU filter and BPDU guard in his second point, and it was quite a confusion that they seem the same. But actually, they are not.
+BPDU is short for the phrase Bridge Protocol Data Unit, which is part of the STP that helps describe and identify attributes of a switch port.</description>
+    </item>
+    
+  </channel>
+</rss>

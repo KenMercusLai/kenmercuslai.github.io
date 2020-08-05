@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>business on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/business/</link>
+    <description>Recent content in business on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 16 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>这些不是我们的竞争优势</title>
+      <link>https://kenlai.me/post/%E8%BF%99%E4%BA%9B%E4%B8%8D%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AB%9E%E4%BA%89%E4%BC%98%E5%8A%BF/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E8%BF%99%E4%BA%9B%E4%B8%8D%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AB%9E%E4%BA%89%E4%BC%98%E5%8A%BF/</guid>
+      <description>Jason Cohen 在近期的文章中提出一些经常被误解为竞争优势的项目。我总结了一下，也加上了自己的看法： 我们有功能X。除非对手不能模仿，或者被模仿后，客户和</description>
+    </item>
+    
+  </channel>
+</rss>

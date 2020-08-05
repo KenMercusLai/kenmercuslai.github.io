@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Ubuntu/</link>
+    <description>Recent content in Ubuntu on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 10 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在Ubuntu上部署SmokePing</title>
+      <link>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</link>
+      <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%9C%A8Ubuntu%E4%B8%8A%E9%83%A8%E7%BD%B2Smokeping/</guid>
+      <description>SmokePing是rrdtool的作者Tobi Oetiker的作品，是用Perl写的，主要是监视网络性能，包括常规的ping，用echop</description>
+    </item>
+    
+    <item>
+      <title>openDCIM 3 Install on Ubuntu 14.04</title>
+      <link>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/openDCIM-3-Install-on-Ubuntu-14.04/</guid>
+      <description>中文版链接 What is openDCIM openDCIM is a free web-based Data Center Infrastructure Management application. DCIM means many different things to many different people, and there is a multitude of commercial applications available. The number one goal for openDCIM is to eliminate the excuse for anybody to ever track their data center inventory using a spreadsheet or word processing document again. installation Install Apache, PHP, MySQL Thanks</description>
+    </item>
+    
+    <item>
+      <title>如何在Ubuntu 14.04上安装openDCIM 3</title>
+      <link>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-14.04%E4%B8%8A%E5%AE%89%E8%A3%85openDCIM-3/</guid>
+      <description>English version link openDCIM简介 openDCIM是一个免费且开源的数据中心（你也可以说“机房”这个名词=_=）基础网络管理软件。基础网络管理对于不</description>
+    </item>
+    
+  </channel>
+</rss>

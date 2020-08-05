@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Center on Engineering Field Notes</title>
+    <link>https://kenlai.me/tags/Data-Center/</link>
+    <description>Recent content in Data Center on Engineering Field Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 25 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kenlai.me/tags/Data-Center/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is hot/cold aisle in data center</title>
+      <link>https://kenlai.me/post/What-is-hotcold-aisle-in-data-center/</link>
+      <pubDate>Thu, 25 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/What-is-hotcold-aisle-in-data-center/</guid>
+      <description>A hot/cold aisle is a layout design for server racks in a data center. The goal of it is to increase the effectiveness of the cooling system by managing airflow in a data center.
+In the simplest form, this design involves lining up server racks in different rows with cold air facing one way and hot exhausts facing the other. Typically, cold aisles, which are usually composed of rack fronts, face AC output, and hot aisles face return ducts.</description>
+    </item>
+    
+    <item>
+      <title>CCIE Data Center Lab Exam Topics</title>
+      <link>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</link>
+      <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenlai.me/post/CCIE-Data-Center-Lab-Exam-Topics/</guid>
+      <description>The CCIE Data Center lab exam topics provided are general guidelines for the content likely to be included on the lab exam. However, other related topics may also appear on any specific delivery of the exam. In order to better reflect the contents of the exam and for clarity purposes, the guidelines below may change at any time without notice.
+Cisco Data Center Infrastructure - NXOS
+  Implement NXOS L2 functionality</description>
+    </item>
+    
+  </channel>
+</rss>

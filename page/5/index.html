@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Engineering Field Notes</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Ken Lai" />
+  <meta name="description" content="Notes and thoughts about network" />
+  <meta name="keywords" content="Network, Automation, Notes, Thoughts" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+
+<link rel="canonical" href="https://kenlai.me/" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Engineering Field Notes" />
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa3d941d1d0e0ddc985804227feabffea55c89883eb0af34e0532a7ae9135151.css" integrity="sha256-&#43;j2UHR0ODdyYWAQif&#43;q//qVciYg&#43;sK804FMqeukTUVE=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="Engineering Field Notes" />
+<meta property="og:description" content="Notes and thoughts about network" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kenlai.me/" />
+<meta property="og:updated_time" content="2017-08-20T21:38:52+08:00" />
+<meta itemprop="name" content="Engineering Field Notes">
+<meta itemprop="description" content="Notes and thoughts about network"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Engineering Field Notes"/>
+<meta name="twitter:description" content="Notes and thoughts about network"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-26670277-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Engineering Field Notes</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Engineering Field Notes
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item active">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/">Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://kenlai.me/links/">Friendly Links</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          
+<section id="posts" class="posts">
+  
+  
+    
+  
+  
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/BPDU-filter-VS-BPDU-guard/">BPDU filter VS BPDU guard</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-04-02" class="post-time">
+        2016-04-02
+      </time>
+      
+      <span class="more-meta"> 253 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      I read Michael’s new blog post about how to reduce the possibility of the network unavailable time. He talked about BPDU filter and BPDU guard in his second point, and it was quite a confusion that they seem the same. But actually, they are not.
+BPDU is short for the phrase Bridge Protocol Data Unit, which is part of the STP that helps describe and identify attributes of a switch port.
+    </div>
+    <div class="read-more">
+      <a href="/post/BPDU-filter-VS-BPDU-guard/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/">如何增加Twitter关注者</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-04-01" class="post-time">
+        2016-04-01
+      </time>
+      
+      <span class="more-meta"> 651 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      Twitter作为互联网中重要的社交工具，是一个非常不错表达自己观点和个人营销的平台。但是如果和其他用户缺乏联系，那就成了自己的自言自语，其
+    </div>
+    <div class="read-more">
+      <a href="/post/%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0Twitter%E5%85%B3%E6%B3%A8%E8%80%85/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/">SDN时代硬件依然重要</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-26" class="post-time">
+        2016-03-26
+      </time>
+      
+      <span class="more-meta"> 671 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      不管从什么地方看到SDN的文章，都是集中于本身的实现与将来的美好愿景，似乎传统的硬件厂商在这一次的技术革新中都难逃厄运。但是我的观点是：SD
+    </div>
+    <div class="read-more">
+      <a href="/post/SDN%E6%97%B6%E4%BB%A3%E7%A1%AC%E4%BB%B6%E4%BE%9D%E7%84%B6%E9%87%8D%E8%A6%81/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/%E6%97%A5%E8%AF%AD%E4%B8%AD%E7%9A%84%E6%98%9F%E6%9C%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A5%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E5%9C%9F/">日语中的星期为什么是“日月火水木金土”</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-25" class="post-time">
+        2016-03-25
+      </time>
+      
+      <span class="more-meta"> 372 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      最近正在用以前下载的上海交大于杨老师的日语二外课程。其中一个麻烦的地方就是日语对于星期的叫法非常特别。老师在上课中说这是类似“五行”的叫法（
+    </div>
+    <div class="read-more">
+      <a href="/post/%E6%97%A5%E8%AF%AD%E4%B8%AD%E7%9A%84%E6%98%9F%E6%9C%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A5%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E5%9C%9F/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/Troubleshooting-is-an-interactive-process/">Troubleshooting is an interactive process</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-22" class="post-time">
+        2016-03-22
+      </time>
+      
+      <span class="more-meta"> 451 words </span>
+      <span class="more-meta"> 3 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      I believe that everyone who ever has a connection with Cisco whether it is business or personal knows TAC. This team provides post-sales technical support for customers who have bought it.
+I was once working in a regional ISP and responsible for a range of technical problems. Our department always had a lot of problems that would have been procrastinated, and of course, we thought that they all were Cisco problems’.
+    </div>
+    <div class="read-more">
+      <a href="/post/Troubleshooting-is-an-interactive-process/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/New-Team-Leader-Todo-List/">New Team Leader Todo List</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-17" class="post-time">
+        2016-03-17
+      </time>
+      
+      <span class="more-meta"> 446 words </span>
+      <span class="more-meta"> 3 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      To be a leader for a team is not as easy as working with machines, because people have their own ideas, attitudes, preferences, and styles of working, etc. I have experienced forming a team and taking over existing teams many times in my working experience, here are some important things I think worth noting for new team leaders.
+Know your team member It&rsquo;s definitely worthy to spend time and energy to establish how you want the team to work, but how to express your idea and be accepted by your members should be considered as the first thing for a new team leader todo list.
+    </div>
+    <div class="read-more">
+      <a href="/post/New-Team-Leader-Todo-List/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/SWOT-Analysis-for-Personal-Improvement/">SWOT Analysis for Personal Improvement</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-15" class="post-time">
+        2016-03-15
+      </time>
+      
+      <span class="more-meta"> 354 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      The SWOT analysis is a structured planning method used to evaluate the strengths, weaknesses, opportunities, and threats involved in a project or in a business venture. It involves specifying the objective and identify the internal and external factors that are favorable and unfavorable to achieve that objective. Here we will it SWOT analysis for personal improvement.
+What does SWOT Analysis do SWOT stands for Strengths, Weaknesses, Opportunities, and Threats. Performing a SWOT Analysis is helpful to use in your career planning for answering the following two questions:
+    </div>
+    <div class="read-more">
+      <a href="/post/SWOT-Analysis-for-Personal-Improvement/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/openDCIM-3-Install-on-Ubuntu-14.04/">openDCIM 3 Install on Ubuntu 14.04</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-03" class="post-time">
+        2016-03-03
+      </time>
+      
+      <span class="more-meta"> 646 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      中文版链接 What is openDCIM openDCIM is a free web-based Data Center Infrastructure Management application. DCIM means many different things to many different people, and there is a multitude of commercial applications available. The number one goal for openDCIM is to eliminate the excuse for anybody to ever track their data center inventory using a spreadsheet or word processing document again. installation Install Apache, PHP, MySQL Thanks
+    </div>
+    <div class="read-more">
+      <a href="/post/openDCIM-3-Install-on-Ubuntu-14.04/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/Huawei-has-published-SDN-product/">Huawei has published SDN product</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-02" class="post-time">
+        2016-03-02
+      </time>
+      
+      <span class="more-meta"> 208 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      I&rsquo;ve walked through the news from official website about SDN, which I thought was a missing part of their product line, and found a interesting one. Seems Huawei finally caught up with the SDN bus.
+I personally don&rsquo;t think what has been mentioned in the news will bring truly impact to the SDN market, and prefer to take it as only a symbol for Huawei entering the SDN game. Here are some of my reasons:
+    </div>
+    <div class="read-more">
+      <a href="/post/Huawei-has-published-SDN-product/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/What-is-IGMP-Snooping/">What is IGMP Snooping</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-02" class="post-time">
+        2016-03-02
+      </time>
+      
+      <span class="more-meta"> 338 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      What does IGMP Snooping Do IGMP snooping is used to monitor the traffic of IGMP protocol between hosts and multicast-enabled routers. The switch uses it to learn which interface has an interested receiver and forward multicast traffic only to these interfaces. This feature could save bandwidth by allowing it to send traffic only needed, rather than flooding all multicast packets to all interfaces.
+IGMP Snooping and Forwarding Interfaces To determine how to forward multicast traffic, IGMP snooping maintains a “table” about the interfaces information:
+    </div>
+    <div class="read-more">
+      <a href="/post/What-is-IGMP-Snooping/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  <nav class="pagination">
+    <ul>
+      
+      <li >
+        <a href="/">1</a>
+      </li>
+      
+      <li >
+        <a href="/page/2/">2</a>
+      </li>
+      
+      <li >
+        <a href="/page/3/">3</a>
+      </li>
+      
+      <li >
+        <a href="/page/4/">4</a>
+      </li>
+      
+      <li  class="active" >
+        <a href="/page/5/">5</a>
+      </li>
+      
+      <li >
+        <a href="/page/6/">6</a>
+      </li>
+      
+      <li >
+        <a href="/page/7/">7</a>
+      </li>
+      
+      <li >
+        <a href="/page/8/">8</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  
+  
+
+
+
+
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:ken.mercus.lai@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://twitter.com/Ken_M_Lai" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://www.linkedin.com/in/kenmercuslai/" rel="me noopener" class="iconfont"
+      title="linkedin"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="33" height="33">
+  <path d="M872.405333 872.618667h-151.637333v-237.610667c0-56.661333-1.152-129.578667-79.018667-129.578667-79.061333 0-91.136 61.653333-91.136 125.397334v241.792H398.976V384h145.664v66.602667h1.962667c20.352-38.4 69.845333-78.933333 143.786666-78.933334 153.642667 0 182.058667 101.12 182.058667 232.746667v268.202667zM227.712 317.141333a87.978667 87.978667 0 0 1-88.021333-88.106666 88.064 88.064 0 1 1 88.021333 88.106666z m76.032 555.477334H151.68V384h152.064v488.618667zM948.266667 0H75.562667C33.792 0 0 33.024 0 73.770667v876.458666C0 991.018667 33.792 1024 75.562667 1024h872.576C989.866667 1024 1024 991.018667 1024 950.229333V73.770667C1024 33.024 989.866667 0 948.138667 0h0.128z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://kenlai.me/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2013 -
+    2020
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Ken Lai
+        
+      </span></span>
+
+  
+  
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
