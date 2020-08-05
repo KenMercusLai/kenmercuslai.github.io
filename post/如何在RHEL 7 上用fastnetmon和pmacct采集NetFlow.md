@@ -1,5 +1,5 @@
 ---
-title: "如何在R HEL 7 上用fastnetmon和pmacct采集NetFlow"
+title: "如何在 RHEL 7 上用fastnetmon和pmacct采集NetFlow"
 date: 2020-07-31
 tags: [Linux, NetFlow, Grafana, pmacct, fastnetmon]
 ---
